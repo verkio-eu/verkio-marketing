@@ -326,7 +326,7 @@
         "description": "Bættu við léninu þínu og við stillum MX-, SPF-, DKIM-, DMARC- og autoconfig-færslur fyrir þig. Engin handvirk DNS-vinna."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Mars 2027",
         "name": "Yfirfærsla frá Google Workspace og Microsoft 365",
         "description": "Eins-smella innflutningur á tölvupósti, dagatali, tengiliðum og skrám úr Drive eða OneDrive. Með stöðu, endurtekningum og samhliða umskiptatímabili."
       },
@@ -357,12 +357,12 @@
         "description": "Byggðu ofan á Verkio: HTTP-API fyrir tölvupóst, dagatal, tengiliði, skjöl og wikis. Webhooks fyrir innkomna atburði. OAuth 2 og token-auðkenning."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Júní 2027",
         "name": "eIDAS-skjalaundirskrift",
         "description": "Lögbindandi rafrænar undirskriftir samkvæmt eIDAS 2.0. Skrifaðu undir PDF og skjöl beint úr skjalageymslunni þinni."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Apríl 2027",
         "name": "Dagatalskannanir",
         "description": "Finndu tíma sem hentar öllum án Doodle-tengils. Stingdu upp á mörgum tímum í boðinu, viðtakendur kjósa, dagatal leysir."
       },
@@ -382,17 +382,17 @@
         "description": "Tímasettu skilaboð fyrir morgundaginn kl. 9. Settu þráð á blund til föstudags. 30 sekúndna svigrúm til að draga til baka sendingu."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Desember 2027",
         "name": "SOC 2 Type II og ISO 27001",
         "description": "Vottanir um samræmi sem kaupendur spyrja um. Stöðug skuldbinding með skjölum tilbúnum fyrir endurskoðun."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Nóvember 2027",
         "name": "Rauntíma skjalasamstarf",
         "description": "Lifandi marg-bendilsritun yfir skjöl og wikis. Athugasemdir, tillögur, útgáfusaga — byggt á opnum sniðum."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Október 2027",
         "name": "ESB-hýst API fyrir viðskiptapóst",
         "description": "HTTP-API til að senda tölvupóst forritsins þíns í gegnum Verkio. Sama ESB-heimilisstöðu og pósthólfið þitt, útfærð fyrir vöruna þína."
       },
@@ -402,7 +402,7 @@
         "description": "Síubundnar póstsíur (Sieve, RFC 5228) sem þú byggir í stjórnborðinu. Færa fréttabréf í möppu, þagga niður í hávær listum, beina verkefnispósti — beitt við afhendingu, þannig að reglurnar virka í hverjum póstforriti. Fimm sniðmát til að byrja á; allt að 50 reglur á hvert pósthólf."
       },
       "ediscovery": {
-        "date": "Snemma 2028",
+        "date": "Desember 2027",
         "name": "eDiscovery og lagaleg varðveisla",
         "description": "Settu notendur eða pósthólf í varðveislu; leitaðu og fluttu út yfir svítuna fyrir samræmis- og lagalega-uppgötvunarferli."
       },
@@ -782,7 +782,7 @@
           "iMIP-boð (RFC 6047) sem virka í Gmail, Outlook, Apple Calendar og Thunderbird.",
           "RSVP-stöður (samþykkt, til bráðabirgða, hafnað) raktar og uppfærðar í rauntíma.",
           "Free/busy-leit yfir samstarfsfólk — finndu glugga án þess að deila dagatalsskjánum þínum.",
-          "Dagatalskannanir á vegvísinum (Q2 2027) þegar free/busy dugar ekki."
+          "Dagatalskannanir á vegvísinum (apríl 2027) þegar free/busy dugar ekki."
         ]
       }
     },

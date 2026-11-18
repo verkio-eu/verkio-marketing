@@ -326,7 +326,7 @@
         "description": "Tilføj dit domæne, og vi konfigurerer MX-, SPF-, DKIM-, DMARC- og autoconfig-poster for dig. Intet manuelt DNS-arbejde."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Marts 2027",
         "name": "Migrering fra Google Workspace og Microsoft 365",
         "description": "Et-klik-import af mail, kalender, kontakter og Drive- eller OneDrive-filer. Med status, gentagelser og en parallel overgangsperiode."
       },
@@ -357,12 +357,12 @@
         "description": "Byg oven på Verkio: HTTP-API til mail, kalender, kontakter, dokumenter og wikis. Webhooks til indgående hændelser. OAuth 2 og token-godkendelse."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Juni 2027",
         "name": "eIDAS-dokumentunderskrift",
         "description": "Juridisk bindende elektroniske underskrifter under eIDAS 2.0. Underskriv PDF'er og dokumenter direkte fra dit dokumentlager."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "April 2027",
         "name": "Kalenderafstemninger",
         "description": "Find en tid, der passer alle, uden Doodle-link. Foreslå flere tider i invitationen, modtagerne stemmer, kalenderen løser."
       },
@@ -382,17 +382,17 @@
         "description": "Planlæg en besked til i morgen kl. 9. Snooze en tråd til fredag. 30 sekunders frist til at trække en afsendelse tilbage."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "December 2027",
         "name": "SOC 2 Type II og ISO 27001",
         "description": "Compliance-attestationer, som købere spørger efter. Løbende forpligtelse med revisionsklar dokumentation."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "November 2027",
         "name": "Realtidssamarbejde om dokumenter",
         "description": "Live-redigering med flere markører på tværs af dokumenter og wikis. Kommentarer, forslag, versionshistorik — bygget på åbne formater."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Oktober 2027",
         "name": "EU-hostet API til transaktionsmail",
         "description": "Et HTTP-API til at sende dit programs e-mails gennem Verkio. Samme EU-residente position som din indbakke, udvidet til dit produkt."
       },
@@ -402,7 +402,7 @@
         "description": "Server-side mailfiltre (Sieve, RFC 5228) du bygger i dashboardet. Flyt nyhedsbreve til en mappe, dæmp støjende lister, dirigér projektmail — anvendes ved levering, så reglerne fungerer i enhver mailklient. Fem skabeloner at starte fra; op til 50 regler pr. indbakke."
       },
       "ediscovery": {
-        "date": "Start 2028",
+        "date": "December 2027",
         "name": "eDiscovery og legal hold",
         "description": "Sæt brugere eller mailbokse under hold; søg og eksporter på tværs af suiten til compliance- og legal-discovery-arbejdsgange."
       },
@@ -782,7 +782,7 @@
           "iMIP-invitationer (RFC 6047), der virker i Gmail, Outlook, Apple Calendar og Thunderbird.",
           "RSVP-statusser (accepteret, foreløbig, afslået) sporet og opdateret i realtid.",
           "Ledig/optaget-opslag på tværs af kolleger — find et tidsrum uden at dele skærm.",
-          "Kalenderafstemninger på roadmappet (Q2 2027) til, når ledig/optaget ikke rækker."
+          "Kalenderafstemninger på roadmappet (april 2027) til, når ledig/optaget ikke rækker."
         ]
       }
     },

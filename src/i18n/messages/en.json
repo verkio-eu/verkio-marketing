@@ -463,7 +463,7 @@
         "description": "Add your domain and we configure MX, SPF, DKIM, DMARC, and autoconfig records for you. No manual DNS work."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "March 2027",
         "name": "Migration from Google Workspace and Microsoft 365",
         "description": "One-click import of mail, calendar, contacts, and Drive or OneDrive files. With status, retries, and a side-by-side switch-over period."
       },
@@ -495,12 +495,12 @@
         "note": "Webhooks, mailbox/domain CRUD, JMAP passthrough, and OAuth 2 still to come."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "June 2027",
         "name": "eIDAS document signing",
         "description": "Legally-binding electronic signatures under eIDAS 2.0. Sign PDFs and documents directly from your document storage."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "April 2027",
         "name": "Calendar polls",
         "description": "Find a time that works for everyone without a Doodle link. Propose multiple slots inside the invite, recipients vote, calendar resolves."
       },
@@ -520,17 +520,17 @@
         "description": "Schedule a message for tomorrow at 9am. Snooze a thread until Friday. A 30-second grace period to pull back a send."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "December 2027",
         "name": "SOC 2 Type II and ISO 27001",
         "description": "Compliance attestations buyers ask for. Rolling commitment with auditor-ready documentation."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "November 2027",
         "name": "Real-time document collaboration",
         "description": "Live multi-cursor editing across documents and wikis. Comments, suggestions, version history — built on open formats."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "October 2027",
         "name": "EU-resident transactional email API",
         "description": "An HTTP API to send your application's emails through Verkio. The same EU-resident posture as your inbox, extended to your product."
       },
@@ -540,7 +540,7 @@
         "description": "Server-side mail filters (Sieve, RFC 5228) you build in the dashboard. Move newsletters to a folder, mute noisy lists, route project mail to the right place — applied at delivery, so the rules fire in every mail client. Five pre-built templates to start from; up to 50 rules per mailbox."
       },
       "ediscovery": {
-        "date": "Early 2028",
+        "date": "December 2027",
         "name": "eDiscovery and legal hold",
         "description": "Place users or mailboxes under hold; search and export across the suite for compliance and legal-discovery workflows."
       },
@@ -786,7 +786,7 @@
           "iMIP invitations (RFC 6047) that work in Gmail, Outlook, Apple Calendar, and Thunderbird.",
           "RSVP statuses (accepted, tentative, declined) tracked and updated in real time.",
           "Free/busy lookup across teammates — find a slot without screen-sharing your calendar.",
-          "Calendar polls on the roadmap (Q2 2027) for when free/busy isn't enough."
+          "Calendar polls on the roadmap (April 2027) for when free/busy isn't enough."
         ]
       }
     },

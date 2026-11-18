@@ -326,7 +326,7 @@
         "description": "Pievieno savu domēnu un mēs konfigurēsim MX, SPF, DKIM, DMARC un autoconfig ierakstus tavā vietā. Bez manuālas DNS darbības."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Marts 2027",
         "name": "Migrācija no Google Workspace un Microsoft 365",
         "description": "Viena klikšķa imports e-pastam, kalendāram, kontaktiem un Drive vai OneDrive failiem. Ar statusu, atkārtojumiem un paralēlu pārejas periodu."
       },
@@ -357,12 +357,12 @@
         "description": "Veido virs Verkio: HTTP API e-pastam, kalendāram, kontaktiem, dokumentiem un vikiem. Webhook ienākošajiem notikumiem. OAuth 2 un token autentifikācija."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Jūnijs 2027",
         "name": "eIDAS dokumentu parakstīšana",
         "description": "Juridiski saistoši elektroniskie paraksti saskaņā ar eIDAS 2.0. Paraksti PDF un dokumentus tieši no dokumentu glabātuves."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Aprīlis 2027",
         "name": "Kalendāra aptaujas",
         "description": "Atrodi laiku, kas der visiem, bez Doodle saites. Piedāvā vairākus laikus uzaicinājumā, saņēmēji balso, kalendārs atrisina."
       },
@@ -382,17 +382,17 @@
         "description": "Ieplāno ziņu rītdienai pulksten 9. Snaud pavedienu līdz piektdienai. 30 sekunžu žēlastības periods, lai atvilktu sūtījumu."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Decembris 2027",
         "name": "SOC 2 Type II un ISO 27001",
         "description": "Atbilstības apliecinājumi, kurus pircēji prasa. Pastāvīga apņemšanās ar audita gatavu dokumentāciju."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Novembris 2027",
         "name": "Reāllaika sadarbība dokumentos",
         "description": "Tiešraides daudzkursoru rediģēšana dokumentos un vikos. Komentāri, ieteikumi, versiju vēsture — veidots uz atvērtiem formātiem."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Oktobris 2027",
         "name": "ES izvietota transakciju e-pasta API",
         "description": "HTTP API, lai sūtītu jūsu lietojumprogrammas e-pastus caur Verkio. Tāda pati ES rezidenta nostāja kā jūsu iesūtne, paplašināta uz jūsu produktu."
       },
@@ -402,7 +402,7 @@
         "description": "Servera puses pasta filtri (Sieve, RFC 5228), ko izveido informācijas panelī. Pārvieto biļetenus uz mapi, apklusini trokšņainus sarakstus, novirzi projekta pastu — tiek lietoti piegādes laikā, tāpēc noteikumi darbojas katrā pasta klientā. Pieci sākuma šabloni; līdz 50 noteikumiem uz pastkasti."
       },
       "ediscovery": {
-        "date": "2028. gada sākums",
+        "date": "Decembris 2027",
         "name": "eDiscovery un juridiska saglabāšana",
         "description": "Novieto lietotājus vai pastkastītes saglabāšanā; meklē un eksportē visā komplektā atbilstības un juridiskās atklāšanas darbplūsmām."
       },
@@ -782,7 +782,7 @@
           "iMIP ielūgumi (RFC 6047), kas darbojas Gmail, Outlook, Apple Calendar un Thunderbird.",
           "RSVP statusi (pieņemts, provizorisks, noraidīts) izsekoti un atjaunināti reālajā laikā.",
           "Brīvs/aizņemts meklēšana starp komandas locekļiem — atrodi laiku bez ekrāna kopīgošanas.",
-          "Kalendāra aptaujas ceļvedī (Q2 2027), kad brīvs/aizņemts nepietiek."
+          "Kalendāra aptaujas ceļvedī (2027. gada aprīlis), kad brīvs/aizņemts nepietiek."
         ]
       }
     },

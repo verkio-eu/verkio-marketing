@@ -326,7 +326,7 @@
         "description": "Lisa oma domeen ja seadistame MX-, SPF-, DKIM-, DMARC- ja autoconfig-kirjed sinu eest. Käsitsi DNS-tööd pole vaja."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Märts 2027",
         "name": "Migratsioon Google Workspace'ist ja Microsoft 365-st",
         "description": "Ühe klõpsuga e-posti, kalendri, kontaktide ning Drive'i või OneDrive'i failide import. Olekuga, kordustega ja paralleelse üleminekuperioodiga."
       },
@@ -357,12 +357,12 @@
         "description": "Ehita Verkio peale: HTTP API e-postile, kalendrile, kontaktidele, dokumentidele ja vikidele. Webhookid sissetulevatele sündmustele. OAuth 2 ja token-autentimine."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Juuni 2027",
         "name": "eIDAS-dokumendi allkirjastamine",
         "description": "Juriidiliselt siduvad elektroonilised allkirjad eIDAS 2.0 alusel. Allkirjasta PDF-id ja dokumendid otse dokumendihoidlast."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Aprill 2027",
         "name": "Kalendri küsitlused",
         "description": "Leia aeg, mis sobib kõigile, ilma Doodle lingita. Paku kutses mitu pesa, saajad hääletavad, kalender lahendab."
       },
@@ -382,17 +382,17 @@
         "description": "Plaani sõnum homme kell 9. Lükka lõim reedeni edasi. 30-sekundiline aeg saatmise tagasivõtmiseks."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Detsember 2027",
         "name": "SOC 2 Type II ja ISO 27001",
         "description": "Vastavustõendid, mida ostjad küsivad. Jätkuv kohustus auditiks valmis dokumentatsiooniga."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "November 2027",
         "name": "Reaalajas dokumendikoostöö",
         "description": "Reaalajas mitme kursoriga redigeerimine dokumentides ja vikides. Kommentaarid, ettepanekud, versiooniajalugu — ehitatud avatud vormingutele."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Oktoober 2027",
         "name": "ELi-põhine tehingute e-posti API",
         "description": "HTTP-API rakenduse e-kirjade saatmiseks Verkio kaudu. Sama ELi-residentne hoiak nagu sinu postkast, laiendatud sinu tootele."
       },
@@ -402,7 +402,7 @@
         "description": "Serveripoolsed meilifiltrid (Sieve, RFC 5228), mille saad ehitada armatuurlauas. Liiguta uudiskirju kausta, summuta lärmakaid loendeid, suuna projektipostid õigesse kohta — rakendatakse kohaletoimetamisel, seega reeglid töötavad igas e-posti kliendis. Viis malli alustamiseks; kuni 50 reeglit postkasti kohta."
       },
       "ediscovery": {
-        "date": "2028 algus",
+        "date": "Detsember 2027",
         "name": "eDiscovery ja õiguslik säilitus",
         "description": "Pane kasutajad või postkastid hoiu alla; otsi ja ekspordi kogu paketi ulatuses vastavus- ja juriidiliste avastamistöövoogude jaoks."
       },
@@ -782,7 +782,7 @@
           "iMIP-kutsed (RFC 6047), mis töötavad Gmailis, Outlookis, Apple Calendaris ja Thunderbirdis.",
           "RSVP-staatused (vastu võetud, esialgne, tagasi lükatud) jälgitud ja reaalajas uuendatud.",
           "Vaba/hõivatud-päring meeskonnakaaslaste vahel — leia aeg ilma ekraani jagamata.",
-          "Kalendriküsitlused tegevuskavas (Q2 2027) juhuks, kui vaba/hõivatud ei piisa."
+          "Kalendriküsitlused tegevuskavas (aprill 2027) juhuks, kui vaba/hõivatud ei piisa."
         ]
       }
     },

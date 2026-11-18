@@ -326,7 +326,7 @@
         "description": "Lisää verkkotunnuksesi, niin määritämme MX-, SPF-, DKIM-, DMARC- ja autoconfig-tietueet puolestasi. Ei manuaalista DNS-työtä."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Maaliskuu 2027",
         "name": "Siirto Google Workspacesta ja Microsoft 365:stä",
         "description": "Yhden napsautuksen tuonti sähköpostille, kalenterille, yhteystiedoille ja Drive- tai OneDrive-tiedostoille. Tilan seurannan, uudelleenyritysten ja rinnakkaisen siirtymäjakson kanssa."
       },
@@ -357,12 +357,12 @@
         "description": "Rakenna Verkion päälle: HTTP-API sähköpostille, kalenterille, yhteystiedoille, dokumenteille ja wikeille. Webhookit saapuville tapahtumille. OAuth 2 ja token-tunnistus."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Kesäkuu 2027",
         "name": "eIDAS-dokumenttien allekirjoitus",
         "description": "Oikeudellisesti sitovat sähköiset allekirjoitukset eIDAS 2.0:n alla. Allekirjoita PDF:t ja dokumentit suoraan dokumenttitallennuksesta."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Huhtikuu 2027",
         "name": "Kalenterikyselyt",
         "description": "Löydä aika, joka sopii kaikille ilman Doodle-linkkiä. Ehdota useita aikoja kutsussa, vastaanottajat äänestävät, kalenteri ratkaisee."
       },
@@ -382,17 +382,17 @@
         "description": "Ajasta viesti huomiseksi klo 9. Torku säikeen perjantaihin. 30 sekunnin armoaika vetää lähetys takaisin."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Joulukuu 2027",
         "name": "SOC 2 Type II ja ISO 27001",
         "description": "Vaatimustenmukaisuussertifikaatit, joita ostajat kysyvät. Jatkuva sitoumus tarkastusvalmiin dokumentaation kanssa."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Marraskuu 2027",
         "name": "Reaaliaikainen yhteistyö dokumenteissa",
         "description": "Reaaliaikainen monikursorimuokkaus dokumenteissa ja wikeissä. Kommentit, ehdotukset, versiohistoria — rakennettu avoimille formaateille."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Lokakuu 2027",
         "name": "EU:hun sijoitettu tapahtumasähköpostin API",
         "description": "HTTP-API sovelluksesi sähköpostien lähettämiseen Verkion kautta. Sama EU-residenttinen asema kuin postilaatikollasi, laajennettuna tuotteeseesi."
       },
@@ -402,7 +402,7 @@
         "description": "Palvelinpuolen sähköpostisuodattimet (Sieve, RFC 5228), jotka rakennat hallintapaneelissa. Siirrä uutiskirjeet kansioon, vaienna meluisat listat, ohjaa projektipostit — sovelletaan toimituksen yhteydessä, joten säännöt toimivat jokaisessa sähköpostiohjelmassa. Viisi mallia aloitukseen; enintään 50 sääntöä postilaatikkoa kohti."
       },
       "ediscovery": {
-        "date": "Alkuvuosi 2028",
+        "date": "Joulukuu 2027",
         "name": "eDiscovery ja oikeudellinen pidätys",
         "description": "Aseta käyttäjät tai postilaatikot pidätykseen; hae ja vie tietoja koko paketin yli vaatimustenmukaisuus- ja oikeudellisen löytämisen työnkulkuihin."
       },
@@ -782,7 +782,7 @@
           "iMIP-kutsut (RFC 6047), jotka toimivat Gmailissa, Outlookissa, Apple Calendarissa ja Thunderbirdissä.",
           "RSVP-tilat (hyväksytty, alustava, hylätty) seurattuna ja päivitettynä reaaliajassa.",
           "Vapaa/varattu-haku tiimiläisten kesken — etsi väli ilman näytön jakamista.",
-          "Kalenterikyselyt tiekartalla (Q2 2027), kun vapaa/varattu ei riitä."
+          "Kalenterikyselyt tiekartalla (huhtikuu 2027), kun vapaa/varattu ei riitä."
         ]
       }
     },

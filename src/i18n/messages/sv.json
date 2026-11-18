@@ -326,7 +326,7 @@
         "description": "Lägg till din domän så konfigurerar vi MX-, SPF-, DKIM-, DMARC- och autoconfig-poster åt dig. Inget manuellt DNS-arbete."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Mars 2027",
         "name": "Migrering från Google Workspace och Microsoft 365",
         "description": "Enkelklicksimport av e-post, kalender, kontakter och Drive- eller OneDrive-filer. Med status, omförsök och en parallell övergångsperiod."
       },
@@ -357,12 +357,12 @@
         "description": "Bygg ovanpå Verkio: HTTP-API för e-post, kalender, kontakter, dokument och wikis. Webhooks för inkommande händelser. OAuth 2 och token-autentisering."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Juni 2027",
         "name": "eIDAS-dokumentsignering",
         "description": "Juridiskt bindande elektroniska signaturer enligt eIDAS 2.0. Signera PDF:er och dokument direkt från ditt dokumentlager."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "April 2027",
         "name": "Kalenderomröstningar",
         "description": "Hitta en tid som passar alla utan Doodle-länk. Föreslå flera tider i inbjudan, mottagarna röstar, kalendern löser."
       },
@@ -382,17 +382,17 @@
         "description": "Schemalägg ett meddelande till imorgon klockan 9. Snooza en tråd till fredag. 30-sekunders frist för att dra tillbaka ett skickat meddelande."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "December 2027",
         "name": "SOC 2 Type II och ISO 27001",
         "description": "Efterlevnadsintyg som köpare frågar efter. Löpande åtagande med revisorsklar dokumentation."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "November 2027",
         "name": "Realtidssamarbete i dokument",
         "description": "Live-redigering med flera markörer i dokument och wikis. Kommentarer, förslag, versionshistorik — byggt på öppna format."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Oktober 2027",
         "name": "EU-baserat API för transaktionsmail",
         "description": "Ett HTTP-API för att skicka din applikations e-post via Verkio. Samma EU-residenta hållning som din inkorg, utökad till din produkt."
       },
@@ -402,7 +402,7 @@
         "description": "Server-side e-postfilter (Sieve, RFC 5228) som du bygger i instrumentpanelen. Flytta nyhetsbrev till en mapp, tysta bullriga listor, dirigera projektmail — tillämpas vid leverans, så reglerna fungerar i varje e-postklient. Fem mallar att börja från; upp till 50 regler per brevlåda."
       },
       "ediscovery": {
-        "date": "Början 2028",
+        "date": "December 2027",
         "name": "eDiscovery och legal hold",
         "description": "Sätt användare eller brevlådor under hold; sök och exportera över hela sviten för efterlevnads- och legal discovery-flöden."
       },
@@ -782,7 +782,7 @@
           "iMIP-inbjudningar (RFC 6047) som fungerar i Gmail, Outlook, Apple Calendar och Thunderbird.",
           "RSVP-statusar (accepterad, preliminär, avböjd) följda och uppdaterade i realtid.",
           "Ledig/upptagen-uppslag bland kollegor — hitta en lucka utan att skärmdela.",
-          "Kalenderomröstningar på färdplanen (Q2 2027) för när ledig/upptagen inte räcker."
+          "Kalenderomröstningar på färdplanen (april 2027) för när ledig/upptagen inte räcker."
         ]
       }
     },

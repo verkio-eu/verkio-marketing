@@ -326,7 +326,7 @@
         "description": "Přidejte svou doménu a my za vás nastavíme MX, SPF, DKIM, DMARC a autoconfig záznamy. Žádná ruční práce s DNS."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Březen 2027",
         "name": "Migrace z Google Workspace a Microsoft 365",
         "description": "Import pošty, kalendáře, kontaktů a souborů Drive nebo OneDrive jedním kliknutím. Se statusem, opakováním a obdobím paralelního přechodu."
       },
@@ -357,12 +357,12 @@
         "description": "Stavte na Verkio: HTTP API pro poštu, kalendář, kontakty, dokumenty a wiki. Webhooky pro příchozí události. OAuth 2 a autentizace tokenem."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Červen 2027",
         "name": "Podepisování dokumentů eIDAS",
         "description": "Právně závazné elektronické podpisy podle eIDAS 2.0. Podepisujte PDF a dokumenty přímo z úložiště dokumentů."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Duben 2027",
         "name": "Ankety v kalendáři",
         "description": "Najděte čas, který vyhovuje všem, bez Doodle odkazu. Navrhněte více termínů v pozvánce, příjemci hlasují, kalendář vyhodnotí."
       },
@@ -382,17 +382,17 @@
         "description": "Naplánujte zprávu na zítra v 9. Odložte vlákno do pátku. 30sekundový čas na stažení odeslání."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Prosinec 2027",
         "name": "SOC 2 Type II a ISO 27001",
         "description": "Osvědčení o shodě, na která se kupující ptají. Průběžný závazek s dokumentací připravenou k auditu."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Listopad 2027",
         "name": "Spolupráce na dokumentech v reálném čase",
         "description": "Živá úprava s více kurzory v dokumentech a wiki. Komentáře, návrhy, historie verzí — postavené na otevřených formátech."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Říjen 2027",
         "name": "API pro transakční e-maily s EU rezidencí",
         "description": "HTTP API pro odesílání e‑mailů vaší aplikace přes Verkio. Stejná EU‑rezidentní pozice jako vaše schránka, rozšířená na váš produkt."
       },
@@ -402,7 +402,7 @@
         "description": "Serverové filtry e-mailů (Sieve, RFC 5228) sestavované v dashboardu. Přesouvejte newslettery do složky, ztišujte hlučné seznamy, směrujte projektovou poštu — aplikováno při doručení, takže pravidla fungují ve všech klientech. Pět šablon pro start; až 50 pravidel na schránku."
       },
       "ediscovery": {
-        "date": "Začátek 2028",
+        "date": "Prosinec 2027",
         "name": "eDiscovery a právní hold",
         "description": "Uveďte uživatele nebo schránky do holdu; hledejte a exportujte napříč balíčkem pro workflow shody a právního zjišťování."
       },
@@ -782,7 +782,7 @@
           "iMIP pozvánky (RFC 6047), které fungují v Gmailu, Outlooku, Apple Calendaru a Thunderbirdu.",
           "Stavy RSVP (přijato, předběžně, odmítnuto) sledované a aktualizované v reálném čase.",
           "Vyhledávání free/busy napříč spolupracovníky — najdi termín bez sdílení obrazovky s kalendářem.",
-          "Hlasování v kalendáři na roadmapě (Q2 2027), když free/busy nestačí."
+          "Hlasování v kalendáři na roadmapě (duben 2027), když free/busy nestačí."
         ]
       }
     },
