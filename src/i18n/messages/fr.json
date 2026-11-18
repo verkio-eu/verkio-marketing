@@ -306,12 +306,12 @@
     },
     "items": {
       "wiki": {
-        "date": "July 2026",
+        "date": "Juillet 2026",
         "name": "Wikis internes",
         "description": "Des espaces recherchables et versionnés pour les runbooks, les décisions et la connaissance institutionnelle que votre équipe écrit pour elle-même."
       },
       "messaging": {
-        "date": "July 2026",
+        "date": "Juillet 2026",
         "name": "Messagerie interne",
         "description": "Canaux, messages privés et fils de discussion pour les conversations d'équipe — consultables, organisés en fils et intégrés à la même suite que votre messagerie et vos documents."
       },
@@ -331,7 +331,7 @@
         "description": "Import en un clic de mail, agenda, contacts, et fichiers Drive ou OneDrive. Avec statut, reprises et une période de bascule en parallèle."
       },
       "ssoScim": {
-        "date": "June 2026",
+        "date": "Juin 2026",
         "name": "SCIM and OIDC sign-on",
         "description": "RFC 7644 SCIM 2.0 endpoints — Okta / Entra ID / JumpCloud / OneLogin auto-provision Users + Groups via push, instead of waiting for first sign-in. OIDC sign-on as an alternative to SAML for IdPs that prefer it (Auth0, Okta-OIDC, Entra-OIDC, Google Workspace OIDC, Authentik). PATCH parser handles the documented per-IdP payload variations. Owner-only configuration."
       },
@@ -342,7 +342,7 @@
         "note": "Sous réserve d'un usage raisonnable"
       },
       "schedule": {
-        "date": "Q1 2027",
+        "date": "Juin 2026",
         "name": "Verkio Schedule",
         "description": "Liens de prise de rendez-vous publics depuis votre agenda. Comme Calendly, mais hébergé dans l'UE, sans tracking, et intégré à la suite."
       },
@@ -377,7 +377,7 @@
         "description": "Vue boîte d'équipe pour les boîtes partagées : attribuez les conversations aux coéquipiers, définissez le statut (ouverte / en attente / fermée) et laissez des notes internes visibles seulement par l'équipe. Le même état est exposé sous forme de mots-clés IMAP standards — visibles dans Apple Mail / Thunderbird / K-9. Suivi en temps réel des messages entrants ; réouverture automatique des conversations fermées sur réponse client."
       },
       "sendLaterSnooze": {
-        "date": "Q3 2027",
+        "date": "Mai 2026",
         "name": "Envoi différé, mise en veille, annuler l'envoi",
         "description": "Planifiez un message pour demain 9h. Mettez un fil en veille jusqu'à vendredi. 30 secondes pour rattraper un envoi."
       },
@@ -432,78 +432,78 @@
         "description": "Carnets d'adresses personnels et partagés en équipe, avec accès CardDAV depuis tout client conforme aux standards. Les contacts se remplissent automatiquement à partir des e-mails et des invitations d'agenda — pas de saisie manuelle, pas d'enfermement dans la plateforme."
       },
       "pwaInstall": {
-        "date": "Q3 2027",
+        "date": "Mai 2026",
         "name": "Application web installable (PWA)",
         "description": "Installez Verkio sur l'écran d'accueil de votre téléphone ou de votre ordinateur. Coque hors ligne pour la boîte de réception, notifications push et une vraie sensation d'application — sans magasin d'applications natif au milieu."
       },
       "gdprPortability": {
-        "date": "Q3 2027",
+        "date": "Juin 2026",
         "name": "Export de portabilité au titre de l'article 20 du RGPD",
         "description": "Export en un clic de tout votre espace de travail dans des formats ouverts interopérables — e-mails en mbox standard, agendas en ICS, contacts en vCard, fichiers dans leurs formats d'origine. Emportez-les chez n'importe quel autre fournisseur. Aucun enfermement, jamais."
       },
       "pgpSmime": {
-        "date": "Q4 2027",
+        "date": "Juin 2026",
         "name": "E-mail chiffré de bout en bout (PGP et S/MIME)",
         "description": "OpenPGP et S/MIME dans le webmail, avec des en-têtes standards pour que le courrier chiffré fonctionne nativement entre les boîtes Verkio et tout autre client compatible PGP ou S/MIME. Des clés que vous contrôlez, jamais en séquestre."
       },
       "notifications": {
-        "date": "May 2026",
+        "date": "Mai 2026",
         "name": "Notifications & web push",
         "description": "Bell icon, in-app inbox, and browser push for the moments that matter — new mail, calendar invites, shared mentions, file shares. Per-channel preferences; nothing leaves your control plane."
       },
       "discountCodes": {
-        "date": "May 2026",
+        "date": "Mai 2026",
         "name": "Discount codes",
         "description": "Apply a code at signup or mid-subscription. Percent, flat-amount, or free-month comp; per-customer redemption limits; restrict to specific plans or billing periods. Pricing transparency on every invoice."
       },
       "universalSearch": {
-        "date": "June 2026",
+        "date": "Juin 2026",
         "name": "Universal search",
         "description": "One input in the top bar searches Email, Calendar, Contacts, Files, Wikis, and Messages. Grouped results, keyboard-first, sharable URLs. Press / from any page to focus; everything in one place."
       },
       "tier2Encryption": {
-        "date": "June 2026",
+        "date": "Juin 2026",
         "name": "Customer-held-key encryption at rest (opt-in)",
         "description": "Optional per-mailbox upgrade: Verkio configures Stalwart to encrypt every incoming message to YOUR PGP public key before writing to disk. Your private key stays in your mail client (Thunderbird / Apple Mail / K-9 / Outlook+PGP). Verkio physically cannot read those messages at rest. Trades web inbox + search + push previews for the strongest at-rest posture. Free on every plan — no Microsoft/Google-style upsell. Default Verkio-managed-keys posture (every account, every plan) is unchanged."
       },
       "samlSso": {
-        "date": "June 2026",
+        "date": "Juin 2026",
         "name": "SAML / SSO",
         "description": "Federated sign-in via Okta, Azure AD, Google Workspace, or any SAML 2.0 IdP. Auto-creates Verkio users on first sign-in (JIT provisioning); group/role claims map to org roles and re-evaluate on every sign-in. SP metadata URL exposed in-app for one-click IdP setup. Owner-only configuration."
       },
       "signInWithVerkio": {
-        "date": "TBD — developer demand-led",
+        "date": "Juin 2026",
         "name": "Sign in with Verkio",
         "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Boards",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Tableaux Kanban intégrés — planifiez et suivez le travail sans quitter Verkio. Colonnes personnalisées, types de cartes, responsables, observateurs et historique complet."
       },
       "forms": {
         "name": "Formulaires",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Des formulaires personnalisés qui acheminent chaque réponse vers une boîte mail, un dossier, un wiki, un tableau ou un webhook — anti-spam et consentement RGPD inclus."
       },
       "crm": {
         "name": "CRM",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Un CRM léger basé sur vos contacts : pipelines, opportunités, prévisions pondérées et notes — entièrement hébergé dans l'UE."
       },
       "autoTranslate": {
         "name": "Traduction automatique",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Traduction instantanée des e-mails entrants et sortants dans les langues de l'UE — hébergée dans l'UE, sans Google ni DeepL, gratuite dans toutes les formules."
       },
       "transparencyLog": {
         "name": "Journal de transparence",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Un journal public et vérifiable cryptographiquement des changements de sous-traitants, des incidents et des mises à jour de l'infrastructure."
       },
       "dsrPortal": {
         "name": "Portail de demandes des personnes concernées",
-        "date": "June 2026",
+        "date": "Juin 2026",
         "description": "Un portail RGPD en libre-service pour les demandes de vos utilisateurs au titre des articles 15 à 21, avec traitement par le DPO dans le délai légal."
       }
     }
@@ -884,7 +884,7 @@
           "Chiffrement AES-256-GCM par fichier — chaque fichier, chaque offre, sans surcoût.",
           "Clés de chiffrement de données enveloppées par Vault Transit sur infrastructure résidente en UE.",
           "Stockage sur EU-resident object storage — aucun bucket américain ne contient vos données.",
-          "Chiffrement avec clé détenue par le client à partir de juin 2026 — même Verkio ne peut pas lire."
+          "Chiffrement opt-in du courrier avec clé détenue par le client — même Verkio ne peut pas le lire."
         ]
       },
       "uploads": {
@@ -1442,7 +1442,7 @@
       "items": [
         {
           "name": "Un service de mail chiffré de bout en bout comme Proton ou Tuta.",
-          "body": "Le chiffrement au repos par défaut utilise des clés gérées par Verkio dans l'UE — solide, mais Verkio peut techniquement lire vos mails. Le chiffrement opt-in avec clés détenues par le client arrive en juin 2026, mais au prix de la boîte web, de la recherche plein texte et des aperçus push. Si le véritable E2EE pour chaque message est votre exigence absolue, ces produits conviennent mieux."
+          "body": "Le chiffrement au repos par défaut utilise des clés gérées par Verkio dans l'UE — solide, mais Verkio peut techniquement lire vos mails. Le chiffrement opt-in avec clés détenues par le client est disponible, mais au prix de la boîte web, de la recherche plein texte et des aperçus push. Si le véritable E2EE pour chaque message est votre exigence absolue, ces produits conviennent mieux."
         },
         {
           "name": "Un bouquet de 50 applis comme Zoho ou Workspace.",

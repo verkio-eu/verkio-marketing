@@ -479,7 +479,7 @@
         "note": "Subject to reasonable use"
       },
       "schedule": {
-        "date": "Q1 2027",
+        "date": "June 2026",
         "name": "Verkio Schedule",
         "description": "Public scheduling links from your calendar. Like Calendly, but EU-resident, no tracking, and built into the suite."
       },
@@ -515,7 +515,7 @@
         "description": "Team-inbox view for shared mailboxes: assign conversations to teammates, set status (open / pending / closed), and leave internal notes visible only to the team. Same state is exposed as standard IMAP keywords so Apple Mail / Thunderbird / K-9 power users see assignments + status from their existing client. Real-time inbound tracking auto-creates conversations on every new message; auto-reopens closed threads when customers reply."
       },
       "sendLaterSnooze": {
-        "date": "Q3 2027",
+        "date": "May 2026",
         "name": "Send later, snooze, undo send",
         "description": "Schedule a message for tomorrow at 9am. Snooze a thread until Friday. A 30-second grace period to pull back a send."
       },
@@ -570,17 +570,17 @@
         "description": "Personal and team-shared address books, with CardDAV access from any standards-compliant client. Contacts auto-populate from mail and calendar invites — no manual entry, no platform lock-in."
       },
       "pwaInstall": {
-        "date": "Q3 2027",
+        "date": "May 2026",
         "name": "Installable web app (PWA)",
         "description": "Install Verkio to your home screen on phone or desktop. Offline shell for the inbox, push notifications, and a real-app feel — without a native app store in the middle."
       },
       "gdprPortability": {
-        "date": "Q3 2027",
+        "date": "June 2026",
         "name": "GDPR Article 20 portability export",
         "description": "One-click export of your entire workspace in interoperable open formats — mail as standard mbox, calendars as ICS, contacts as vCard, files in their original formats. Bring it to any other provider. No lock-in, ever."
       },
       "pgpSmime": {
-        "date": "Q4 2027",
+        "date": "June 2026",
         "name": "End-to-end encrypted mail (PGP and S/MIME)",
         "description": "OpenPGP and S/MIME in the webmail, with standard headers so encrypted mail Just Works between Verkio mailboxes and any other PGP- or S/MIME-aware client. Keys you control, never escrowed."
       },
@@ -610,7 +610,7 @@
         "description": "Federated sign-in via Okta, Azure AD, Google Workspace, or any SAML 2.0 IdP. Auto-creates Verkio users on first sign-in (JIT provisioning); group/role claims map to org roles and re-evaluate on every sign-in. SP metadata URL exposed in-app for one-click IdP setup. Owner-only configuration."
       },
       "signInWithVerkio": {
-        "date": "TBD — developer demand-led",
+        "date": "June 2026",
         "name": "Sign in with Verkio",
         "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
       },
@@ -888,7 +888,7 @@
           "Per-file AES-256-GCM encryption — every file, every plan, no upcharge.",
           "Data-encryption keys wrapped by Vault Transit on EU-resident infrastructure.",
           "Storage on EU-resident object storage — no US bucket holds your data.",
-          "Customer-held-key encryption shipping June 2026 — even Verkio can't read it."
+          "Opt-in customer-held-key encryption for mail — even Verkio can't read it."
         ]
       },
       "uploads": {
@@ -1446,7 +1446,7 @@
       "items": [
         {
           "name": "An end-to-end encrypted mail service like Proton or Tuta.",
-          "body": "Default at-rest encryption uses Verkio-managed keys held in the EU — strong, but Verkio can technically read your mail. Opt-in customer-held-key encryption ships June 2026 but trades the web inbox, full-text search, and push previews. If true E2EE for every message is your hard requirement, those products fit better."
+          "body": "Default at-rest encryption uses Verkio-managed keys held in the EU — strong, but Verkio can technically read your mail. Opt-in customer-held-key encryption is available, but trades the web inbox, full-text search, and push previews. If true E2EE for every message is your hard requirement, those products fit better."
         },
         {
           "name": "A 50-app bundle like Zoho or Workspace.",
