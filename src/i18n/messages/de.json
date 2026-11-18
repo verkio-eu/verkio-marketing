@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Start im Juli 2026",
+    "eyebrow": "Start im Februar 2027",
     "headline": "Die Arbeits-Suite ohne Lärm.",
     "body1": "Mail, Kalender, Kontakte, Dateien, Wikis und Nachrichten. Eine Suite für die eigentliche Arbeit, ohne Aufblähung und ohne Lärm.",
     "body2": "Auf offenen Standards gebaut. In Europa gehostet. Deine, jederzeit zum Verlassen.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Wann startet Verkio?",
-        "answer": "Im Juli 2026. Tragen Sie sich auf die Warteliste ein, dann melden wir uns, sobald Konten geöffnet werden."
+        "answer": "Im Februar 2027. Tragen Sie sich auf die Warteliste ein, dann melden wir uns, sobald Konten geöffnet werden."
       },
       "migration": {
         "question": "Kann ich von Google Workspace oder Microsoft 365 migrieren?",

@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Premiera w lipcu 2026",
+    "eyebrow": "Premiera w lutym 2027",
     "headline": "Pakiet do pracy bez hałasu.",
     "body1": "Poczta, kalendarz, kontakty, pliki, wiki i wiadomości. Jeden pakiet do prawdziwej pracy, bez puchnięcia ani hałasu.",
     "body2": "Zbudowane na otwartych standardach. Hostowane w Europie. Twoje do opuszczenia, w każdej chwili.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Kiedy startuje Verkio?",
-        "answer": "W lipcu 2026. Zapisz się na listę oczekujących, a odezwiemy się, gdy konta zostaną otwarte."
+        "answer": "W lutym 2027. Zapisz się na listę oczekujących, a odezwiemy się, gdy konta zostaną otwarte."
       },
       "migration": {
         "question": "Czy mogę przenieść się z Google Workspace lub Microsoft 365?",

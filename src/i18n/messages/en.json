@@ -71,7 +71,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Launching July 2026",
+    "eyebrow": "Launching February 2027",
     "headline": "The work suite without the noise.",
     "body1": "Mail, calendar, contacts, files, wikis, and messaging. One suite for the actual work, without the bloat or the noise.",
     "body2": "Built on open standards. Hosted in Europe. Yours to leave, anytime.",
@@ -223,7 +223,7 @@
       },
       "launch": {
         "question": "When does Verkio launch?",
-        "answer": "July 2026. Join the waitlist and we'll be in touch when accounts open."
+        "answer": "February 2027. Join the waitlist and we'll be in touch when accounts open."
       },
       "migration": {
         "question": "Can I migrate from Google Workspace or Microsoft 365?",

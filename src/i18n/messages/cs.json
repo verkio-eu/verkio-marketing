@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Spuštění v červenci 2026",
+    "eyebrow": "Spuštění v únoru 2027",
     "headline": "Pracovní sada bez hluku.",
     "body1": "Pošta, kalendář, kontakty, soubory, wiki a zprávy. Jedna sada pro skutečnou práci, bez nafouknutí a hluku.",
     "body2": "Postaveno na otevřených standardech. Hostováno v Evropě. Vaše k odchodu, kdykoliv.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Kdy se Verkio spustí?",
-        "answer": "V červenci 2026. Přidejte se na seznam zájemců a my se ozveme, jakmile se účty otevřou."
+        "answer": "V únoru 2027. Přidejte se na seznam zájemců a my se ozveme, jakmile se účty otevřou."
       },
       "migration": {
         "question": "Mohu migrovat z Google Workspace nebo Microsoft 365?",

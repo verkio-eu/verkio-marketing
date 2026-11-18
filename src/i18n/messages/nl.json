@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Lancering in juli 2026",
+    "eyebrow": "Lancering in februari 2027",
     "headline": "De werksuite zonder ruis.",
     "body1": "Mail, agenda, contacten, bestanden, wiki's en berichten. Eén suite voor het echte werk, zonder opgeblazen rommel of ruis.",
     "body2": "Gebouwd op open standaarden. Gehost in Europa. Van jou om te vertrekken, op elk moment.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Wanneer wordt Verkio gelanceerd?",
-        "answer": "Juli 2026. Schrijf je in op de wachtlijst, dan horen we van je zodra accounts openen."
+        "answer": "Februari 2027. Schrijf je in op de wachtlijst, dan horen we van je zodra accounts openen."
       },
       "migration": {
         "question": "Kan ik migreren vanaf Google Workspace of Microsoft 365?",
