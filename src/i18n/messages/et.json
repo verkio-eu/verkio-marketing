@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio arendajatele — Ehita Verkio peale",
-    "metaDescription": "REST API OpenAPI 3.1-ga, JMAP passthrough, allkirjastatud webhookid, voogedastatav audit-logi. Sign in with Verkio (OIDC) tulemas. Tasuta v1-s.",
+    "metaDescription": "REST API OpenAPI 3.1-ga, JMAP passthrough, allkirjastatud webhookid, voogedastatav audit-logi. Sign in with Verkio (OIDC). Tasuta v1-s.",
     "eyebrow": "Arendajatele",
     "headline": "Ehita Verkio peale. Tüütud garantiid kaasas.",
     "body": "Verkio on ehitatud API-esmane — samad otspunktid, mida veebirakendus kasutab, on sulle avatud. REST OpenAPI 3.1 spec-iga koodi genereerimiseks, JMAP otseseks juurdepääsuks posti protokollile, HMAC-allkirjastatud webhookid surnud kirjade järjekorraga ja voogedastatav audit-logi vastavuseks. Tasuta v1 tasemel.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Päris platvorm.",
-          "body": "Avalik REST API koos OpenAPI 3.1-ga, allkirjastatud veebihookid, JMAP-passthrough, piiratud ulatusega võtmed. Sign in with Verkio (OIDC) tuleb, kui arendajad seda soovivad."
+          "body": "Avalik REST API koos OpenAPI 3.1-ga, allkirjastatud veebihookid, JMAP-passthrough, piiratud ulatusega võtmed, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Auditilogi-keskne.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platvorm",
       "headline": "Komplekt kasutamiseks ja platvorm, millele ehitada.",
-      "body": "Avalik REST API, allkirjastatud webhookid ja forensilise tasemega auditilogi. Peagi: Logi sisse Verkioga — EL-i residentsiline identiteediteenus sinu rakendustele ja klientidele.",
+      "body": "Avalik REST API, allkirjastatud webhookid ja forensilise tasemega auditilogi. Logi sisse Verkioga — EL-i residentsiline identiteediteenus sinu rakendustele ja klientidele.",
       "items": {
         "api": {
           "name": "Avalik API",

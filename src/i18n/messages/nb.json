@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio for utviklere — Bygg på Verkio",
-    "metaDescription": "REST API med OpenAPI 3.1, JMAP-passthrough, signerte webhooks, strømbar revisjonslogg. Sign in with Verkio (OIDC) kommer. Gratis for v1.",
+    "metaDescription": "REST API med OpenAPI 3.1, JMAP-passthrough, signerte webhooks, strømbar revisjonslogg. Sign in with Verkio (OIDC). Gratis for v1.",
     "eyebrow": "For utviklere",
     "headline": "Bygg på Verkio. De kjedelige garantiene inkludert.",
     "body": "Verkio er bygd API-first — de samme endepunktene webappen bruker er åpne for deg. REST med en OpenAPI 3.1-spesifikasjon for codegen, JMAP for direkte tilgang til e-postprotokollen, HMAC-signerte webhooks med en dead-letter-kø, og en strømbar revisjonslogg for compliance. Gratis på v1-nivået.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "En reell plattform.",
-          "body": "Offentlig REST-API med OpenAPI 3.1, signerte webhooks, JMAP-passthrough, scopede tokens. Sign in with Verkio (OIDC) kommer hvis utviklere vil ha det."
+          "body": "Offentlig REST-API med OpenAPI 3.1, signerte webhooks, JMAP-passthrough, scopede tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-nativ.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plattform",
       "headline": "En suite å bruke, og en plattform å bygge på.",
-      "body": "Et offentlig REST-API, signerte webhooks og en forensisk revisjonslogg. Snart: Logg inn med Verkio — en EU-basert identitetsleverandør for appene og kundene dine.",
+      "body": "Et offentlig REST-API, signerte webhooks og en forensisk revisjonslogg. Logg inn med Verkio — en EU-basert identitetsleverandør for appene og kundene dine.",
       "items": {
         "api": {
           "name": "Offentlig API",

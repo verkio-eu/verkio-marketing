@@ -1346,7 +1346,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio for Developers — Build on Verkio",
-    "metaDescription": "REST API with OpenAPI 3.1, JMAP passthrough, signed webhooks, streamable audit log. Sign in with Verkio (OIDC) coming. Free for v1.",
+    "metaDescription": "REST API with OpenAPI 3.1, JMAP passthrough, signed webhooks, streamable audit log. Sign in with Verkio (OIDC). Free for v1.",
     "eyebrow": "For Developers",
     "headline": "Build on Verkio. The boring guarantees included.",
     "body": "Verkio is built API-first — the same endpoints the web app uses are open to you. REST with an OpenAPI 3.1 spec for codegen, JMAP for direct mail-protocol access, HMAC-signed webhooks with a dead-letter queue, and a streamable audit log for compliance. Free for the v1 tier.",
@@ -1432,7 +1432,7 @@
         },
         {
           "name": "A real platform.",
-          "body": "Public REST API with OpenAPI 3.1, signed webhooks, JMAP passthrough, scoped tokens. Sign in with Verkio (OIDC) is coming if developers want it."
+          "body": "Public REST API with OpenAPI 3.1, signed webhooks, JMAP passthrough, scoped tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-native.",
@@ -1570,7 +1570,7 @@
     "build": {
       "eyebrow": "Platform",
       "headline": "A suite to use, and a platform to build on.",
-      "body": "A public REST API, signed webhooks, and a forensic-grade audit log. Soon: Sign in with Verkio — an EU-resident identity provider for your apps and your customers.",
+      "body": "A public REST API, signed webhooks, and a forensic-grade audit log. Sign in with Verkio — an EU-resident identity provider for your apps and your customers.",
       "items": {
         "api": {
           "name": "Public API",

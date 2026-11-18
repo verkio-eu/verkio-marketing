@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio voor ontwikkelaars — Bouw op Verkio",
-    "metaDescription": "REST API met OpenAPI 3.1, JMAP-passthrough, ondertekende webhooks, streambaar auditlog. Sign in with Verkio (OIDC) komt eraan. Gratis voor v1.",
+    "metaDescription": "REST API met OpenAPI 3.1, JMAP-passthrough, ondertekende webhooks, streambaar auditlog. Sign in with Verkio (OIDC). Gratis voor v1.",
     "eyebrow": "Voor ontwikkelaars",
     "headline": "Bouw op Verkio. De saaie garanties inbegrepen.",
     "body": "Verkio is API-first gebouwd — dezelfde endpoints die de webapp gebruikt staan voor jou open. REST met een OpenAPI 3.1-specificatie voor codegen, JMAP voor directe toegang tot het mailprotocol, HMAC-ondertekende webhooks met een dead-letter-queue, en een streambaar auditlog voor compliance. Gratis voor het v1-niveau.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Een echt platform.",
-          "body": "Publieke REST-API met OpenAPI 3.1, ondertekende webhooks, JMAP-passthrough, gescoopte tokens. Sign in with Verkio (OIDC) komt eraan als ontwikkelaars dat willen."
+          "body": "Publieke REST-API met OpenAPI 3.1, ondertekende webhooks, JMAP-passthrough, gescoopte tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-native.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platform",
       "headline": "Een suite om te gebruiken, en een platform om op te bouwen.",
-      "body": "Een publieke REST-API, ondertekende webhooks en een forensisch auditlogboek. Binnenkort: Inloggen met Verkio — een in de EU gevestigde identiteitsprovider voor je apps en je klanten.",
+      "body": "Een publieke REST-API, ondertekende webhooks en een forensisch auditlogboek. Inloggen met Verkio — een in de EU gevestigde identiteitsprovider voor je apps en je klanten.",
       "items": {
         "api": {
           "name": "Publieke API",

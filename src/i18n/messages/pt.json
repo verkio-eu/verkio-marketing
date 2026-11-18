@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio para programadores — Constrói sobre o Verkio",
-    "metaDescription": "API REST com OpenAPI 3.1, passthrough JMAP, webhooks assinados, registo de auditoria com streaming. Sign in with Verkio (OIDC) a caminho. Grátis para v1.",
+    "metaDescription": "API REST com OpenAPI 3.1, passthrough JMAP, webhooks assinados, registo de auditoria com streaming. Sign in with Verkio (OIDC). Grátis para v1.",
     "eyebrow": "Para programadores",
     "headline": "Constrói sobre o Verkio. As garantias chatas incluídas.",
     "body": "O Verkio é construído API-first — os mesmos endpoints que a app web usa estão abertos para ti. REST com uma especificação OpenAPI 3.1 para codegen, JMAP para acesso direto ao protocolo de correio, webhooks assinados com HMAC e fila dead-letter, e um registo de auditoria com streaming para conformidade. Grátis no nível v1.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Uma plataforma a sério.",
-          "body": "API REST pública com OpenAPI 3.1, webhooks assinados, passthrough JMAP, tokens com escopo. Sign in with Verkio (OIDC) chegará se os programadores o quiserem."
+          "body": "API REST pública com OpenAPI 3.1, webhooks assinados, passthrough JMAP, tokens com escopo, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Pensada para o audit log.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plataforma",
       "headline": "Uma suite para usar, e uma plataforma para construir.",
-      "body": "Uma API REST pública, webhooks assinados e um registo de auditoria de grau forense. Em breve: Iniciar sessão com Verkio — um fornecedor de identidade residente na UE para as tuas aplicações e os teus clientes.",
+      "body": "Uma API REST pública, webhooks assinados e um registo de auditoria de grau forense. Iniciar sessão com Verkio — um fornecedor de identidade residente na UE para as tuas aplicações e os teus clientes.",
       "items": {
         "api": {
           "name": "API pública",

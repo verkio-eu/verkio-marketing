@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio izstrādātājiem — Veido uz Verkio",
-    "metaDescription": "REST API ar OpenAPI 3.1, JMAP passthrough, parakstīti webhook, straumējams audita žurnāls. Sign in with Verkio (OIDC) drīzumā. Bezmaksas v1.",
+    "metaDescription": "REST API ar OpenAPI 3.1, JMAP passthrough, parakstīti webhook, straumējams audita žurnāls. Sign in with Verkio (OIDC). Bezmaksas v1.",
     "eyebrow": "Izstrādātājiem",
     "headline": "Veido uz Verkio. Garlaicīgās garantijas iekļautas.",
     "body": "Verkio ir veidots API-first — tie paši galapunkti, ko izmanto tīmekļa lietotne, ir atvērti tev. REST ar OpenAPI 3.1 specifikāciju kodu ģenerēšanai, JMAP tiešai piekļuvei pasta protokolam, HMAC parakstīti webhook ar dead-letter rindu un straumējams audita žurnāls atbilstībai. Bezmaksas v1 līmenim.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Reāla platforma.",
-          "body": "Publisks REST API ar OpenAPI 3.1, parakstīti webhook-i, JMAP-passthrough, ierobežoti piekļuves marķieri. Sign in with Verkio (OIDC) tuvojas, ja izstrādātāji to vēlas."
+          "body": "Publisks REST API ar OpenAPI 3.1, parakstīti webhook-i, JMAP-passthrough, ierobežoti piekļuves marķieri, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Revīzijas žurnāli pamatā.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Komplekts lietošanai un platforma, uz kuras būvēt.",
-      "body": "Publiska REST API, parakstīti webhooki un kriminālistiska līmeņa audita žurnāls. Drīzumā: Pieteikties ar Verkio — ES rezidējošs identitātes nodrošinātājs tavām lietotnēm un klientiem.",
+      "body": "Publiska REST API, parakstīti webhooki un kriminālistiska līmeņa audita žurnāls. Pieteikties ar Verkio — ES rezidējošs identitātes nodrošinātājs tavām lietotnēm un klientiem.",
       "items": {
         "api": {
           "name": "Publiska API",

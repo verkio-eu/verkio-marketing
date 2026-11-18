@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio für Entwickler — Baut auf Verkio auf",
-    "metaDescription": "REST-API mit OpenAPI 3.1, JMAP-Passthrough, signierte Webhooks, streambares Audit-Log. Sign in with Verkio (OIDC) kommt. Kostenlos in v1.",
+    "metaDescription": "REST-API mit OpenAPI 3.1, JMAP-Passthrough, signierte Webhooks, streambares Audit-Log. Sign in with Verkio (OIDC). Kostenlos in v1.",
     "eyebrow": "Für Entwickler",
     "headline": "Baut auf Verkio. Die langweiligen Garantien sind dabei.",
     "body": "Verkio ist API-first gebaut — dieselben Endpunkte, die die Web-App nutzt, stehen euch offen. REST mit OpenAPI-3.1-Spec für Codegen, JMAP für direkten Zugriff auf das Mail-Protokoll, HMAC-signierte Webhooks mit Dead-Letter-Queue und ein streambares Audit-Log für Compliance. Kostenlos im v1-Tier.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Eine echte Plattform.",
-          "body": "Öffentliche REST-API mit OpenAPI 3.1, signierte Webhooks, JMAP-Passthrough, gescopte Tokens. Sign in with Verkio (OIDC) kommt, falls Entwickler es wollen."
+          "body": "Öffentliche REST-API mit OpenAPI 3.1, signierte Webhooks, JMAP-Passthrough, gescopte Tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-Log-nativ.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plattform",
       "headline": "Eine Suite zum Nutzen und eine Plattform zum Bauen.",
-      "body": "Eine öffentliche REST-API, signierte Webhooks und ein forensisches Audit-Log. Bald: Mit Verkio anmelden — ein in der EU ansässiger Identitätsanbieter für deine Apps und deine Kunden.",
+      "body": "Eine öffentliche REST-API, signierte Webhooks und ein forensisches Audit-Log. Mit Verkio anmelden — ein in der EU ansässiger Identitätsanbieter für deine Apps und deine Kunden.",
       "items": {
         "api": {
           "name": "Öffentliche API",

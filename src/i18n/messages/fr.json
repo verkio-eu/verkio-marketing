@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio pour les développeurs — Construisez sur Verkio",
-    "metaDescription": "API REST avec OpenAPI 3.1, passthrough JMAP, webhooks signés, journal d'audit diffusable. Sign in with Verkio (OIDC) à venir. Gratuit en v1.",
+    "metaDescription": "API REST avec OpenAPI 3.1, passthrough JMAP, webhooks signés, journal d'audit diffusable. Sign in with Verkio (OIDC). Gratuit en v1.",
     "eyebrow": "Pour les développeurs",
     "headline": "Construisez sur Verkio. Les garanties ennuyeuses incluses.",
     "body": "Verkio est conçu API-first — les mêmes endpoints que la web app utilise vous sont ouverts. REST avec une spec OpenAPI 3.1 pour la codegen, JMAP pour un accès direct au protocole mail, webhooks signés HMAC avec file de lettres mortes, et un journal d'audit diffusable pour la conformité. Gratuit au tier v1.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Une vraie plateforme.",
-          "body": "API REST publique avec OpenAPI 3.1, webhooks signés, passthrough JMAP, jetons à portée limitée. Sign in with Verkio (OIDC) arrive si les développeurs le souhaitent."
+          "body": "API REST publique avec OpenAPI 3.1, webhooks signés, passthrough JMAP, jetons à portée limitée, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Pensé pour l'audit-log.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plateforme",
       "headline": "Une suite à utiliser, et une plateforme sur laquelle bâtir.",
-      "body": "Une API REST publique, des webhooks signés et un journal d'audit de qualité forensique. Bientôt : Se connecter avec Verkio — un fournisseur d'identité résident UE pour vos applications et vos clients.",
+      "body": "Une API REST publique, des webhooks signés et un journal d'audit de qualité forensique. Se connecter avec Verkio — un fournisseur d'identité résident UE pour vos applications et vos clients.",
       "items": {
         "api": {
           "name": "API publique",

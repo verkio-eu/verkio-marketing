@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio kehittäjille — Rakenna Verkion päälle",
-    "metaDescription": "REST API OpenAPI 3.1:llä, JMAP-passthrough, allekirjoitetut webhookit, striimattava audit-loki. Sign in with Verkio (OIDC) tulossa. Ilmainen v1:ssä.",
+    "metaDescription": "REST API OpenAPI 3.1:llä, JMAP-passthrough, allekirjoitetut webhookit, striimattava audit-loki. Sign in with Verkio (OIDC). Ilmainen v1:ssä.",
     "eyebrow": "Kehittäjille",
     "headline": "Rakenna Verkion päälle. Tylsät takuut mukana.",
     "body": "Verkio on rakennettu API-ensimmäiseksi — samat päätepisteet, joita web-sovellus käyttää, ovat avoinna sinulle. REST OpenAPI 3.1 -määrittelyllä koodigenerointia varten, JMAP suoraan postiprotokollan käyttöön, HMAC-allekirjoitetut webhookit kuolleen kirjeen jonolla ja striimattava audit-loki vaatimustenmukaisuuteen. Ilmainen v1-tasolla.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Aito alusta.",
-          "body": "Julkinen REST-API ja OpenAPI 3.1, allekirjoitetut webhookit, JMAP-passthrough, rajatut tokenit. Sign in with Verkio (OIDC) tulee, jos kehittäjät haluavat sitä."
+          "body": "Julkinen REST-API ja OpenAPI 3.1, allekirjoitetut webhookit, JMAP-passthrough, rajatut tokenit, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-natiivi.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Alusta",
       "headline": "Paketti käytettäväksi ja alusta jonka päälle rakentaa.",
-      "body": "Julkinen REST-rajapinta, allekirjoitetut webhookit ja forensisen tason auditointiloki. Pian: Kirjaudu Verkiolla — EU-asuinpaikkainen identiteettipalvelu sovelluksillesi ja asiakkaillesi.",
+      "body": "Julkinen REST-rajapinta, allekirjoitetut webhookit ja forensisen tason auditointiloki. Kirjaudu Verkiolla — EU-asuinpaikkainen identiteettipalvelu sovelluksillesi ja asiakkaillesi.",
       "items": {
         "api": {
           "name": "Julkinen API",

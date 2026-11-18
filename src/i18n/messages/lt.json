@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio kūrėjams — Statykite ant Verkio",
-    "metaDescription": "REST API su OpenAPI 3.1, JMAP passthrough, pasirašyti webhook, transliuojamas audito žurnalas. Sign in with Verkio (OIDC) artėja. Nemokama v1.",
+    "metaDescription": "REST API su OpenAPI 3.1, JMAP passthrough, pasirašyti webhook, transliuojamas audito žurnalas. Sign in with Verkio (OIDC). Nemokama v1.",
     "eyebrow": "Kūrėjams",
     "headline": "Statykite ant Verkio. Nuobodžios garantijos įskaičiuotos.",
     "body": "Verkio sukurta API-first — tie patys endpointai, kuriuos naudoja žiniatinklio programa, atviri jums. REST su OpenAPI 3.1 specifikacija kodų generavimui, JMAP tiesioginei prieigai prie pašto protokolo, HMAC pasirašyti webhook su dead-letter queue ir transliuojamas audito žurnalas atitikčiai. Nemokama v1 lygiui.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Tikra platforma.",
-          "body": "Viešas REST API su OpenAPI 3.1, pasirašyti webhook'ai, JMAP-passthrough, apriboti prieigos raktai. Sign in with Verkio (OIDC) ateina, jei kūrėjai to nori."
+          "body": "Viešas REST API su OpenAPI 3.1, pasirašyti webhook'ai, JMAP-passthrough, apriboti prieigos raktai, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audito žurnalas iš pagrindų.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Rinkinys naudoti ir platforma, ant kurios statyti.",
-      "body": "Viešas REST API, pasirašyti webhookai ir forensinio lygio audito žurnalas. Netrukus: Prisijungti su Verkio — ES rezidento tapatybės teikėjas tavo programoms ir klientams.",
+      "body": "Viešas REST API, pasirašyti webhookai ir forensinio lygio audito žurnalas. Prisijungti su Verkio — ES rezidento tapatybės teikėjas tavo programoms ir klientams.",
       "items": {
         "api": {
           "name": "Viešas API",

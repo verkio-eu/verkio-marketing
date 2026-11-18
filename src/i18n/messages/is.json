@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio fyrir forritara — Byggðu á Verkio",
-    "metaDescription": "REST API með OpenAPI 3.1, JMAP passthrough, undirritaðir webhooks, streymanleg eftirlitsskrá. Sign in with Verkio (OIDC) væntanlegt. Ókeypis í v1.",
+    "metaDescription": "REST API með OpenAPI 3.1, JMAP passthrough, undirritaðir webhooks, streymanleg eftirlitsskrá. Sign in with Verkio (OIDC). Ókeypis í v1.",
     "eyebrow": "Fyrir forritara",
     "headline": "Byggðu á Verkio. Leiðinlegu ábyrgðirnar fylgja með.",
     "body": "Verkio er byggt API-fyrst — sömu endapunktar og vefappið notar eru opnir þér. REST með OpenAPI 3.1 forskrift fyrir kóðagerð, JMAP fyrir beinan aðgang að póstreglu, HMAC-undirritaðir webhooks með dauðabréfaröð og streymanleg eftirlitsskrá fyrir reglufylgni. Ókeypis á v1 stigi.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Raunverulegur vettvangur.",
-          "body": "Opinbert REST API með OpenAPI 3.1, undirrituð webhooks, JMAP-passthrough, afmarkaðir aðgangslyklar. Sign in with Verkio (OIDC) er á leiðinni ef þróunaraðilar vilja það."
+          "body": "Opinbert REST API með OpenAPI 3.1, undirrituð webhooks, JMAP-passthrough, afmarkaðir aðgangslyklar, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Endurskoðunarskrár frá grunni.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Vettvangur",
       "headline": "Svíta til að nota, og vettvangur til að byggja á.",
-      "body": "Opið REST API, undirritaðir webhooks og réttarfræðileg úttektarskrá. Senn: Skráðu þig inn með Verkio — ESB-búsettur auðkennisveitandi fyrir forritin þín og viðskiptavinina þína.",
+      "body": "Opið REST API, undirritaðir webhooks og réttarfræðileg úttektarskrá. Skráðu þig inn með Verkio — ESB-búsettur auðkennisveitandi fyrir forritin þín og viðskiptavinina þína.",
       "items": {
         "api": {
           "name": "Opið API",

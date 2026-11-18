@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio dla programistów — Buduj na Verkio",
-    "metaDescription": "REST API z OpenAPI 3.1, passthrough JMAP, podpisane webhooki, strumieniowalny dziennik audytu. Sign in with Verkio (OIDC) wkrótce. Darmowe dla v1.",
+    "metaDescription": "REST API z OpenAPI 3.1, passthrough JMAP, podpisane webhooki, strumieniowalny dziennik audytu. Sign in with Verkio (OIDC). Darmowe dla v1.",
     "eyebrow": "Dla programistów",
     "headline": "Buduj na Verkio. Nudne gwarancje w komplecie.",
     "body": "Verkio jest zbudowane API-first — te same endpointy, których używa aplikacja webowa, są otwarte dla ciebie. REST ze specyfikacją OpenAPI 3.1 do codegen, JMAP do bezpośredniego dostępu do protokołu pocztowego, webhooki podpisane HMAC z kolejką dead-letter oraz strumieniowalny dziennik audytu dla zgodności. Darmowe na poziomie v1.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Prawdziwą platformą.",
-          "body": "Publiczne REST API z OpenAPI 3.1, podpisane webhooki, JMAP-passthrough, ograniczone tokeny. Sign in with Verkio (OIDC) nadchodzi, jeśli będą tego chcieli deweloperzy."
+          "body": "Publiczne REST API z OpenAPI 3.1, podpisane webhooki, JMAP-passthrough, ograniczone tokeny, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Z dziennikiem audytu od podstaw.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Pakiet do używania i platforma, na której można budować.",
-      "body": "Publiczne API REST, podpisane webhooki i dziennik audytu klasy forensycznej. Wkrótce: Zaloguj się przez Verkio — dostawca tożsamości z siedzibą w UE dla twoich aplikacji i klientów.",
+      "body": "Publiczne API REST, podpisane webhooki i dziennik audytu klasy forensycznej. Zaloguj się przez Verkio — dostawca tożsamości z siedzibą w UE dla twoich aplikacji i klientów.",
       "items": {
         "api": {
           "name": "Publiczne API",

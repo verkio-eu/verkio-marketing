@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio para desarrolladores — Construye sobre Verkio",
-    "metaDescription": "API REST con OpenAPI 3.1, passthrough JMAP, webhooks firmados, registro de auditoría enviable. Sign in with Verkio (OIDC) en camino. Gratis en v1.",
+    "metaDescription": "API REST con OpenAPI 3.1, passthrough JMAP, webhooks firmados, registro de auditoría enviable. Sign in with Verkio (OIDC). Gratis en v1.",
     "eyebrow": "Para desarrolladores",
     "headline": "Construye sobre Verkio. Las garantías aburridas, incluidas.",
     "body": "Verkio está construida API-first — los mismos endpoints que usa la web app están abiertos a ti. REST con spec OpenAPI 3.1 para codegen, JMAP para acceso directo al protocolo de correo, webhooks firmados con HMAC con cola de mensajes fallidos, y un registro de auditoría enviable para cumplimiento. Gratis en el nivel v1.",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Una plataforma de verdad.",
-          "body": "API REST pública con OpenAPI 3.1, webhooks firmados, passthrough JMAP, tokens con ámbito. Sign in with Verkio (OIDC) llegará si los desarrolladores lo piden."
+          "body": "API REST pública con OpenAPI 3.1, webhooks firmados, passthrough JMAP, tokens con ámbito, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Pensada para el audit log.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plataforma",
       "headline": "Una suite para usar y una plataforma sobre la que construir.",
-      "body": "Una API REST pública, webhooks firmados y un registro de auditoría de grado forense. Próximamente: Iniciar sesión con Verkio — un proveedor de identidad residente en la UE para tus aplicaciones y tus clientes.",
+      "body": "Una API REST pública, webhooks firmados y un registro de auditoría de grado forense. Iniciar sesión con Verkio — un proveedor de identidad residente en la UE para tus aplicaciones y tus clientes.",
       "items": {
         "api": {
           "name": "API pública",
