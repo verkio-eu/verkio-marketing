@@ -326,7 +326,7 @@
         "description": "Ajoutez votre domaine et nous configurons les enregistrements MX, SPF, DKIM, DMARC et autoconfig pour vous. Pas de DNS à régler à la main."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Mars 2027",
         "name": "Migration depuis Google Workspace et Microsoft 365",
         "description": "Import en un clic de mail, agenda, contacts, et fichiers Drive ou OneDrive. Avec statut, reprises et une période de bascule en parallèle."
       },
@@ -357,12 +357,12 @@
         "description": "Construisez sur Verkio : API HTTP pour mail, agenda, contacts, documents et wikis. Webhooks pour les événements entrants. OAuth 2 et auth par jeton."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Juin 2027",
         "name": "Signature de documents eIDAS",
         "description": "Signatures électroniques juridiquement contraignantes sous eIDAS 2.0. Signez des PDF et documents directement depuis votre stockage."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Avril 2027",
         "name": "Sondages d'agenda",
         "description": "Trouvez un créneau qui convient à tous sans lien Doodle. Proposez plusieurs créneaux dans l'invitation, les destinataires votent, l'agenda résout."
       },
@@ -382,17 +382,17 @@
         "description": "Planifiez un message pour demain 9h. Mettez un fil en veille jusqu'à vendredi. 30 secondes pour rattraper un envoi."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Avril 2028",
         "name": "SOC 2 Type II et ISO 27001",
         "description": "Attestations de conformité que les acheteurs demandent. Engagement continu avec une documentation prête pour l'audit."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Novembre 2027",
         "name": "Collaboration documentaire en temps réel",
         "description": "Édition multi-curseur en direct sur les documents et wikis. Commentaires, suggestions, historique des versions — bâti sur des formats ouverts."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Octobre 2027",
         "name": "API d'e-mails transactionnels hébergée dans l'UE",
         "description": "Une API HTTP pour envoyer les e-mails de votre application via Verkio. La même posture résidente dans l'UE que votre boîte de réception, étendue à votre produit."
       },
@@ -402,7 +402,7 @@
         "description": "Filtres mail côté serveur (Sieve, RFC 5228) construits dans le tableau de bord. Déplacez les newsletters vers un dossier, faites taire les listes bruyantes, routez les mails de projet — appliqués à la livraison, donc les règles s'exécutent dans tous les clients mail. Cinq modèles pour démarrer ; jusqu'à 50 règles par boîte."
       },
       "ediscovery": {
-        "date": "Début 2028",
+        "date": "Décembre 2027",
         "name": "eDiscovery et conservation légale",
         "description": "Placez des utilisateurs ou boîtes sous conservation ; recherchez et exportez à travers la suite pour les workflows de conformité et de découverte légale."
       },
@@ -782,7 +782,7 @@
           "Invitations iMIP (RFC 6047) qui fonctionnent dans Gmail, Outlook, Apple Calendar et Thunderbird.",
           "Statuts RSVP (accepté, provisoire, refusé) suivis et mis à jour en temps réel.",
           "Recherche de disponibilités dans l'équipe — trouvez un créneau sans partager votre écran.",
-          "Sondages de calendrier sur la feuille de route (T2 2027) pour quand les disponibilités ne suffisent pas."
+          "Sondages de calendrier sur la feuille de route (avril 2027) pour quand les disponibilités ne suffisent pas."
         ]
       }
     },

@@ -326,7 +326,7 @@
         "description": "Pridėk savo domeną ir mes sukonfigūruosime MX, SPF, DKIM, DMARC bei autoconfig įrašus už tave. Jokio rankinio DNS darbo."
       },
       "migration": {
-        "date": "Q1 2027",
+        "date": "Kovas 2027",
         "name": "Migracija iš Google Workspace ir Microsoft 365",
         "description": "Vieno paspaudimo pašto, kalendoriaus, kontaktų ir Drive ar OneDrive failų importas. Su būsena, pakartojimais ir lygiagrečiu perėjimo laikotarpiu."
       },
@@ -357,12 +357,12 @@
         "description": "Statyk ant Verkio: HTTP API paštui, kalendoriui, kontaktams, dokumentams ir vikiams. Webhook'ai įeinantiems įvykiams. OAuth 2 ir žetonų autentifikavimas."
       },
       "eidasSigning": {
-        "date": "Q2 2027",
+        "date": "Birželis 2027",
         "name": "eIDAS dokumentų pasirašymas",
         "description": "Teisiškai įpareigojantys elektroniniai parašai pagal eIDAS 2.0. Pasirašyk PDF ir dokumentus tiesiai iš savo dokumentų saugyklos."
       },
       "calendarPolls": {
-        "date": "Q2 2027",
+        "date": "Balandis 2027",
         "name": "Kalendoriaus apklausos",
         "description": "Rask laiką, tinkantį visiems, be Doodle saito. Pasiūlyk kelis laikus kvietime, gavėjai balsuoja, kalendorius išsprendžia."
       },
@@ -382,17 +382,17 @@
         "description": "Suplanuok pranešimą rytojui 9 val. Atidėk giją iki penktadienio. 30 sekundžių malonės laikas atšaukti siuntimą."
       },
       "compliance": {
-        "date": "H2 2027",
+        "date": "Balandis 2028",
         "name": "SOC 2 Type II ir ISO 27001",
         "description": "Atitikties patvirtinimai, kurių prašo pirkėjai. Tęstinis įsipareigojimas su audito parengta dokumentacija."
       },
       "realtimeDocs": {
-        "date": "Q4 2027",
+        "date": "Lapkritis 2027",
         "name": "Realaus laiko bendradarbiavimas dokumentuose",
         "description": "Tiesioginis daugiakursorinis redagavimas dokumentuose ir vikiuose. Komentarai, pasiūlymai, versijų istorija — sukurta naudojant atvirus formatus."
       },
       "transactionalEmail": {
-        "date": "Q4 2027",
+        "date": "Spalis 2027",
         "name": "ES talpinama tranzakcinio el. pašto API",
         "description": "HTTP API jūsų programos el. laiškams siųsti per Verkio. Ta pati ES rezidento pozicija kaip jūsų pašto dėžutė, išplėsta jūsų produktui."
       },
@@ -402,7 +402,7 @@
         "description": "Serverio pusės pašto filtrai (Sieve, RFC 5228), kuriuos kuri valdymo pulte. Perkelti naujienlaiškius į aplanką, nutildyti triukšmingus sąrašus, nukreipti projekto paštą — taikomi pristatymo metu, taigi taisyklės veikia kiekvienoje pašto programoje. Penki šablonai pradžiai; iki 50 taisyklių dėžutei."
       },
       "ediscovery": {
-        "date": "2028 m. pradžia",
+        "date": "Gruodis 2027",
         "name": "eDiscovery ir teisinis saugojimas",
         "description": "Įdėk vartotojus ar pašto dėžes į saugojimą; ieškok ir eksportuok visame rinkinyje atitikties ir teisinio atskleidimo darbo eigoms."
       },
@@ -782,7 +782,7 @@
           "iMIP kvietimai (RFC 6047), veikiantys Gmail, Outlook, Apple Calendar ir Thunderbird.",
           "RSVP statusai (priimta, preliminarus, atmesta) sekami ir atnaujinami realiu laiku.",
           "Free/busy paieška tarp kolegų — rask laiką nedalindamasis kalendoriaus ekrano vaizdu.",
-          "Kalendoriaus apklausos kelio plane (Q2 2027), kai free/busy neužtenka."
+          "Kalendoriaus apklausos kelio plane (2027 m. balandis), kai free/busy neužtenka."
         ]
       }
     },

@@ -4,8 +4,15 @@
 // The padding lets descenders (g, y) show: the gradient only paints inside the box. The margin takes it back.
 export const gradientText = "bg-gradient-to-b from-heading to-heading/55 bg-clip-text pb-[0.12em] -mb-[0.12em] text-transparent";
 
-/** A page's headline (landing and product heroes). */
-export const h1 = `text-[2.6rem] leading-[1.05] font-semibold tracking-[-0.035em] text-balance sm:text-6xl ${gradientText}`;
+// The same fade done with a mask, so text inside it can fade on its own: bg-clip-text paints through every
+// descendant glyph whatever its opacity (the landing hero's rotating word). The padding keeps descenders inside the mask.
+const maskFadeText = "text-heading [mask-image:linear-gradient(to_bottom,#000,rgb(0_0_0/0.55))] pb-[0.12em] -mb-[0.12em]";
+
+const h1Type = "text-[2.6rem] leading-[1.05] font-semibold tracking-[-0.035em] text-balance sm:text-6xl";
+/** A page's headline (product heroes). */
+export const h1 = `${h1Type} ${gradientText}`;
+/** The landing hero's headline: as h1, but its rotating word can fade. */
+export const h1Hero = `${h1Type} ${maskFadeText}`;
 /** A smaller page headline (roadmap, articles, legal pages). */
 export const h1Page = `text-4xl font-semibold tracking-[-0.03em] sm:text-5xl ${gradientText}`;
 /** A section's headline. */

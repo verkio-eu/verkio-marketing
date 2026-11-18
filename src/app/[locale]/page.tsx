@@ -7,7 +7,7 @@ import { HomeNarrative } from "./components/HomeNarrative";
 import { RotatingWord } from "./components/RotatingWord";
 import { ArrowRight } from "./components/ProductIcons";
 import { WaitlistCta } from "./components/WaitlistCta";
-import { h1, inkButton, lead, secondaryButton } from "./components/styles";
+import { h1Hero, inkButton, lead, secondaryButton } from "./components/styles";
 
 async function StructuredData({ locale }: { locale: string }) {
   const tMeta = await getTranslations({ locale, namespace: "metadata" });
@@ -39,7 +39,7 @@ function Hero() {
           <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
           {t("eyebrow")}
         </p>
-        <h1 className={`animate-hero-in motion-reduce:animate-none ${h1}`}>
+        <h1 className={`animate-hero-in motion-reduce:animate-none ${h1Hero}`}>
           {t("headlinePrefix")}
           <RotatingWord words={words} />
         </h1>
