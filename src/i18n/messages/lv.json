@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Jūnijs 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Tāfeles",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "ES rezidenta identitātes pakalpojumu sniedzējs atvērtajam tīklam. Standarta OIDC, bez starpvietņu profilēšanas, jums pieder piekrišana. Plānots — vadīts pēc izstrādātāju pieprasījuma.",
-    "eyebrow": "Sign in with Verkio · Drīzumā",
+    "metaDescription": "ES rezidenta identitātes pakalpojumu sniedzējs atvērtajam tīklam. Standarta OIDC, bez starpvietņu profilēšanas, jums pieder piekrišana. Lietotnēm ar servera puses aizmugursistēmu.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Identitātes pakalpojumu sniedzējs, kas ciena cilvēkus, kuri to izmanto.",
-    "body": "Sign in with Verkio ir standarta OIDC poga, ko var integrēt jebkura trešās puses vietne — jūsu Verkio konts kļūst par jūsu identitāti atvērtajam tīklam. ES rezidents, ciena privātumu, bez starpvietņu profilēšanas. Plānots, vadīts pēc izstrādātāju pieprasījuma: bez maksas galalietotājiem, bez maksas izstrādātājiem v1. Pasakiet mums, ka to vēlaties, un mēs to izveidosim ātrāk.",
-    "cta": "Pasakiet mums, ka to vēlaties",
+    "body": "Sign in with Verkio ir standarta OIDC poga, ko var integrēt jebkura vietne ar servera puses aizmugursistēmu — jūsu Verkio konts kļūst par jūsu identitāti atvērtajam tīklam. ES rezidents, ciena privātumu, bez starpvietņu profilēšanas. Bez maksas galalietotājiem, bez maksas izstrādātājiem v1.",
+    "cta": "Pievienoties gaidīšanas sarakstam",
     "backLink": "Atpakaļ uz produkta pārskatu",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Šodien 'sign in with…' nozīmē Google, Apple vai Microsoft — visi ar galveno biroju ASV, visi lasa katru vietni, kur pierakstāties. Sign in with Verkio dod atvērtajam tīklam ES rezidenta alternatīvu. Pierakstīšanās paliek Verkio ES infrastruktūrā. Bez starpvietņu profilēšanas. Bez US CLOUD Act virsmas.",
         "bullets": [
           "ES rezidenta pierakstīšanās plūsma uz Verkio infrastruktūras.",
-          "Bez starpvietņu izsekošanas — vietnes nesaņem profilu, ko varētu korelēt.",
+          "Vietnes saņem jūsu vārdu, lietotājvārdu un e-pasta adresi — nekad jūsu pastu, failus vai kalendāru.",
           "Ārpus US CLOUD Act jurisdikcijas.",
           "Viena identitāte lietotnēm, ko izmantojat; atsaucama pa vietnei jebkurā laikā."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standarta OIDC",
         "headline": "Tikai OIDC. Darbojas ar to, kas jums jau ir.",
-        "body": "Sign in with Verkio runās standarta OpenID Connect — to pašu protokolu, ko jūsu esošais identitātes brokeris (Auth0, Clerk, Keycloak, NextAuth) jau atbalsta. Tā pievienošanai vajadzētu būt konfigurācijas izmaiņai, nevis koda pārrakstīšanai.",
+        "body": "Sign in with Verkio runā standarta OpenID Connect — to pašu protokolu, ko jūsu esošais identitātes brokeris (Auth0, Clerk, Keycloak, NextAuth) jau atbalsta. Tā pievienošana ir konfigurācijas izmaiņa, nevis koda pārrakstīšana.",
         "bullets": [
           "Standarta OpenID Connect (OIDC) — discovery, JWKS, kā parasti.",
-          "Darbojas ar jebkuru OIDC apzinošu bibliotēku — Verkio SDK nav nepieciešams.",
+          "Darbojas ar jebkuru servera puses OIDC bibliotēku — Verkio SDK nav nepieciešams.",
           "Pievienojas jūsu esošajai IdP konfigurācijai blakus Sign in with Google vai Apple.",
           "Bez maksas galalietotājiem; bez maksas izstrādātājiem v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Jums pieder piekrišana",
         "headline": "Pa vietnei, atsaucama, caurspīdīga.",
-        "body": "Kad vietne lūdz pierakstīšanos, jūs redzēsiet tieši, kādus datus tā pieprasa. Varat noraidīt daļas, ko nevēlaties dalīties. Katra vietne, kur kādreiz esat pierakstījies, parādīsies pievienoto lietotņu panelī — atsauciet jebkuru ar vienu klikšķi. Bez klusas atkārtotas autentifikācijas, bez scope creep.",
+        "body": "Kad vietne pirmo reizi lūdz jums pierakstīties, jūs redzat tieši, kādus datus tā pieprasa, un apstiprināt vai noraidāt. Katra jūsu apstiprinātā vietne ir uzskaitīta jūsu Verkio konta lapā — tur atsauciet jebkuru no tām. Vietnei, kas vēlas vairāk datu, jums jājautā vēlreiz.",
         "bullets": [
-          "Pa-vietnei piekrišanas ekrāns — detalizēts, bez visu-vai-neko.",
-          "Pievienoto lietotņu panelis, kas uzskaita katru vietni, kur esat pierakstījies.",
-          "Viena klikšķa atsaukšana, jebkurā laikā — vietne nekavējoties zaudē piekļuvi.",
-          "Bez klusas atkārtotas autentifikācijas; scope izmaiņas prasa svaigu piekrišanu."
+          "Piekrišanas ekrāns katrai jaunai vietnei, kas parāda tieši, ko tā saņem.",
+          "Katra jūsu apstiprinātā vietne, uzskaitīta jūsu konta lapā.",
+          "Atsauciet jebkuras vietnes piekļuvi jebkurā laikā.",
+          "Vietnei, kas pieprasa vairāk datu, atkal nepieciešama jūsu piekrišana."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio izstrādātājiem — Veido uz Verkio",
-    "metaDescription": "REST API ar OpenAPI 3.1, JMAP passthrough, parakstīti webhook, straumējams audita žurnāls. Sign in with Verkio (OIDC) drīzumā. Bezmaksas v1.",
+    "metaDescription": "REST API ar OpenAPI 3.1, JMAP passthrough, parakstīti webhook, straumējams audita žurnāls. Sign in with Verkio (OIDC). Bezmaksas v1.",
     "eyebrow": "Izstrādātājiem",
     "headline": "Veido uz Verkio. Garlaicīgās garantijas iekļautas.",
     "body": "Verkio ir veidots API-first — tie paši galapunkti, ko izmanto tīmekļa lietotne, ir atvērti tev. REST ar OpenAPI 3.1 specifikāciju kodu ģenerēšanai, JMAP tiešai piekļuvei pasta protokolam, HMAC parakstīti webhook ar dead-letter rindu un straumējams audita žurnāls atbilstībai. Bezmaksas v1 līmenim.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Drīzumā",
+        "eyebrow": "Sign in with Verkio",
         "headline": "ES mitināts identitātes nodrošinātājs taviem lietotājiem.",
-        "body": "Standarta OIDC poga, ko tu vari integrēt jebkurā trešās puses vietnē. ES mitināta pieslēgšanās plūsma, bez cross-site profilēšanas, sīka piekrišana katrai vietnei. Plānots, izstrādātāju pieprasījuma vadīts — bezmaksas galalietotājiem, bezmaksas izstrādātājiem v1. Vēlies to savai lietotnei? Pasaki mums.",
+        "body": "Standarta OIDC poga jebkurai vietnei ar servera puses aizmugursistēmu. ES mitināta pieslēgšanās plūsma, bez cross-site profilēšanas, piekrišana katrai vietnei. Reģistrē savu lietotni Verkio un saņem client ID, secret un discovery URL. Bezmaksas galalietotājiem, bezmaksas izstrādātājiem v1.",
         "bullets": [
           "Standarta OpenID Connect (OIDC) — Verkio SDK nav nepieciešams.",
           "Darbojas ar jebkuru OIDC-zinošu identitātes brokeri (Auth0, Clerk, Keycloak, NextAuth).",
-          "Sīka piekrišana katrai vietnei plus pievienoto lietotņu informācijas panelis galalietotājiem.",
-          "Bezmaksas v1 — pasaki mums, ka vēlies, un mēs piešķirsim prioritāti."
+          "Piekrišana katrai vietnei taviem lietotājiem, atsaucama viņu konta lapā.",
+          "Nomaini client secret vai atsauc savu lietotni jebkurā laikā. Bezmaksas v1."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Reāla platforma.",
-          "body": "Publisks REST API ar OpenAPI 3.1, parakstīti webhook-i, JMAP-passthrough, ierobežoti piekļuves marķieri. Sign in with Verkio (OIDC) tuvojas, ja izstrādātāji to vēlas."
+          "body": "Publisks REST API ar OpenAPI 3.1, parakstīti webhook-i, JMAP-passthrough, ierobežoti piekļuves marķieri, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Revīzijas žurnāli pamatā.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Komplekts lietošanai un platforma, uz kuras būvēt.",
-      "body": "Publiska REST API, parakstīti webhooki un kriminālistiska līmeņa audita žurnāls. Drīzumā: Pieteikties ar Verkio — ES rezidējošs identitātes nodrošinātājs tavām lietotnēm un klientiem.",
+      "body": "Publiska REST API, parakstīti webhooki un kriminālistiska līmeņa audita žurnāls. Pieteikties ar Verkio — ES rezidējošs identitātes nodrošinātājs tavām lietotnēm un klientiem.",
       "items": {
         "api": {
           "name": "Publiska API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Pieteikties ar Verkio",
-          "description": "ES rezidējoša alternatīva pieteikšanai ar Google vai Apple. Drīzumā."
+          "description": "ES rezidējoša alternatīva pieteikšanai ar Google vai Apple."
         }
       }
     }

@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Juni 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Boards",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "En EU-baserad identitetsleverantör för det öppna webben. Standard-OIDC, ingen cross-site-profilering, du äger samtycket. Planerad — efterfrågestyrd av utvecklare.",
-    "eyebrow": "Sign in with Verkio · Kommer snart",
+    "metaDescription": "En EU-baserad identitetsleverantör för det öppna webben. Standard-OIDC, ingen cross-site-profilering, du äger samtycket. För appar med serverbackend.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "En identitetsleverantör som respekterar människorna som använder den.",
-    "body": "Sign in with Verkio är en standard-OIDC-knapp som vilken tredjepartssajt som helst kan integrera — ditt Verkio-konto blir din identitet för det öppna webben. EU-baserad, integritetsrespekterande, ingen cross-site-profilering. Planerad, efterfrågestyrd av utvecklare: gratis för slutanvändare, gratis för utvecklare i v1. Säg till att du vill ha det så bygger vi det snabbare.",
-    "cta": "Säg till att du vill ha det",
+    "body": "Sign in with Verkio är en standard-OIDC-knapp som vilken sajt med serverbackend som helst kan integrera — ditt Verkio-konto blir din identitet för det öppna webben. EU-baserad, integritetsrespekterande, ingen cross-site-profilering. Gratis för slutanvändare, gratis för utvecklare i v1.",
+    "cta": "Gå med i väntelistan",
     "backLink": "Tillbaka till produktöversikt",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Idag betyder 'sign in with…' Google, Apple eller Microsoft — alla med huvudkontor i USA, alla läser varje sajt du loggar in på. Sign in with Verkio ger det öppna webben ett EU-baserat alternativ. Inloggningar stannar inom Verkios EU-infrastruktur. Ingen cross-site-profilering. Ingen US CLOUD Act-yta.",
         "bullets": [
           "EU-baserat inloggningsflöde på Verkio-infrastruktur.",
-          "Ingen cross-site-spårning — sajter får ingen profil som de kan korrelera.",
+          "Sajter får ditt namn, användarnamn och din e-postadress — aldrig din mejl, dina filer eller din kalender.",
           "Utanför US CLOUD Act-jurisdiktion.",
           "En identitet för apparna du använder; återkallningsbar per sajt när du vill."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standard-OIDC",
         "headline": "Bara OIDC. Fungerar med det du redan har.",
-        "body": "Sign in with Verkio kommer tala standard OpenID Connect — samma protokoll som din befintliga identitetsmäklare (Auth0, Clerk, Keycloak, NextAuth) redan stöder. Att lägga till det ska vara en konfigurationsändring, inte en kodomskrivning.",
+        "body": "Sign in with Verkio talar standard OpenID Connect — samma protokoll som din befintliga identitetsmäklare (Auth0, Clerk, Keycloak, NextAuth) redan stöder. Att lägga till det är en konfigurationsändring, inte en kodomskrivning.",
         "bullets": [
           "Standard OpenID Connect (OIDC) — discovery, JWKS, det vanliga.",
-          "Fungerar med vilket OIDC-medvetet bibliotek som helst — ingen Verkio-SDK krävs.",
+          "Fungerar med vilket OIDC-bibliotek på serversidan som helst — ingen Verkio-SDK krävs.",
           "Läggs till i din befintliga IdP-uppsättning vid sidan av Sign in with Google eller Apple.",
           "Gratis för slutanvändare; gratis för utvecklare i v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Du äger samtycket",
         "headline": "Per sajt, återkallningsbart, transparent.",
-        "body": "När en sajt frågar efter inloggning ser du exakt vilken data de ber om. Du kan tacka nej till delar du inte vill dela. Varje sajt du någonsin loggat in på dyker upp i en dashboard för anslutna appar — återkalla vilken som helst med ett klick. Ingen tyst återautentisering, ingen scope creep.",
+        "body": "Första gången en sajt ber dig logga in ser du exakt vilken data den ber om, och godkänner eller nekar. Varje sajt du har godkänt listas på din Verkio-kontosida — återkalla vilken som helst av dem där. En sajt som vill ha mer data måste fråga dig igen.",
         "bullets": [
-          "Per-sajt-samtyckesskärm — granulär, ingen allt-eller-inget.",
-          "Dashboard för anslutna appar som listar varje sajt du loggat in på.",
-          "Ett-kliks återkallning, när som helst — sajten förlorar åtkomst omedelbart.",
-          "Ingen tyst återautentisering; scope-ändringar kräver nytt samtycke."
+          "En samtyckesskärm för varje ny sajt, som visar exakt vad den får.",
+          "Varje sajt du har godkänt, listad på din kontosida.",
+          "Återkalla vilken sajts åtkomst som helst, när som helst.",
+          "En sajt som ber om mer data behöver ditt samtycke igen."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio för utvecklare — Bygg på Verkio",
-    "metaDescription": "REST API med OpenAPI 3.1, JMAP-passthrough, signerade webhooks, strömbar granskningslogg. Sign in with Verkio (OIDC) på väg. Gratis för v1.",
+    "metaDescription": "REST API med OpenAPI 3.1, JMAP-passthrough, signerade webhooks, strömbar granskningslogg. Sign in with Verkio (OIDC). Gratis för v1.",
     "eyebrow": "För utvecklare",
     "headline": "Bygg på Verkio. De tråkiga garantierna ingår.",
     "body": "Verkio är byggt API-first — samma endpoints som webbappen använder är öppna för dig. REST med en OpenAPI 3.1-specifikation för codegen, JMAP för direkt åtkomst till mailprotokollet, HMAC-signerade webhooks med en dead-letter-kö, och en strömbar granskningslogg för efterlevnad. Gratis på v1-nivån.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Kommer snart",
+        "eyebrow": "Sign in with Verkio",
         "headline": "En EU-hostad identitetsleverantör för dina användare.",
-        "body": "En standard OIDC-knapp du kan integrera i vilken tredjepartssida som helst. EU-hostat inloggningsflöde, ingen cross-site-profilering, granulärt samtycke per sida. Planerat, utvecklareefterfrågansdrivet — gratis för slutanvändare, gratis för utvecklare på v1. Vill du ha det till din app? Säg till.",
+        "body": "En standard OIDC-knapp för vilken sida med serverbackend som helst. EU-hostat inloggningsflöde, ingen cross-site-profilering, samtycke per sida. Registrera din app i Verkio och få ett client ID, en secret och en discovery-URL. Gratis för slutanvändare, gratis för utvecklare på v1.",
         "bullets": [
           "Standard OpenID Connect (OIDC) — ingen Verkio-SDK krävs.",
           "Fungerar med vilken OIDC-medveten identitetsbroker som helst (Auth0, Clerk, Keycloak, NextAuth).",
-          "Granulärt samtycke per sida plus instrumentpanel för anslutna appar för slutanvändare.",
-          "Gratis i v1 — säg till att du vill ha det så prioriterar vi."
+          "Samtycke per sida för dina användare, som de kan återkalla från sin kontosida.",
+          "Rotera din client secret eller återkalla din app själv. Gratis i v1."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "En riktig plattform.",
-          "body": "Publikt REST-API med OpenAPI 3.1, signerade webhooks, JMAP-passthrough, scopade tokens. Sign in with Verkio (OIDC) kommer om utvecklare vill ha det."
+          "body": "Publikt REST-API med OpenAPI 3.1, signerade webhooks, JMAP-passthrough, scopade tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-nativ.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Plattform",
       "headline": "En svit att använda, och en plattform att bygga på.",
-      "body": "Ett publikt REST-API, signerade webhooks och en forensisk revisionslogg. Snart: Logga in med Verkio — en EU-baserad identitetsleverantör för dina appar och dina kunder.",
+      "body": "Ett publikt REST-API, signerade webhooks och en forensisk revisionslogg. Logga in med Verkio — en EU-baserad identitetsleverantör för dina appar och dina kunder.",
       "items": {
         "api": {
           "name": "Publikt API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Logga in med Verkio",
-          "description": "Det EU-baserade alternativet till Logga in med Google eller Apple. Kommer snart."
+          "description": "Det EU-baserade alternativet till Logga in med Google eller Apple."
         }
       }
     }

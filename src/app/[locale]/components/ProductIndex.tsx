@@ -11,7 +11,7 @@ const items: { key: ProductIconKey; href: string; comingSoon?: boolean }[] = [
   { key: "wikis", href: "/product/wikis" },
   { key: "messaging", href: "/product/messaging" },
   { key: "api", href: "/product/api" },
-  { key: "signIn", href: "/product/sign-in-with-verkio", comingSoon: true },
+  { key: "signIn", href: "/product/sign-in-with-verkio" },
 ];
 
 /** Every product, as Branchscope's /product overview: a centred hero, then a card for each. */

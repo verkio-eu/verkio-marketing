@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Júní 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Borð",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "Auðkennisveitandi með búsetu í ESB fyrir opna vefinn. Staðlað OIDC, ekkert vefsíða-til-vefsíða prófíleringar, þú átt samþykkið. Áætlað — drifið áfram af eftirspurn forritara.",
-    "eyebrow": "Sign in with Verkio · Bráðum",
+    "metaDescription": "Auðkennisveitandi með búsetu í ESB fyrir opna vefinn. Staðlað OIDC, ekkert vefsíða-til-vefsíða prófíleringar, þú átt samþykkið. Fyrir öpp með bakenda á netþjóni.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Auðkennisveitandi sem virðir fólkið sem notar hann.",
-    "body": "Sign in with Verkio er staðlaður OIDC hnappur sem hver þriðja aðila vefsíða getur samþætt — Verkio reikningurinn þinn verður auðkennið þitt fyrir opna vefinn. Með búsetu í ESB, virðir friðhelgi, ekkert vefsíða-til-vefsíða prófíleringar. Áætlað, drifið áfram af eftirspurn forritara: ókeypis fyrir endanotendur, ókeypis fyrir forritara í v1. Segðu okkur að þú viljir það og við byggjum það fyrr.",
-    "cta": "Segðu okkur að þú viljir það",
+    "body": "Sign in with Verkio er staðlaður OIDC hnappur sem hver vefsíða með bakenda á netþjóni getur samþætt — Verkio reikningurinn þinn verður auðkennið þitt fyrir opna vefinn. Með búsetu í ESB, virðir friðhelgi, ekkert vefsíða-til-vefsíða prófíleringar. Ókeypis fyrir endanotendur, ókeypis fyrir forritara í v1.",
+    "cta": "Skrá á biðlista",
     "backLink": "Aftur að yfirliti vöru",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Í dag þýðir 'sign in with…' Google, Apple eða Microsoft — öll með höfuðstöðvar í Bandaríkjunum, öll lesa hverja vefsíðu sem þú skráir þig inn á. Sign in with Verkio gefur opna vefnum valkost með búsetu í ESB. Innskráningar haldast inni í ESB-innviðum Verkio. Engin vefsíða-til-vefsíða prófílering. Ekkert US CLOUD Act yfirborð.",
         "bullets": [
           "Innskráningarflæði með búsetu í ESB á Verkio-innviðum.",
-          "Engin vefsíða-til-vefsíða rakning — vefsíður fá ekki prófíl sem þær geta tengt saman.",
+          "Vefsíður fá nafnið þitt, notandanafn og netfang — aldrei póstinn þinn, skrár eða dagatal.",
           "Utan lögsögu US CLOUD Act.",
           "Eitt auðkenni fyrir öppin sem þú notar; hægt að afturkalla per vefsíðu hvenær sem þú vilt."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Staðlað OIDC",
         "headline": "Bara OIDC. Virkar með því sem þú átt nú þegar.",
-        "body": "Sign in with Verkio mun tala staðlað OpenID Connect — sömu samskiptareglu og núverandi auðkennismiðlari þinn (Auth0, Clerk, Keycloak, NextAuth) styður nú þegar. Að bæta því við ætti að vera stillingabreyting, ekki kóðauppskrifning.",
+        "body": "Sign in with Verkio talar staðlað OpenID Connect — sömu samskiptareglu og núverandi auðkennismiðlari þinn (Auth0, Clerk, Keycloak, NextAuth) styður nú þegar. Að bæta því við er stillingabreyting, ekki endurskrifun kóða.",
         "bullets": [
           "Staðlað OpenID Connect (OIDC) — discovery, JWKS, hið venjulega.",
-          "Virkar með hvaða OIDC-meðvitundu safni sem er — ekkert Verkio SDK krafist.",
+          "Virkar með hvaða OIDC-safni sem er á netþjóni — ekkert Verkio SDK krafist.",
           "Bætist við núverandi IdP-uppsetningu þína við hliðina á Sign in with Google eða Apple.",
           "Ókeypis fyrir endanotendur; ókeypis fyrir forritara í v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Þú átt samþykkið",
         "headline": "Per vefsíðu, hægt að afturkalla, gagnsætt.",
-        "body": "Þegar vefsíða biður um innskráningu muntu sjá nákvæmlega hvaða gögn þeir biðja um. Þú getur hafnað hlutum sem þú vilt ekki deila. Hver vefsíða sem þú hefur einhvern tíma skráð þig inn á birtist í mælaborði tengdra appa — afturkallaðu einhverja þeirra með einum smelli. Engin þögul endurauðkenning, ekkert scope creep.",
+        "body": "Í fyrsta skipti sem vefsíða biður þig um að skrá þig inn sérðu nákvæmlega hvaða gögn hún biður um og samþykkir eða hafnar. Hver vefsíða sem þú hefur samþykkt er skráð á reikningssíðunni þinni hjá Verkio — afturkallaðu hverja þeirra þar. Vefsíða sem vill meiri gögn þarf að spyrja þig aftur.",
         "bullets": [
-          "Per-vefsíðu samþykkisskjár — fínkornótt, ekkert allt-eða-ekkert.",
-          "Mælaborð tengdra appa sem skráir hverja vefsíðu sem þú hefur skráð þig inn á.",
-          "Einsmells afturköllun, hvenær sem er — vefsíðan missir aðgang strax.",
-          "Engin þögul endurauðkenning; sviðsbreytingar krefjast nýs samþykkis."
+          "Samþykkisskjár fyrir hverja nýja vefsíðu sem sýnir nákvæmlega hvað hún fær.",
+          "Hver vefsíða sem þú hefur samþykkt, skráð á reikningssíðunni þinni.",
+          "Afturkallaðu aðgang hvaða vefsíðu sem er, hvenær sem er.",
+          "Vefsíða sem biður um meiri gögn þarf samþykki þitt aftur."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio fyrir forritara — Byggðu á Verkio",
-    "metaDescription": "REST API með OpenAPI 3.1, JMAP passthrough, undirritaðir webhooks, streymanleg eftirlitsskrá. Sign in with Verkio (OIDC) væntanlegt. Ókeypis í v1.",
+    "metaDescription": "REST API með OpenAPI 3.1, JMAP passthrough, undirritaðir webhooks, streymanleg eftirlitsskrá. Sign in with Verkio (OIDC). Ókeypis í v1.",
     "eyebrow": "Fyrir forritara",
     "headline": "Byggðu á Verkio. Leiðinlegu ábyrgðirnar fylgja með.",
     "body": "Verkio er byggt API-fyrst — sömu endapunktar og vefappið notar eru opnir þér. REST með OpenAPI 3.1 forskrift fyrir kóðagerð, JMAP fyrir beinan aðgang að póstreglu, HMAC-undirritaðir webhooks með dauðabréfaröð og streymanleg eftirlitsskrá fyrir reglufylgni. Ókeypis á v1 stigi.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Bráðum",
+        "eyebrow": "Sign in with Verkio",
         "headline": "Auðkennisveitandi með ESB-búsetu fyrir notendur þína.",
-        "body": "Stöðluð OIDC hnappur sem þú getur samþætt á hvaða þriðja aðila vefsíðu sem er. Innskráningarflæði með ESB-búsetu, engin þvermilluvefssíða-prófílgerð, fínkornótt samþykki á hverri vefsíðu. Skipulagt, knúið af eftirspurn forritara — ókeypis fyrir endanotendur, ókeypis fyrir forritara í v1. Viltu það fyrir appið þitt? Segðu okkur.",
+        "body": "Staðlaður OIDC hnappur fyrir hvaða vefsíðu sem er með bakenda á netþjóni. Innskráningarflæði með ESB-búsetu, engin prófílgerð þvert á vefsíður, samþykki á hverri vefsíðu. Skráðu appið þitt í Verkio til að fá client ID, secret og discovery-slóð. Ókeypis fyrir endanotendur, ókeypis fyrir forritara í v1.",
         "bullets": [
           "Staðlað OpenID Connect (OIDC) — ekkert Verkio SDK krafist.",
           "Virkar með hvaða OIDC-meðvituðu auðkennismiðlara sem er (Auth0, Clerk, Keycloak, NextAuth).",
-          "Fínkornótt samþykki á hverri vefsíðu auk mælaborðs tengdra appa fyrir endanotendur.",
-          "Ókeypis í v1 — segðu okkur að þú viljir það og við forgangsröðum."
+          "Samþykki á hverri vefsíðu fyrir notendur þína, afturkallanlegt af reikningssíðu þeirra.",
+          "Skiptu um client secret eða afturkallaðu appið hvenær sem er. Ókeypis í v1."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Raunverulegur vettvangur.",
-          "body": "Opinbert REST API með OpenAPI 3.1, undirrituð webhooks, JMAP-passthrough, afmarkaðir aðgangslyklar. Sign in with Verkio (OIDC) er á leiðinni ef þróunaraðilar vilja það."
+          "body": "Opinbert REST API með OpenAPI 3.1, undirrituð webhooks, JMAP-passthrough, afmarkaðir aðgangslyklar, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Endurskoðunarskrár frá grunni.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Vettvangur",
       "headline": "Svíta til að nota, og vettvangur til að byggja á.",
-      "body": "Opið REST API, undirritaðir webhooks og réttarfræðileg úttektarskrá. Senn: Skráðu þig inn með Verkio — ESB-búsettur auðkennisveitandi fyrir forritin þín og viðskiptavinina þína.",
+      "body": "Opið REST API, undirritaðir webhooks og réttarfræðileg úttektarskrá. Skráðu þig inn með Verkio — ESB-búsettur auðkennisveitandi fyrir forritin þín og viðskiptavinina þína.",
       "items": {
         "api": {
           "name": "Opið API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Skráðu þig inn með Verkio",
-          "description": "ESB-búsetti valkostur við Skráðu þig inn með Google eða Apple. Senn fáanlegt."
+          "description": "ESB-búsetti valkostur við Skráðu þig inn með Google eða Apple."
         }
       }
     }

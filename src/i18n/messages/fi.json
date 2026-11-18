@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Kesäkuu 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Boards",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "EU-asuva identiteetintarjoaja avoimelle verkolle. Standardi OIDC, ei sivustojen välistä profilointia, sinä omistat suostumuksen. Suunnitteilla — kehittäjien kysynnän ohjaama.",
-    "eyebrow": "Sign in with Verkio · Tulossa pian",
+    "metaDescription": "EU-asuva identiteetintarjoaja avoimelle verkolle. Standardi OIDC, ei sivustojen välistä profilointia, sinä omistat suostumuksen. Sovelluksille, joilla on palvelinpuolen taustajärjestelmä.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Identiteetintarjoaja, joka kunnioittaa sitä käyttäviä ihmisiä.",
-    "body": "Sign in with Verkio on standardi OIDC-painike, jonka mikä tahansa kolmannen osapuolen sivusto voi integroida — Verkio-tilistäsi tulee identiteettisi avoimelle verkolle. EU-asuva, yksityisyyttä kunnioittava, ei sivustojen välistä profilointia. Suunnitteilla, kehittäjien kysynnän ohjaama: ilmainen loppukäyttäjille, ilmainen kehittäjille v1:ssä. Kerro meille, että haluat sen, niin rakennamme sen nopeammin.",
-    "cta": "Kerro meille, että haluat sen",
+    "body": "Sign in with Verkio on standardi OIDC-painike, jonka mikä tahansa palvelinpuolen taustajärjestelmällä varustettu sivusto voi integroida — Verkio-tilistäsi tulee identiteettisi avoimelle verkolle. EU-asuva, yksityisyyttä kunnioittava, ei sivustojen välistä profilointia. Ilmainen loppukäyttäjille, ilmainen kehittäjille v1:ssä.",
+    "cta": "Liity jonotuslistalle",
     "backLink": "Takaisin tuoteyleiskatsaukseen",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Tänään 'sign in with…' tarkoittaa Googlea, Applea tai Microsoftia — kaikilla pääkonttori USA:ssa, kaikki lukevat jokaisen sivuston, jolle kirjaudut. Sign in with Verkio antaa avoimelle verkolle EU-asuvan vaihtoehdon. Kirjautumiset pysyvät Verkion EU-infrastruktuurissa. Ei sivustojen välistä profilointia. Ei US CLOUD Act -pintaa.",
         "bullets": [
           "EU-asuva kirjautumisvirta Verkio-infrastruktuurissa.",
-          "Ei sivustojen välistä seurantaa — sivustot eivät saa profiilia, jonka voisivat korreloida.",
+          "Sivustot saavat nimesi, käyttäjätunnuksesi ja sähköpostiosoitteesi — eivät koskaan sähköpostejasi, tiedostojasi tai kalenteriasi.",
           "US CLOUD Actin lainkäyttövallan ulkopuolella.",
           "Yksi identiteetti käyttämillesi sovelluksille; peruutettavissa per sivusto milloin tahansa."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standardi OIDC",
         "headline": "Vain OIDC. Toimii sen kanssa, mitä sinulla jo on.",
-        "body": "Sign in with Verkio puhuu standardia OpenID Connectia — samaa protokollaa, jota nykyinen identiteettivälittäjäsi (Auth0, Clerk, Keycloak, NextAuth) jo tukee. Sen lisäämisen pitäisi olla konfiguraatiomuutos, ei koodin uudelleenkirjoitus.",
+        "body": "Sign in with Verkio puhuu standardia OpenID Connectia — samaa protokollaa, jota nykyinen identiteettivälittäjäsi (Auth0, Clerk, Keycloak, NextAuth) jo tukee. Sen lisääminen on konfiguraatiomuutos, ei koodin uudelleenkirjoitus.",
         "bullets": [
           "Standardi OpenID Connect (OIDC) — discovery, JWKS, tavanomaista.",
-          "Toimii minkä tahansa OIDC-tietoisen kirjaston kanssa — Verkio-SDK:ta ei tarvita.",
+          "Toimii minkä tahansa palvelinpuolen OIDC-kirjaston kanssa — Verkio-SDK:ta ei tarvita.",
           "Lisätään olemassa olevaan IdP-asetuksellesi Sign in with Googlen tai Applen rinnalle.",
           "Ilmainen loppukäyttäjille; ilmainen kehittäjille v1:ssä."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Sinä omistat suostumuksen",
         "headline": "Per sivusto, peruutettavissa, läpinäkyvä.",
-        "body": "Kun sivusto pyytää kirjautumista, näet tarkalleen, mitä tietoja he pyytävät. Voit kieltäytyä osista, joita et halua jakaa. Jokainen sivusto, jolle olet koskaan kirjautunut, näkyy yhdistettyjen sovellusten kojelaudassa — peruuta mikä tahansa yhdellä klikkauksella. Ei hiljaista uudelleentodennusta, ei scope creepiä.",
+        "body": "Kun sivusto pyytää sinua ensimmäistä kertaa kirjautumaan, näet tarkalleen, mitä tietoja se pyytää, ja hyväksyt tai hylkäät. Jokainen hyväksymäsi sivusto näkyy Verkio-tilisi sivulla — peruuta mikä tahansa niistä siellä. Sivuston, joka haluaa lisää tietoja, on kysyttävä sinulta uudelleen.",
         "bullets": [
-          "Sivustokohtainen suostumusnäyttö — yksityiskohtainen, ei kaikki-tai-ei-mitään.",
-          "Yhdistettyjen sovellusten kojelauta, joka listaa jokaisen sivuston, jolle olet kirjautunut.",
-          "Yhden klikkauksen peruutus, milloin tahansa — sivusto menettää pääsyn välittömästi.",
-          "Ei hiljaista uudelleentodennusta; scope-muutokset vaativat tuoreen suostumuksen."
+          "Suostumusnäyttö jokaiselle uudelle sivustolle, joka näyttää tarkalleen, mitä se saa.",
+          "Jokainen hyväksymäsi sivusto listattuna tilisi sivulla.",
+          "Peruuta minkä tahansa sivuston pääsy milloin tahansa.",
+          "Sivusto, joka pyytää lisää tietoja, tarvitsee suostumuksesi uudelleen."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio kehittäjille — Rakenna Verkion päälle",
-    "metaDescription": "REST API OpenAPI 3.1:llä, JMAP-passthrough, allekirjoitetut webhookit, striimattava audit-loki. Sign in with Verkio (OIDC) tulossa. Ilmainen v1:ssä.",
+    "metaDescription": "REST API OpenAPI 3.1:llä, JMAP-passthrough, allekirjoitetut webhookit, striimattava audit-loki. Sign in with Verkio (OIDC). Ilmainen v1:ssä.",
     "eyebrow": "Kehittäjille",
     "headline": "Rakenna Verkion päälle. Tylsät takuut mukana.",
     "body": "Verkio on rakennettu API-ensimmäiseksi — samat päätepisteet, joita web-sovellus käyttää, ovat avoinna sinulle. REST OpenAPI 3.1 -määrittelyllä koodigenerointia varten, JMAP suoraan postiprotokollan käyttöön, HMAC-allekirjoitetut webhookit kuolleen kirjeen jonolla ja striimattava audit-loki vaatimustenmukaisuuteen. Ilmainen v1-tasolla.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Tulossa pian",
+        "eyebrow": "Sign in with Verkio",
         "headline": "EU-isännöity identiteetin tarjoaja käyttäjillesi.",
-        "body": "Standardi OIDC-painike, jonka voit integroida mihin tahansa kolmannen osapuolen sivustoon. EU-isännöity kirjautumisvirta, ei sivustojenvälistä profilointia, sivustokohtainen yksityiskohtainen suostumus. Suunnitteilla, kehittäjien kysynnän vetämänä — ilmainen loppukäyttäjille, ilmainen kehittäjille v1:ssä. Haluatko sen sovelluksellesi? Kerro meille.",
+        "body": "Standardi OIDC-painike mille tahansa sivustolle, jolla on palvelinpuolen taustajärjestelmä. EU-isännöity kirjautumisvirta, ei sivustojenvälistä profilointia, sivustokohtainen suostumus. Rekisteröi sovelluksesi Verkiossa ja saat client ID:n, secretin ja discovery-URL:n. Ilmainen loppukäyttäjille, ilmainen kehittäjille v1:ssä.",
         "bullets": [
           "Standardi OpenID Connect (OIDC) — Verkion SDK:ta ei vaadita.",
           "Toimii minkä tahansa OIDC-tietoisen identiteetin välittäjän kanssa (Auth0, Clerk, Keycloak, NextAuth).",
-          "Sivustokohtainen yksityiskohtainen suostumus sekä yhdistettyjen sovellusten kojelauta loppukäyttäjille.",
-          "Ilmainen v1:ssä — kerro meille, että haluat sen, ja priorisoimme."
+          "Sivustokohtainen suostumus käyttäjillesi, peruttavissa heidän tilisivultaan.",
+          "Vaihda client secret tai peruuta sovelluksesi itse. Ilmainen v1:ssä."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Aito alusta.",
-          "body": "Julkinen REST-API ja OpenAPI 3.1, allekirjoitetut webhookit, JMAP-passthrough, rajatut tokenit. Sign in with Verkio (OIDC) tulee, jos kehittäjät haluavat sitä."
+          "body": "Julkinen REST-API ja OpenAPI 3.1, allekirjoitetut webhookit, JMAP-passthrough, rajatut tokenit, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-natiivi.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Alusta",
       "headline": "Paketti käytettäväksi ja alusta jonka päälle rakentaa.",
-      "body": "Julkinen REST-rajapinta, allekirjoitetut webhookit ja forensisen tason auditointiloki. Pian: Kirjaudu Verkiolla — EU-asuinpaikkainen identiteettipalvelu sovelluksillesi ja asiakkaillesi.",
+      "body": "Julkinen REST-rajapinta, allekirjoitetut webhookit ja forensisen tason auditointiloki. Kirjaudu Verkiolla — EU-asuinpaikkainen identiteettipalvelu sovelluksillesi ja asiakkaillesi.",
       "items": {
         "api": {
           "name": "Julkinen API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Kirjaudu Verkiolla",
-          "description": "EU-asuinpaikkainen vaihtoehto Google- tai Apple-kirjautumiselle. Tulossa pian."
+          "description": "EU-asuinpaikkainen vaihtoehto Google- tai Apple-kirjautumiselle."
         }
       }
     }

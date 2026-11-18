@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Červen 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Nástěnky",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "Identitní poskytovatel se sídlem v EU pro otevřený web. Standardní OIDC, žádné cross-site profilování, souhlas patří vám. Plánováno — řízeno poptávkou vývojářů.",
-    "eyebrow": "Sign in with Verkio · Brzy",
+    "metaDescription": "Identitní poskytovatel se sídlem v EU pro otevřený web. Standardní OIDC, žádné cross-site profilování, souhlas patří vám. Pro aplikace se serverovým backendem.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Poskytovatel identity, který respektuje lidi, kteří ho používají.",
-    "body": "Sign in with Verkio je standardní OIDC tlačítko, které může integrovat jakákoli třetí strana — váš účet Verkio se stává vaší identitou pro otevřený web. Se sídlem v EU, respektující soukromí, žádné cross-site profilování. Plánováno, řízeno poptávkou vývojářů: zdarma pro koncové uživatele, zdarma pro vývojáře ve v1. Řekněte nám, že to chcete, a postavíme to dřív.",
-    "cta": "Řekněte nám, že to chcete",
+    "body": "Sign in with Verkio je standardní OIDC tlačítko, které může integrovat jakýkoli web se serverovým backendem — váš účet Verkio se stává vaší identitou pro otevřený web. Se sídlem v EU, respektující soukromí, žádné cross-site profilování. Zdarma pro koncové uživatele, zdarma pro vývojáře ve v1.",
+    "cta": "Přidat se na seznam",
     "backLink": "Zpět na přehled produktu",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Dnes 'sign in with…' znamená Google, Apple nebo Microsoft — všichni se sídlem v USA, všichni čtou každou stránku, kam se přihlásíte. Sign in with Verkio dává otevřenému webu alternativu se sídlem v EU. Přihlášení zůstávají v EU infrastruktuře Verkio. Žádné cross-site profilování. Žádný povrch pro US CLOUD Act.",
         "bullets": [
           "Přihlašovací tok se sídlem v EU na infrastruktuře Verkio.",
-          "Žádné cross-site sledování — stránky nedostanou profil, který by mohly korelovat.",
+          "Stránky dostanou vaše jméno, uživatelské jméno a e-mailovou adresu — nikdy vaši poštu, soubory ani kalendář.",
           "Mimo jurisdikci US CLOUD Act.",
           "Jedna identita pro aplikace, které používáte; kdykoli odvolatelná pro jednotlivou stránku."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standardní OIDC",
         "headline": "Jen OIDC. Funguje s tím, co už máte.",
-        "body": "Sign in with Verkio bude mluvit standardním OpenID Connect — stejným protokolem, který už podporuje váš stávající identity broker (Auth0, Clerk, Keycloak, NextAuth). Přidání by mělo být změnou konfigurace, ne přepsáním kódu.",
+        "body": "Sign in with Verkio mluví standardním OpenID Connect — stejným protokolem, který už podporuje váš stávající identity broker (Auth0, Clerk, Keycloak, NextAuth). Přidání je změnou konfigurace, ne přepsáním kódu.",
         "bullets": [
           "Standardní OpenID Connect (OIDC) — discovery, JWKS, jak je obvyklé.",
-          "Funguje s jakoukoli OIDC-aware knihovnou — Verkio SDK není potřeba.",
+          "Funguje s jakoukoli serverovou OIDC knihovnou — Verkio SDK není potřeba.",
           "Přidá se ke stávajícímu IdP setupu vedle Sign in with Google nebo Apple.",
           "Zdarma pro koncové uživatele; zdarma pro vývojáře ve v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Souhlas patří vám",
         "headline": "Pro každou stránku, odvolatelný, transparentní.",
-        "body": "Když si stránka řekne o přihlášení, uvidíte přesně, jaká data chce. Můžete odmítnout části, které sdílet nechcete. Každá stránka, kam jste se kdy přihlásili, se objeví v dashboardu připojených aplikací — kteroukoli odvolejte jedním kliknutím. Žádná tichá re-autentizace, žádné scope creep.",
+        "body": "Když vás stránka poprvé požádá o přihlášení, uvidíte přesně, jaká data chce, a schválíte nebo odmítnete. Každá stránka, kterou jste schválili, je uvedena na stránce vašeho účtu Verkio — kteroukoli tam odvoláte. Stránka, která chce víc dat, se vás musí zeptat znovu.",
         "bullets": [
-          "Per-stránková obrazovka souhlasu — granulární, žádné vše-nebo-nic.",
-          "Dashboard připojených aplikací se seznamem všech stránek, kam jste se přihlásili.",
-          "Odvolání jedním kliknutím, kdykoli — stránka okamžitě ztrácí přístup.",
-          "Žádná tichá re-autentizace; změny scope vyžadují čerstvý souhlas."
+          "Obrazovka souhlasu pro každou novou stránku, ukazující přesně, co dostane.",
+          "Každá stránka, kterou jste schválili, uvedená na stránce vašeho účtu.",
+          "Přístup kterékoli stránky kdykoli odvoláte.",
+          "Stránka, která chce víc dat, potřebuje znovu váš souhlas."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio pro vývojáře — Stavějte na Verkio",
-    "metaDescription": "REST API s OpenAPI 3.1, JMAP passthrough, podepsané webhooky, streamovatelný audit log. Sign in with Verkio (OIDC) přichází. Zdarma v1.",
+    "metaDescription": "REST API s OpenAPI 3.1, JMAP passthrough, podepsané webhooky, streamovatelný audit log. Sign in with Verkio (OIDC). Zdarma v1.",
     "eyebrow": "Pro vývojáře",
     "headline": "Stavějte na Verkio. Nudné záruky v ceně.",
     "body": "Verkio je postavené API-first — stejné endpointy, které používá web app, jsou otevřené vám. REST s OpenAPI 3.1 specifikací pro codegen, JMAP pro přímý přístup k mailovému protokolu, webhooky podepsané HMAC s dead-letter queue a streamovatelný audit log pro compliance. Zdarma v rámci v1 tieru.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Brzy",
+        "eyebrow": "Sign in with Verkio",
         "headline": "Poskytovatel identity s EU rezidencí pro vaše uživatele.",
-        "body": "Standardní OIDC tlačítko, které integrujete na libovolnou stránku třetí strany. Přihlašovací tok s EU rezidencí, žádné cross-site profilování, granulární souhlas per stránka. Plánováno, řízeno poptávkou vývojářů — zdarma pro koncové uživatele, zdarma pro vývojáře v rámci v1. Chcete to pro svou aplikaci? Řekněte nám.",
+        "body": "Standardní OIDC tlačítko pro jakýkoli web se serverovým backendem. Přihlašovací tok s EU rezidencí, žádné cross-site profilování, souhlas per stránka. Zaregistrujte svou aplikaci ve Verkiu a získáte client ID, secret a discovery URL. Zdarma pro koncové uživatele, zdarma pro vývojáře v rámci v1.",
         "bullets": [
           "Standardní OpenID Connect (OIDC) — žádné Verkio SDK není potřeba.",
           "Funguje s libovolným OIDC-aware identity brokerem (Auth0, Clerk, Keycloak, NextAuth).",
-          "Granulární souhlas per stránka plus dashboard připojených aplikací pro koncové uživatele.",
-          "Zdarma v rámci v1 — řekněte nám, že to chcete, a my to upřednostníme."
+          "Souhlas per stránka pro vaše uživatele, odvolatelný ze stránky jejich účtu.",
+          "Client secret si rotujete nebo aplikaci odvoláte sami. Zdarma v rámci v1."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Skutečná platforma.",
-          "body": "Veřejné REST API s OpenAPI 3.1, podepsané webhooky, JMAP passthrough, tokeny s rozsahem. Sign in with Verkio (OIDC) přijde, pokud o ně vývojáři budou stát."
+          "body": "Veřejné REST API s OpenAPI 3.1, podepsané webhooky, JMAP passthrough, tokeny s rozsahem, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-nativní.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Sada k používání a platforma, na které stavět.",
-      "body": "Veřejné REST API, podepsané webhooky a forenzní audit log. Brzy: Přihlášení přes Verkio — poskytovatel identity sídlící v EU pro tvé aplikace i zákazníky.",
+      "body": "Veřejné REST API, podepsané webhooky a forenzní audit log. Přihlášení přes Verkio — poskytovatel identity sídlící v EU pro tvé aplikace i zákazníky.",
       "items": {
         "api": {
           "name": "Veřejné API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Přihlášení přes Verkio",
-          "description": "EU alternativa k Přihlášení přes Google nebo Apple. Brzy k dispozici."
+          "description": "EU alternativa k Přihlášení přes Google nebo Apple."
         }
       }
     }

@@ -612,7 +612,7 @@
       "signInWithVerkio": {
         "date": "June 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Boards",
@@ -1111,11 +1111,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "An EU-resident identity provider for the open web. Standard OIDC, no cross-site profiling, you own the consent. Planned — developer demand-led.",
-    "eyebrow": "Sign in with Verkio · Coming soon",
+    "metaDescription": "An EU-resident identity provider for the open web. Standard OIDC, no cross-site profiling, you own the consent. For apps with a server-side backend.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "An identity provider that respects the people using it.",
-    "body": "Sign in with Verkio is a standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident, privacy-respecting, no cross-site profiling. Planned, developer demand-led: free for end users, free for developers in v1. Tell us you want it and we'll build it sooner.",
-    "cta": "Tell us you want it",
+    "body": "Sign in with Verkio is a standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident, privacy-respecting, no cross-site profiling. Free for end users, free for developers in v1.",
+    "cta": "Join waitlist",
     "backLink": "Back to product overview",
     "sections": {
       "euIdentity": {
@@ -1124,7 +1124,7 @@
         "body": "Today 'sign in with…' means Google, Apple, or Microsoft — all US-headquartered, all reading every site you sign into. Sign in with Verkio gives the open web an EU-resident alternative. Sign-ins stay inside Verkio's EU infrastructure. No cross-site profiling. No US CLOUD Act surface.",
         "bullets": [
           "EU-resident sign-in flow on Verkio infrastructure.",
-          "No cross-site tracking — sites don't get a profile they can correlate.",
+          "Sites get your name, username and email address — never your mail, files or calendar.",
           "Outside US CLOUD Act jurisdiction.",
           "One identity for the apps you use; revocable per-site whenever you want."
         ]
@@ -1132,10 +1132,10 @@
       "openStandard": {
         "eyebrow": "Standard OIDC",
         "headline": "Just OIDC. Works with what you already have.",
-        "body": "Sign in with Verkio will speak standard OpenID Connect — the same protocol your existing identity broker (Auth0, Clerk, Keycloak, NextAuth) already supports. Adding it should be a configuration change, not a code rewrite.",
+        "body": "Sign in with Verkio speaks standard OpenID Connect — the same protocol your existing identity broker (Auth0, Clerk, Keycloak, NextAuth) already supports. Adding it is a configuration change, not a code rewrite.",
         "bullets": [
           "Standard OpenID Connect (OIDC) — discovery, JWKS, the usual.",
-          "Works with any OIDC-aware library — no Verkio SDK required.",
+          "Works with any server-side OIDC library — no Verkio SDK required.",
           "Adds to your existing IdP setup alongside Sign in with Google or Apple.",
           "Free for end users; free for developers in v1."
         ]
@@ -1143,12 +1143,12 @@
       "consent": {
         "eyebrow": "You own the consent",
         "headline": "Per-site, revocable, transparent.",
-        "body": "When a site asks for sign-in, you'll see exactly what data they're asking for. You can decline parts you don't want to share. Every site you've ever signed into appears in a connected-apps dashboard — revoke any of them with one click. No silent re-authentication, no scope creep.",
+        "body": "The first time a site asks you to sign in, you see exactly what data it's asking for, and approve or decline. Every site you've approved is listed on your Verkio account page — revoke any of them there. A site that wants more data has to ask you again.",
         "bullets": [
-          "Per-site consent screen — granular, no all-or-nothing.",
-          "Connected-apps dashboard listing every site you've signed into.",
-          "One-click revoke, anytime — site loses access immediately.",
-          "No silent re-authentication; scope changes require fresh consent."
+          "A consent screen for each new site, showing exactly what it gets.",
+          "Every site you've approved, listed on your account page.",
+          "Revoke any site's access, anytime.",
+          "A site that asks for more data needs your consent again."
         ]
       }
     }
@@ -1346,7 +1346,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio for Developers — Build on Verkio",
-    "metaDescription": "REST API with OpenAPI 3.1, JMAP passthrough, signed webhooks, streamable audit log. Sign in with Verkio (OIDC) coming. Free for v1.",
+    "metaDescription": "REST API with OpenAPI 3.1, JMAP passthrough, signed webhooks, streamable audit log. Sign in with Verkio (OIDC). Free for v1.",
     "eyebrow": "For Developers",
     "headline": "Build on Verkio. The boring guarantees included.",
     "body": "Verkio is built API-first — the same endpoints the web app uses are open to you. REST with an OpenAPI 3.1 spec for codegen, JMAP for direct mail-protocol access, HMAC-signed webhooks with a dead-letter queue, and a streamable audit log for compliance. Free for the v1 tier.",
@@ -1388,14 +1388,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Coming soon",
+        "eyebrow": "Sign in with Verkio",
         "headline": "An EU-resident identity provider for your users.",
-        "body": "A standard OIDC button you can integrate into any third-party site. EU-resident sign-in flow, no cross-site profiling, per-site granular consent. Planned, developer demand-led — free for end users, free for developers in v1. Want it for your app? Tell us.",
+        "body": "A standard OIDC button for any site with a server-side backend. EU-resident sign-in flow, no cross-site profiling, per-site consent. Register your app in Verkio to get a client ID, secret and discovery URL. Free for end users, free for developers in v1.",
         "bullets": [
           "Standard OpenID Connect (OIDC) — no Verkio SDK required.",
           "Works with any OIDC-aware identity broker (Auth0, Clerk, Keycloak, NextAuth).",
-          "Per-site granular consent plus connected-apps dashboard for end users.",
-          "Free in v1 — tell us you want it and we'll prioritise."
+          "Per-site consent for your users, revocable from their account page.",
+          "Rotate your client secret or revoke your app yourself. Free in v1."
         ]
       }
     }
@@ -1432,7 +1432,7 @@
         },
         {
           "name": "A real platform.",
-          "body": "Public REST API with OpenAPI 3.1, signed webhooks, JMAP passthrough, scoped tokens. Sign in with Verkio (OIDC) is coming if developers want it."
+          "body": "Public REST API with OpenAPI 3.1, signed webhooks, JMAP passthrough, scoped tokens, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Audit-log-native.",
@@ -1570,7 +1570,7 @@
     "build": {
       "eyebrow": "Platform",
       "headline": "A suite to use, and a platform to build on.",
-      "body": "A public REST API, signed webhooks, and a forensic-grade audit log. Soon: Sign in with Verkio — an EU-resident identity provider for your apps and your customers.",
+      "body": "A public REST API, signed webhooks, and a forensic-grade audit log. Sign in with Verkio — an EU-resident identity provider for your apps and your customers.",
       "items": {
         "api": {
           "name": "Public API",
@@ -1586,7 +1586,7 @@
         },
         "signIn": {
           "name": "Sign in with Verkio",
-          "description": "The EU-resident alternative to Sign in with Google or Apple. Coming soon."
+          "description": "The EU-resident alternative to Sign in with Google or Apple."
         }
       }
     }

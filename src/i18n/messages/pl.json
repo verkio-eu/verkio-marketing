@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Czerwiec 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Tablice",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "Dostawca tożsamości z siedzibą w UE dla otwartego webu. Standardowe OIDC, brak profilowania cross-site, zgoda należy do ciebie. Planowane — napędzane zapotrzebowaniem programistów.",
-    "eyebrow": "Sign in with Verkio · Wkrótce",
+    "metaDescription": "Dostawca tożsamości z siedzibą w UE dla otwartego webu. Standardowe OIDC, brak profilowania cross-site, zgoda należy do ciebie. Dla aplikacji z backendem po stronie serwera.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Dostawca tożsamości, który szanuje ludzi, którzy go używają.",
-    "body": "Sign in with Verkio to standardowy przycisk OIDC, który dowolna witryna zewnętrzna może zintegrować — twoje konto Verkio staje się twoją tożsamością dla otwartego webu. Z siedzibą w UE, szanuje prywatność, brak profilowania cross-site. Planowane, napędzane zapotrzebowaniem programistów: bezpłatne dla użytkowników końcowych, bezpłatne dla programistów w v1. Powiedz nam, że chcesz, a zbudujemy szybciej.",
-    "cta": "Powiedz nam, że chcesz",
+    "body": "Sign in with Verkio to standardowy przycisk OIDC, który może zintegrować każda witryna z backendem po stronie serwera — twoje konto Verkio staje się twoją tożsamością dla otwartego webu. Z siedzibą w UE, szanuje prywatność, brak profilowania cross-site. Bezpłatne dla użytkowników końcowych, bezpłatne dla programistów w v1.",
+    "cta": "Zapisz się",
     "backLink": "Powrót do przeglądu produktu",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Dzisiaj 'sign in with…' oznacza Google, Apple lub Microsoft — wszystkie z siedzibą w USA, wszystkie czytają każdą stronę, na której się logujesz. Sign in with Verkio daje otwartemu webowi alternatywę z siedzibą w UE. Logowania pozostają w infrastrukturze UE Verkio. Brak profilowania cross-site. Brak powierzchni US CLOUD Act.",
         "bullets": [
           "Przepływ logowania z siedzibą w UE na infrastrukturze Verkio.",
-          "Brak śledzenia cross-site — witryny nie dostają profilu, który mogłyby korelować.",
+          "Witryny dostają twoje imię i nazwisko, nazwę użytkownika i adres e-mail — nigdy twoją pocztę, pliki ani kalendarz.",
           "Poza jurysdykcją US CLOUD Act.",
           "Jedna tożsamość dla aplikacji, których używasz; możliwa do odwołania per witryna kiedy tylko chcesz."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standardowe OIDC",
         "headline": "Po prostu OIDC. Działa z tym, co już masz.",
-        "body": "Sign in with Verkio będzie mówić standardowym OpenID Connect — tym samym protokołem, który twój istniejący broker tożsamości (Auth0, Clerk, Keycloak, NextAuth) już obsługuje. Dodanie powinno być zmianą konfiguracji, a nie przepisaniem kodu.",
+        "body": "Sign in with Verkio mówi standardowym OpenID Connect — tym samym protokołem, który twój istniejący broker tożsamości (Auth0, Clerk, Keycloak, NextAuth) już obsługuje. Dodanie to zmiana konfiguracji, a nie przepisanie kodu.",
         "bullets": [
           "Standardowe OpenID Connect (OIDC) — discovery, JWKS, jak zwykle.",
-          "Działa z dowolną biblioteką świadomą OIDC — SDK Verkio nie jest wymagane.",
+          "Działa z dowolną biblioteką OIDC po stronie serwera — SDK Verkio nie jest wymagane.",
           "Dodaje się do twojej istniejącej konfiguracji IdP obok Sign in with Google lub Apple.",
           "Bezpłatne dla użytkowników końcowych; bezpłatne dla programistów w v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Zgoda należy do ciebie",
         "headline": "Per witryna, możliwa do odwołania, przejrzysta.",
-        "body": "Kiedy witryna prosi o logowanie, zobaczysz dokładnie, jakich danych żąda. Możesz odrzucić części, których nie chcesz udostępniać. Każda witryna, na której kiedykolwiek się zalogowałeś, pojawi się w panelu połączonych aplikacji — odwołaj którąkolwiek jednym kliknięciem. Brak cichej re-autentyzacji, brak scope creep.",
+        "body": "Gdy witryna po raz pierwszy prosi cię o zalogowanie, widzisz dokładnie, jakich danych żąda, i zatwierdzasz lub odrzucasz. Każda zatwierdzona przez ciebie witryna jest wymieniona na stronie twojego konta Verkio — tam odwołasz każdą z nich. Witryna, która chce więcej danych, musi zapytać cię ponownie.",
         "bullets": [
-          "Per-witryna ekran zgody — szczegółowy, brak wszystko-albo-nic.",
-          "Panel połączonych aplikacji wymieniający każdą witrynę, na której się zalogowałeś.",
-          "Odwołanie jednym kliknięciem, w dowolnym momencie — witryna natychmiast traci dostęp.",
-          "Brak cichej re-autentyzacji; zmiany zakresu wymagają świeżej zgody."
+          "Ekran zgody dla każdej nowej witryny, pokazujący dokładnie, co dostanie.",
+          "Każda zatwierdzona witryna, wymieniona na stronie twojego konta.",
+          "Odwołaj dostęp dowolnej witryny, w dowolnym momencie.",
+          "Witryna, która prosi o więcej danych, potrzebuje ponownie twojej zgody."
         ]
       }
     }
@@ -1342,7 +1342,7 @@
   },
   "forDevelopers": {
     "metaTitle": "Verkio dla programistów — Buduj na Verkio",
-    "metaDescription": "REST API z OpenAPI 3.1, passthrough JMAP, podpisane webhooki, strumieniowalny dziennik audytu. Sign in with Verkio (OIDC) wkrótce. Darmowe dla v1.",
+    "metaDescription": "REST API z OpenAPI 3.1, passthrough JMAP, podpisane webhooki, strumieniowalny dziennik audytu. Sign in with Verkio (OIDC). Darmowe dla v1.",
     "eyebrow": "Dla programistów",
     "headline": "Buduj na Verkio. Nudne gwarancje w komplecie.",
     "body": "Verkio jest zbudowane API-first — te same endpointy, których używa aplikacja webowa, są otwarte dla ciebie. REST ze specyfikacją OpenAPI 3.1 do codegen, JMAP do bezpośredniego dostępu do protokołu pocztowego, webhooki podpisane HMAC z kolejką dead-letter oraz strumieniowalny dziennik audytu dla zgodności. Darmowe na poziomie v1.",
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Wkrótce",
+        "eyebrow": "Sign in with Verkio",
         "headline": "Hostowany w UE dostawca tożsamości dla twoich użytkowników.",
-        "body": "Standardowy przycisk OIDC, który możesz zintegrować z dowolną stroną zewnętrzną. Hostowany w UE przepływ logowania, brak profilowania cross-site, granularna zgoda per strona. Planowane, napędzane popytem programistów — darmowe dla użytkowników końcowych, darmowe dla programistów w v1. Chcesz tego dla swojej aplikacji? Powiedz nam.",
+        "body": "Standardowy przycisk OIDC dla każdej strony z backendem po stronie serwera. Hostowany w UE przepływ logowania, brak profilowania cross-site, zgoda per strona. Zarejestruj aplikację w Verkio i otrzymaj client ID, secret oraz discovery URL. Darmowe dla użytkowników końcowych, darmowe dla programistów w v1.",
         "bullets": [
           "Standardowy OpenID Connect (OIDC) — żaden SDK Verkio nie jest wymagany.",
           "Działa z dowolnym brokerem tożsamości świadomym OIDC (Auth0, Clerk, Keycloak, NextAuth).",
-          "Granularna zgoda per strona plus panel połączonych aplikacji dla użytkowników końcowych.",
-          "Darmowe w v1 — powiedz nam, że chcesz, a damy temu priorytet."
+          "Zgoda per strona dla twoich użytkowników, odwoływalna ze strony ich konta.",
+          "Samodzielnie zmieniaj client secret lub odwołuj aplikację. Darmowe w v1."
         ]
       }
     }
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "Prawdziwą platformą.",
-          "body": "Publiczne REST API z OpenAPI 3.1, podpisane webhooki, JMAP-passthrough, ograniczone tokeny. Sign in with Verkio (OIDC) nadchodzi, jeśli będą tego chcieli deweloperzy."
+          "body": "Publiczne REST API z OpenAPI 3.1, podpisane webhooki, JMAP-passthrough, ograniczone tokeny, Sign in with Verkio (OIDC)."
         },
         {
           "name": "Z dziennikiem audytu od podstaw.",
@@ -1566,7 +1566,7 @@
     "build": {
       "eyebrow": "Platforma",
       "headline": "Pakiet do używania i platforma, na której można budować.",
-      "body": "Publiczne API REST, podpisane webhooki i dziennik audytu klasy forensycznej. Wkrótce: Zaloguj się przez Verkio — dostawca tożsamości z siedzibą w UE dla twoich aplikacji i klientów.",
+      "body": "Publiczne API REST, podpisane webhooki i dziennik audytu klasy forensycznej. Zaloguj się przez Verkio — dostawca tożsamości z siedzibą w UE dla twoich aplikacji i klientów.",
       "items": {
         "api": {
           "name": "Publiczne API",
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Zaloguj się przez Verkio",
-          "description": "Alternatywa z siedzibą w UE do Zaloguj się przez Google lub Apple. Wkrótce."
+          "description": "Alternatywa z siedzibą w UE do Zaloguj się przez Google lub Apple."
         }
       }
     }

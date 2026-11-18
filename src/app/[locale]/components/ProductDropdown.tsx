@@ -14,7 +14,7 @@ const items: { key: ItemKey; href: string; comingSoon?: boolean }[] = [
   { key: "wikis", href: "/product/wikis" },
   { key: "messaging", href: "/product/messaging" },
   { key: "api", href: "/product/api" },
-  { key: "signIn", href: "/product/sign-in-with-verkio", comingSoon: true },
+  { key: "signIn", href: "/product/sign-in-with-verkio" },
 ];
 
 export function ProductDropdown({ className = "" }: { className?: string }) {
