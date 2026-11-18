@@ -10,11 +10,12 @@ interface Props {
 
 // All words are rendered into a single grid cell so the container's
 // width is fixed by the longest word and swapping never causes layout
-// shift. Only the active word is opacity-100; the rest fade out.
-// Inactive words are also `invisible`: inside a gradient heading
-// (bg-clip-text), the parent's background is painted through every
-// descendant glyph regardless of opacity, so opacity alone left all the
-// words showing on top of each other.
+// shift. The outgoing word fades out, then the next one fades in (its
+// delay is the fade-out's duration), so two words never overlap.
+// Inactive words are also `invisible` once faded (visibility switches at
+// the end of the transition): inside a gradient heading (bg-clip-text) the
+// parent's background is painted through every descendant glyph whatever
+// its opacity, which left all the words showing on top of each other.
 export function RotatingWord({ words, intervalMs = 2400 }: Props) {
   const [index, setIndex] = useState(0);
 
@@ -39,8 +40,8 @@ export function RotatingWord({ words, intervalMs = 2400 }: Props) {
         <span
           key={word}
           aria-hidden={i === index ? undefined : true}
-          className={`col-start-1 row-start-1 transition-opacity duration-300 ${
-            i === index ? "opacity-100" : "invisible opacity-0"
+          className={`col-start-1 row-start-1 transition-[opacity,visibility] duration-300 ease-out motion-reduce:transition-none ${
+            i === index ? "opacity-100 delay-300" : "invisible opacity-0"
           }`}
         >
           {word}
