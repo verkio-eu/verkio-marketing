@@ -259,7 +259,9 @@
     "terms": "Regulamin",
     "subprocessors": "Podwykonawcy",
     "isAndIsnt": "Czym Verkio jest, a czym nie",
-    "allRightsReserved": "Wszelkie prawa zastrzeżone"
+    "allRightsReserved": "Wszelkie prawa zastrzeżone",
+    "themeLight": "Przełącz na tryb jasny",
+    "themeDark": "Przełącz na tryb ciemny"
   },
   "waitlist": {
     "cardTitle": "Zapisz się na listę oczekujących",

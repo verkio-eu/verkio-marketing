@@ -262,7 +262,9 @@
     "terms": "Terms & Conditions",
     "subprocessors": "Subprocessors",
     "isAndIsnt": "What Verkio is and isn't",
-    "allRightsReserved": "All Rights Reserved"
+    "allRightsReserved": "All Rights Reserved",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode"
   },
   "waitlist": {
     "cardTitle": "Join the waitlist",

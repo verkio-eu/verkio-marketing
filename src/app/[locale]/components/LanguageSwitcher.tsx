@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useRef, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { useDismiss, useInsideViewport } from "./NavMenu";
+import { ChevronDown } from "./ProductIcons";
 
 type Locale = (typeof routing.locales)[number];
 
@@ -297,6 +299,17 @@ const flags: Record<Locale, () => React.ReactElement> = {
   is: ISFlag,
 };
 
+function LanguagesIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6" />
+    </svg>
+  );
+}
+
+const flagFrame = "size-4 shrink-0 overflow-hidden rounded-full ring-1 ring-ink/10";
+
+/** The footer's language menu, beside the theme toggle, as Branchscope's: every language with its flag. */
 export function LanguageSwitcher() {
   const t = useTranslations("nav");
   const locale = useLocale() as Locale;
@@ -305,28 +318,9 @@ export function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
   const [, startTransition] = useTransition();
   const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function onPointer(event: PointerEvent) {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    }
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
-    }
-    if (open) {
-      document.addEventListener("pointerdown", onPointer);
-      document.addEventListener("keydown", onKey);
-    }
-    return () => {
-      document.removeEventListener("pointerdown", onPointer);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-
-  const CurrentFlag = flags[locale];
-  const others = routing.locales.filter((l) => l !== locale);
+  const menu = useRef<HTMLDivElement>(null);
+  useDismiss(ref, open, () => setOpen(false));
+  useInsideViewport(menu, open);
 
   function switchTo(next: Locale) {
     startTransition(() => {
@@ -336,53 +330,49 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-      <div
-        className={`grid grid-cols-2 gap-3 transition-all duration-200 ease-out ${
-          open
-            ? "opacity-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 translate-y-2 pointer-events-none"
-        }`}
-        role="menu"
-        aria-label={t("language")}
-      >
-        {others.map((l, index) => {
-          const Flag = flags[l];
-          return (
-            <button
-              key={l}
-              type="button"
-              role="menuitem"
-              onClick={() => switchTo(l)}
-              aria-label={labels[l]}
-              title={labels[l]}
-              className={`h-10 w-10 rounded-full overflow-hidden ring-1 ring-black/10 shadow-md shadow-black/15 bg-white hover:scale-110 active:scale-95 transition-all duration-200 ease-out ${
-                open
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-2"
-              }`}
-              style={{
-                transitionDelay: open
-                  ? `${index * 25}ms`
-                  : `${(others.length - 1 - index) * 15}ms`,
-              }}
-            >
-              <Flag />
-            </button>
-          );
-        })}
-      </div>
-
+    <div ref={ref} className="relative">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-haspopup="menu"
         aria-expanded={open}
         aria-label={`${t("language")}: ${labels[locale]}`}
-        className="h-12 w-12 rounded-full overflow-hidden ring-1 ring-black/10 shadow-lg shadow-black/20 bg-white hover:scale-105 active:scale-95 transition-transform"
+        className="inline-flex cursor-pointer items-center gap-1.5 rounded-md text-[13px] text-muted-foreground transition-colors outline-none hover:text-foreground focus-visible:ring-[3px] focus-visible:ring-ring/50"
       >
-        <CurrentFlag />
+        <LanguagesIcon className="size-3.5" aria-hidden="true" />
+        {labels[locale]}
+        <ChevronDown className="size-3.5 opacity-50" aria-hidden="true" />
       </button>
+      {open && (
+        <div
+          ref={menu}
+          role="menu"
+          aria-label={t("language")}
+          className="animate-menu-in motion-reduce:animate-none absolute right-0 bottom-full z-50 mb-2.5 grid w-[22rem] origin-bottom-right grid-cols-2 rounded-xl border border-ink/10 bg-panel/95 p-1.5 shadow-md backdrop-blur-md"
+        >
+          {routing.locales.map((l) => {
+            const Flag = flags[l];
+            return (
+              <button
+                key={l}
+                type="button"
+                role="menuitem"
+                lang={l}
+                aria-current={l === locale ? "true" : undefined}
+                onClick={() => switchTo(l)}
+                className={`flex cursor-pointer items-center gap-2.5 rounded-lg px-2.5 py-1.5 text-left text-[13px] text-foreground outline-none transition-colors hover:bg-ink/[0.05] focus-visible:bg-ink/[0.05] ${
+                  l === locale ? "bg-ink/[0.05] font-medium" : ""
+                }`}
+              >
+                <span className={flagFrame}>
+                  <Flag />
+                </span>
+                {labels[l]}
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

@@ -259,7 +259,9 @@
     "terms": "Användarvillkor",
     "subprocessors": "Underbiträden",
     "isAndIsnt": "Vad Verkio är och inte är",
-    "allRightsReserved": "Alla rättigheter förbehållna"
+    "allRightsReserved": "Alla rättigheter förbehållna",
+    "themeLight": "Byt till ljust läge",
+    "themeDark": "Byt till mörkt läge"
   },
   "waitlist": {
     "cardTitle": "Gå med i väntelistan",

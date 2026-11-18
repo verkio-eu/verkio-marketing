@@ -259,7 +259,9 @@
     "terms": "Términos y condiciones",
     "subprocessors": "Subencargados",
     "isAndIsnt": "Qué es Verkio y qué no es",
-    "allRightsReserved": "Todos los derechos reservados"
+    "allRightsReserved": "Todos los derechos reservados",
+    "themeLight": "Cambiar al modo claro",
+    "themeDark": "Cambiar al modo oscuro"
   },
   "waitlist": {
     "cardTitle": "Únete a la lista de espera",

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { RoadmapRequestForm } from "@/app/components/RoadmapRequestForm";
+import { inkButton } from "@/app/[locale]/components/styles";
 
 const TRANSITION_MS = 200;
 
@@ -42,7 +43,7 @@ export function RoadmapRequestModal() {
       <button
         type="button"
         onClick={openModal}
-        className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors"
+        className={inkButton}
       >
         <svg
           viewBox="0 0 16 16"
@@ -67,14 +68,14 @@ export function RoadmapRequestModal() {
           aria-labelledby="roadmap-modal-title"
         >
           <div
-            className={`absolute inset-0 bg-gray-900/50 transition-opacity duration-200 ease-out ${
+            className={`absolute inset-0 bg-black/50 transition-opacity duration-200 ease-out ${
               visible ? "opacity-100" : "opacity-0"
             }`}
             onClick={closeModal}
             aria-hidden="true"
           />
           <div
-            className={`relative z-10 w-full max-w-lg rounded-lg bg-white p-6 sm:p-8 shadow-xl transition-all duration-200 ease-out ${
+            className={`relative z-10 w-full max-w-lg rounded-xl border border-ink/10 bg-popover p-6 text-popover-foreground shadow-lg sm:p-8 transition-all duration-200 ease-out ${
               visible
                 ? "opacity-100 scale-100 translate-y-0"
                 : "opacity-0 scale-95 translate-y-2"
@@ -84,18 +85,18 @@ export function RoadmapRequestModal() {
               <div>
                 <h2
                   id="roadmap-modal-title"
-                  className="text-xl font-medium text-gray-900"
+                  className="text-lg font-semibold tracking-tight text-heading"
                 >
                   {t("requestForm.title")}
                 </h2>
-                <p className="mt-2 text-sm text-gray-600">
+                <p className="mt-2 text-sm text-muted-foreground">
                   {t("requestForm.description")}
                 </p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
-                className="-mr-2 -mt-2 p-2 text-gray-400 hover:text-gray-900 transition-colors"
+                className="-mr-2 -mt-2 rounded-md p-2 text-muted-foreground transition-colors hover:text-foreground"
                 aria-label={t("requestForm.close")}
               >
                 <svg

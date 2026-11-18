@@ -259,7 +259,9 @@
     "terms": "Smluvní podmínky",
     "subprocessors": "Subzpracovatelé",
     "isAndIsnt": "Co Verkio je a co není",
-    "allRightsReserved": "Všechna práva vyhrazena"
+    "allRightsReserved": "Všechna práva vyhrazena",
+    "themeLight": "Přepnout na světlý režim",
+    "themeDark": "Přepnout na tmavý režim"
   },
   "waitlist": {
     "cardTitle": "Přidat se na seznam zájemců",

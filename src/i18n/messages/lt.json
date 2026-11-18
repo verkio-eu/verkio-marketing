@@ -259,7 +259,9 @@
     "terms": "Naudojimosi sąlygos",
     "subprocessors": "Tvarkytojai",
     "isAndIsnt": "Kas Verkio yra ir kas ne",
-    "allRightsReserved": "Visos teisės saugomos"
+    "allRightsReserved": "Visos teisės saugomos",
+    "themeLight": "Perjungti į šviesų režimą",
+    "themeDark": "Perjungti į tamsų režimą"
   },
   "waitlist": {
     "cardTitle": "Užsiregistruoti į laukimo sąrašą",

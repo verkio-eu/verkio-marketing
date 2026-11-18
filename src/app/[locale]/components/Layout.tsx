@@ -1,21 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { AudienceDropdown } from "./AudienceDropdown";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ProductDropdown } from "./ProductDropdown";
+import { ThemeToggle } from "./ThemeToggle";
+import { inkButtonSm } from "./styles";
 
-export function Container({
-  className = "",
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${className}`}>
-      {children}
-    </div>
-  );
-}
+const navLink = "rounded-md px-3 py-1.5 text-[13px] text-muted-foreground transition-colors hover:text-foreground";
 
 export function Logo({
   className = "",
@@ -60,36 +51,23 @@ export function VerkioMark({ className = "" }: { className?: string }) {
 export function Header() {
   const t = useTranslations("nav");
   return (
-    <header className="sticky top-0 z-40 bg-white">
-      <Container>
-        <nav className="flex items-center justify-between py-6">
-          <Link href="/" aria-label="Verkio" className="text-gray-900">
-            <Logo />
-          </Link>
-          <div className="flex items-center gap-x-6 sm:gap-x-8">
-            <Link
-              href="/product"
-              className="inline sm:hidden text-sm text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t("product")}
-            </Link>
-            <ProductDropdown />
-            <AudienceDropdown />
-            <Link
-              href="/why-verkio"
-              className="hidden sm:inline text-sm text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t("whyVerkio")}
-            </Link>
-            <Link
-              href="/#waitlist"
-              className="inline-flex justify-center rounded-lg bg-gray-900 px-3 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors"
-            >
-              {t("joinWaitlist")}
-            </Link>
-          </div>
-        </nav>
-      </Container>
+    <header className="sticky top-0 z-20 border-b border-ink/[0.06] bg-page/70 backdrop-blur-md">
+      <nav className="mx-auto flex h-14 max-w-6xl items-center gap-1 px-4 sm:px-6">
+        <Link href="/" aria-label="Verkio" className="mr-auto text-foreground">
+          <Logo size="sm" />
+        </Link>
+        <Link href="/product" className={`${navLink} inline-flex sm:hidden`}>
+          {t("product")}
+        </Link>
+        <ProductDropdown className={`${navLink} hidden sm:inline-flex`} />
+        <AudienceDropdown className={`${navLink} hidden sm:inline-flex`} />
+        <Link href="/why-verkio" className={`${navLink} hidden sm:inline-flex`}>
+          {t("whyVerkio")}
+        </Link>
+        <Link href="/#waitlist" className={`${inkButtonSm} ml-2`}>
+          {t("joinWaitlist")}
+        </Link>
+      </nav>
     </header>
   );
 }
@@ -106,140 +84,90 @@ export function Footer() {
   const tFooter = useTranslations("footer");
   const tNav = useTranslations("nav");
   const year = new Date().getFullYear();
+  const columns: { title: string; links: [href: string, label: string][] }[] = [
+    {
+      title: tFooter("productHeading"),
+      links: [
+        ["/product", tNav("product")],
+        ["/why-verkio", tNav("whyVerkio")],
+      ],
+    },
+    {
+      title: tFooter("resourcesHeading"),
+      links: [
+        ["/roadmap", tNav("roadmap")],
+        ["/articles", tNav("articles")],
+        ["/what-verkio-is-and-isnt", tFooter("isAndIsnt")],
+      ],
+    },
+    {
+      title: tFooter("legalHeading"),
+      links: [
+        ["/privacy", tFooter("privacy")],
+        ["/terms", tFooter("terms")],
+        ["/subprocessors", tFooter("subprocessors")],
+      ],
+    },
+    {
+      title: tFooter("contactHeading"),
+      links: [
+        ["mailto:hello@verkio.eu", "hello@verkio.eu"],
+        ["/#waitlist", tNav("joinWaitlist")],
+      ],
+    },
+  ];
+  const link = "transition-colors hover:text-foreground";
   return (
-    <footer className="bg-gray-50">
-      <Container className="py-12 lg:py-16">
-        <div className="md:flex md:justify-between">
-          <div className="mb-10 md:mb-0">
-            <Link href="/" aria-label="Verkio" className="text-gray-900">
-              <span className="text-lg font-semibold tracking-tight">
-                Verkio
-              </span>
-            </Link>
-            <p className="mt-4 text-sm text-gray-600 max-w-sm">
-              {tFooter("tagline")}
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
-            <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase tracking-wider">
-                {tFooter("productHeading")}
-              </h2>
-              <ul className="text-sm text-gray-600 space-y-3">
-                <li>
-                  <Link href="/product" className="hover:text-gray-900 transition-colors">
-                    {tNav("product")}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/why-verkio" className="hover:text-gray-900 transition-colors">
-                    {tNav("whyVerkio")}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase tracking-wider">
-                {tFooter("resourcesHeading")}
-              </h2>
-              <ul className="text-sm text-gray-600 space-y-3">
-                <li>
-                  <Link href="/roadmap" className="hover:text-gray-900 transition-colors">
-                    {tNav("roadmap")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/articles"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tNav("articles")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/what-verkio-is-and-isnt"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tFooter("isAndIsnt")}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase tracking-wider">
-                {tFooter("legalHeading")}
-              </h2>
-              <ul className="text-sm text-gray-600 space-y-3">
-                <li>
-                  <Link
-                    href="/privacy"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tFooter("privacy")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/terms"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tFooter("terms")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/subprocessors"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tFooter("subprocessors")}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase tracking-wider">
-                {tFooter("contactHeading")}
-              </h2>
-              <ul className="text-sm text-gray-600 space-y-3">
-                <li>
-                  <a
-                    href="mailto:hello@verkio.eu"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    hello@verkio.eu
-                  </a>
-                </li>
-                <li>
-                  <Link
-                    href="/#waitlist"
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    {tNav("joinWaitlist")}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <footer className="relative border-t border-ink/[0.06]">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-10 px-4 pt-14 pb-10 sm:grid-cols-4 sm:px-6 md:grid-cols-[1fr_repeat(4,9rem)]">
+        <div className="col-span-2 sm:col-span-4 md:col-span-1">
+          <Link href="/" aria-label="Verkio" className="flex items-center gap-2.5 font-semibold tracking-tight text-foreground">
+            <VerkioMark className="h-5 w-auto" />
+            Verkio
+          </Link>
+          <p className="mt-3 max-w-xs text-[13px] text-muted-foreground">{tFooter("tagline")}</p>
         </div>
-        <hr className="my-8 border-gray-200 lg:my-10" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <p className="text-sm text-gray-500">
+        {columns.map((c) => (
+          <nav key={c.title} aria-label={c.title}>
+            <h2 className="text-[13px] font-medium text-foreground">{c.title}</h2>
+            <ul className="mt-4 space-y-3 text-[13px] text-muted-foreground">
+              {c.links.map(([href, label]) => (
+                <li key={href}>
+                  {href.startsWith("mailto:") ? (
+                    <a href={href} className={link}>
+                      {label}
+                    </a>
+                  ) : (
+                    <Link href={href} className={link}>
+                      {label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
+      </div>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/[0.06] py-6 text-[13px] text-muted-foreground">
+          <span className="mr-auto">
             © {year} Verkio. {tFooter("allRightsReserved")}.
-          </p>
-          <div className="flex mt-4 sm:mt-0 gap-5">
-            <a
-              href="https://www.linkedin.com/company/verkio/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-900 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon className="h-5 w-5" />
-            </a>
-          </div>
+          </span>
+          <a
+            href="https://www.linkedin.com/company/verkio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon className="size-4" />
+          </a>
+          <span className="inline-flex items-center gap-3">
+            <LanguageSwitcher />
+            <ThemeToggle />
+          </span>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

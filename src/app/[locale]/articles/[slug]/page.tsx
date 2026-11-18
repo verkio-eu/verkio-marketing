@@ -3,11 +3,8 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import {
-  Container,
-  Footer,
-  Header,
-} from "@/app/[locale]/components/Layout";
+import { Footer, Header } from "@/app/[locale]/components/Layout";
+import { h1Page, lead, textLink } from "@/app/[locale]/components/styles";
 import {
   articles,
   articleSlugs,
@@ -151,53 +148,34 @@ export default async function ArticlePage({
       <ArticleStructuredData slug={slug} locale={locale} />
       <Header />
       <main>
-        <article className="py-16 sm:py-24 lg:py-32">
-          <Container>
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-x-4 text-xs font-mono uppercase tracking-wider text-brand-600">
-                <Link href="/articles" className="hover:text-gray-900 transition-colors">
-                  Articles
-                </Link>
-                <span className="text-gray-300">·</span>
-                <time
-                  dateTime={article.meta.publishedAt}
-                  className="text-gray-400"
-                >
-                  {new Date(article.meta.publishedAt).toLocaleDateString(
-                    "en-GB",
-                    {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    },
-                  )}
-                </time>
-                <span className="text-gray-300">·</span>
-                <span className="text-gray-400">
-                  {article.meta.readingMinutes} min read
-                </span>
-              </div>
-              <h1 className="mt-6 text-4xl sm:text-5xl font-medium tracking-tight text-gray-900 leading-[1.1]">
-                {article.meta.title}
-              </h1>
-              <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                {article.meta.description}
-              </p>
-            </div>
+        <article className="mx-auto max-w-2xl px-4 pt-20 pb-24 sm:px-6 lg:pt-28">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-muted-foreground">
+            <Link href="/articles" className="text-sm font-medium text-primary hover:underline">
+              Articles
+            </Link>
+            <span aria-hidden="true">·</span>
+            <time dateTime={article.meta.publishedAt}>
+              {new Date(article.meta.publishedAt).toLocaleDateString("en-GB", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            <span aria-hidden="true">·</span>
+            <span>{article.meta.readingMinutes} min read</span>
+          </div>
+          <h1 className={`mt-4 ${h1Page}`}>{article.meta.title}</h1>
+          <p className={`mt-6 ${lead}`}>{article.meta.description}</p>
 
-            <div className="mt-16 max-w-2xl article-body">
-              <Body />
-            </div>
+          <div className="article-body mt-14">
+            <Body />
+          </div>
 
-            <div className="mt-16 max-w-2xl">
-              <Link
-                href="/articles"
-                className="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-gray-900 transition-colors"
-              >
-                ← All articles
-              </Link>
-            </div>
-          </Container>
+          <div className="mt-16">
+            <Link href="/articles" className={textLink}>
+              ← All articles
+            </Link>
+          </div>
         </article>
       </main>
       <Footer />

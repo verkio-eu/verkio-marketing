@@ -259,7 +259,9 @@
     "terms": "Vilkår",
     "subprocessors": "Underdatabehandlere",
     "isAndIsnt": "Hva Verkio er og ikke er",
-    "allRightsReserved": "Alle rettigheter reservert"
+    "allRightsReserved": "Alle rettigheter reservert",
+    "themeLight": "Bytt til lyst tema",
+    "themeDark": "Bytt til mørkt tema"
   },
   "waitlist": {
     "cardTitle": "Bli med på ventelisten",

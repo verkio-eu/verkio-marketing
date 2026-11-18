@@ -259,7 +259,9 @@
     "terms": "Skilmálar",
     "subprocessors": "Undirvinnsluaðilar",
     "isAndIsnt": "Hvað Verkio er og hvað ekki",
-    "allRightsReserved": "Allur réttur áskilinn"
+    "allRightsReserved": "Allur réttur áskilinn",
+    "themeLight": "Skipta í ljóst útlit",
+    "themeDark": "Skipta í dökkt útlit"
   },
   "waitlist": {
     "cardTitle": "Skráðu þig á biðlistann",

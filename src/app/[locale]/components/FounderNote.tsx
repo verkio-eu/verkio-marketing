@@ -1,30 +1,24 @@
 import { useTranslations } from "next-intl";
-import { Container } from "./Layout";
+import { eyebrow } from "./styles";
 
 export function FounderNote() {
   const t = useTranslations("founderNote");
   return (
-    <section className="border-t border-gray-200 py-20 sm:py-32">
-      <Container>
-        <figure className="mx-auto max-w-2xl">
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <blockquote className="mt-6 text-xl leading-relaxed text-gray-900 sm:text-2xl">
-            {t("body")}
-          </blockquote>
-          <figcaption className="mt-6 flex items-center gap-4">
-            {/* PLACEHOLDER — replace with a small founder photo (round, ~48px). */}
-            <span
-              aria-hidden="true"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-dashed border-gray-300 bg-gray-50 text-xs font-mono uppercase tracking-wider text-gray-400"
-            >
-              IMG
-            </span>
-            <span className="text-sm font-medium text-gray-600">
-              {t("signature")}
-            </span>
-          </figcaption>
-        </figure>
-      </Container>
+    <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <figure className="mx-auto max-w-2xl">
+        <p className={eyebrow}>{t("eyebrow")}</p>
+        <blockquote className="mt-6 text-xl leading-relaxed tracking-[-0.01em] text-heading sm:text-2xl">{t("body")}</blockquote>
+        <figcaption className="mt-6 flex items-center gap-4">
+          {/* PLACEHOLDER — replace with a small founder photo (round, ~48px). */}
+          <span
+            aria-hidden="true"
+            className="flex size-12 items-center justify-center rounded-full border border-dashed border-ink/15 bg-ink/[0.03] font-mono text-xs tracking-wider text-muted-foreground uppercase"
+          >
+            IMG
+          </span>
+          <span className="text-sm font-medium text-muted-foreground">{t("signature")}</span>
+        </figcaption>
+      </figure>
     </section>
   );
 }

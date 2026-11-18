@@ -259,7 +259,9 @@
     "terms": "Käyttöehdot",
     "subprocessors": "Alikäsittelijät",
     "isAndIsnt": "Mitä Verkio on ja mitä ei",
-    "allRightsReserved": "Kaikki oikeudet pidätetään"
+    "allRightsReserved": "Kaikki oikeudet pidätetään",
+    "themeLight": "Vaihda vaaleaan tilaan",
+    "themeDark": "Vaihda tummaan tilaan"
   },
   "waitlist": {
     "cardTitle": "Liity jonotuslistalle",

@@ -259,7 +259,9 @@
     "terms": "Lietošanas noteikumi",
     "subprocessors": "Apakšapstrādātāji",
     "isAndIsnt": "Kas Verkio ir un kas nav",
-    "allRightsReserved": "Visas tiesības aizsargātas"
+    "allRightsReserved": "Visas tiesības aizsargātas",
+    "themeLight": "Pārslēgties uz gaišo režīmu",
+    "themeDark": "Pārslēgties uz tumšo režīmu"
   },
   "waitlist": {
     "cardTitle": "Pievienoties gaidīšanas sarakstam",

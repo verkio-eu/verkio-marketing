@@ -259,7 +259,9 @@
     "terms": "Kasutustingimused",
     "subprocessors": "Allvolitatud töötlejad",
     "isAndIsnt": "Mis Verkio on ja mis ei ole",
-    "allRightsReserved": "Kõik õigused kaitstud"
+    "allRightsReserved": "Kõik õigused kaitstud",
+    "themeLight": "Lülitu heledale režiimile",
+    "themeDark": "Lülitu tumedale režiimile"
   },
   "waitlist": {
     "cardTitle": "Liitu ootejärjekorraga",

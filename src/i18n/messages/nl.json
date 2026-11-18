@@ -259,7 +259,9 @@
     "terms": "Algemene voorwaarden",
     "subprocessors": "Subverwerkers",
     "isAndIsnt": "Wat Verkio wel en niet is",
-    "allRightsReserved": "Alle rechten voorbehouden"
+    "allRightsReserved": "Alle rechten voorbehouden",
+    "themeLight": "Overschakelen naar lichte modus",
+    "themeDark": "Overschakelen naar donkere modus"
   },
   "waitlist": {
     "cardTitle": "Inschrijven op de wachtlijst",

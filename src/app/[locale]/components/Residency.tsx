@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Container } from "./Layout";
+import { Section } from "./Section";
+import { hairlineGrid } from "./styles";
 
 function LockIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -104,41 +105,23 @@ const residencyIcons = {
   subprocessors: ShieldCheckIcon,
 };
 
+/** Where the data lives, as Branchscope's security cards: a hairline grid, an icon, a title and a line each. */
 export function Residency() {
   const t = useTranslations("residency");
   return (
-    <section id="residency" className="bg-gray-900 py-20 sm:py-32">
-      <Container>
-        <div>
-          <p className="text-sm font-semibold text-brand-300">{t("eyebrow")}</p>
-          <h2 className="mt-3 text-3xl font-medium tracking-tight text-white">
-            {t("headline")}
-          </h2>
-          <p className="mt-4 text-lg text-gray-400">{t("subhead")}</p>
-        </div>
-        <ul
-          role="list"
-          className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5"
-        >
-          {residencyKeys.map((key) => {
-            const Icon = residencyIcons[key];
-            return (
-              <li
-                key={key}
-                className="flex flex-col items-center text-center p-8"
-              >
-                <Icon className="h-20 w-20 text-brand-300" />
-                <h3 className="mt-6 text-base font-semibold text-white">
-                  {t(`items.${key}.name`)}
-                </h3>
-                <p className="mt-2 text-sm text-gray-400">
-                  {t(`items.${key}.description`)}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
-      </Container>
-    </section>
+    <Section id="residency" eyebrow={t("eyebrow")} title={t("headline")} lead={t("subhead")}>
+      <ul role="list" className={`${hairlineGrid} sm:grid-cols-2 lg:grid-cols-5`}>
+        {residencyKeys.map((key) => {
+          const Icon = residencyIcons[key];
+          return (
+            <li key={key} className="bg-page p-6">
+              <Icon className="size-5 text-muted-foreground" aria-hidden="true" />
+              <h3 className="mt-4 text-[15px] font-medium tracking-tight text-foreground">{t(`items.${key}.name`)}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(`items.${key}.description`)}</p>
+            </li>
+          );
+        })}
+      </ul>
+    </Section>
   );
 }
