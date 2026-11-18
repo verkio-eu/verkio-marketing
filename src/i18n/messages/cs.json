@@ -306,12 +306,12 @@
     },
     "items": {
       "wiki": {
-        "date": "July 2026",
+        "date": "Červenec 2026",
         "name": "Interní wiki",
         "description": "Vyhledatelné, verzované prostory pro runbooky, rozhodnutí a institucionální znalosti, které si tým píše sám pro sebe."
       },
       "messaging": {
-        "date": "July 2026",
+        "date": "Červenec 2026",
         "name": "Interní komunikace",
         "description": "Kanály, soukromé zprávy a vlákna pro týmovou komunikaci — prohledatelné, vláknové, integrované do stejné sady jako vaše pošta a dokumenty."
       },
@@ -331,7 +331,7 @@
         "description": "Import pošty, kalendáře, kontaktů a souborů Drive nebo OneDrive jedním kliknutím. Se statusem, opakováním a obdobím paralelního přechodu."
       },
       "ssoScim": {
-        "date": "June 2026",
+        "date": "Červen 2026",
         "name": "SCIM and OIDC sign-on",
         "description": "RFC 7644 SCIM 2.0 endpoints — Okta / Entra ID / JumpCloud / OneLogin auto-provision Users + Groups via push, instead of waiting for first sign-in. OIDC sign-on as an alternative to SAML for IdPs that prefer it (Auth0, Okta-OIDC, Entra-OIDC, Google Workspace OIDC, Authentik). PATCH parser handles the documented per-IdP payload variations. Owner-only configuration."
       },
@@ -342,7 +342,7 @@
         "note": "S výhradou přiměřeného použití"
       },
       "schedule": {
-        "date": "Q1 2027",
+        "date": "Červen 2026",
         "name": "Verkio Schedule",
         "description": "Veřejné rezervační odkazy z vašeho kalendáře. Jako Calendly, ale v EU, bez sledování a integrované do balíčku."
       },
@@ -377,7 +377,7 @@
         "description": "Pohled týmové schránky pro sdílené schránky: přiřazujte konverzace spolupracovníkům, nastavujte stav (otevřené / čekající / zavřené), zanechávejte interní poznámky viditelné jen pro tým. Stejný stav je vystaven jako standardní IMAP klíčová slova — viditelné v Apple Mail / Thunderbird / K-9. Sledování příchozích zpráv v reálném čase; automatické znovuotevírání uzavřených vláken při odpovědi zákazníka."
       },
       "sendLaterSnooze": {
-        "date": "Q3 2027",
+        "date": "Květen 2026",
         "name": "Odeslat později, odložit, vrátit odeslání",
         "description": "Naplánujte zprávu na zítra v 9. Odložte vlákno do pátku. 30sekundový čas na stažení odeslání."
       },
@@ -432,78 +432,78 @@
         "description": "Osobní a týmově sdílené adresáře s přístupem CardDAV z libovolného klienta odpovídajícího standardům. Kontakty se automaticky doplňují z pošty a kalendářových pozvánek — žádné ruční zadávání, žádné uvíznutí v platformě."
       },
       "pwaInstall": {
-        "date": "Q3 2027",
+        "date": "Květen 2026",
         "name": "Instalovatelná webová aplikace (PWA)",
         "description": "Nainstalujte si Verkio na domovskou obrazovku telefonu nebo počítače. Offline obal pro schránku, push notifikace a pocit skutečné aplikace — bez nativního obchodu s aplikacemi mezi vámi a námi."
       },
       "gdprPortability": {
-        "date": "Q3 2027",
+        "date": "Červen 2026",
         "name": "Export přenositelnosti podle článku 20 GDPR",
         "description": "Jednokliknutý export celého pracovního prostoru v interoperabilních otevřených formátech — pošta jako standardní mbox, kalendáře jako ICS, kontakty jako vCard, soubory v původních formátech. Vezměte si je k libovolnému jinému poskytovateli. Žádné uvíznutí, nikdy."
       },
       "pgpSmime": {
-        "date": "Q4 2027",
+        "date": "Červen 2026",
         "name": "End-to-end šifrovaná pošta (PGP a S/MIME)",
         "description": "OpenPGP a S/MIME ve webové poště se standardními hlavičkami, takže šifrovaná pošta funguje bez problémů mezi schránkami Verkio a libovolným jiným klientem s podporou PGP nebo S/MIME. Klíče máte pod kontrolou vy, nikdy nejsou v úschově."
       },
       "notifications": {
-        "date": "May 2026",
+        "date": "Květen 2026",
         "name": "Notifications & web push",
         "description": "Bell icon, in-app inbox, and browser push for the moments that matter — new mail, calendar invites, shared mentions, file shares. Per-channel preferences; nothing leaves your control plane."
       },
       "discountCodes": {
-        "date": "May 2026",
+        "date": "Květen 2026",
         "name": "Discount codes",
         "description": "Apply a code at signup or mid-subscription. Percent, flat-amount, or free-month comp; per-customer redemption limits; restrict to specific plans or billing periods. Pricing transparency on every invoice."
       },
       "universalSearch": {
-        "date": "June 2026",
+        "date": "Červen 2026",
         "name": "Universal search",
         "description": "One input in the top bar searches Email, Calendar, Contacts, Files, Wikis, and Messages. Grouped results, keyboard-first, sharable URLs. Press / from any page to focus; everything in one place."
       },
       "tier2Encryption": {
-        "date": "June 2026",
+        "date": "Červen 2026",
         "name": "Customer-held-key encryption at rest (opt-in)",
         "description": "Optional per-mailbox upgrade: Verkio configures Stalwart to encrypt every incoming message to YOUR PGP public key before writing to disk. Your private key stays in your mail client (Thunderbird / Apple Mail / K-9 / Outlook+PGP). Verkio physically cannot read those messages at rest. Trades web inbox + search + push previews for the strongest at-rest posture. Free on every plan — no Microsoft/Google-style upsell. Default Verkio-managed-keys posture (every account, every plan) is unchanged."
       },
       "samlSso": {
-        "date": "June 2026",
+        "date": "Červen 2026",
         "name": "SAML / SSO",
         "description": "Federated sign-in via Okta, Azure AD, Google Workspace, or any SAML 2.0 IdP. Auto-creates Verkio users on first sign-in (JIT provisioning); group/role claims map to org roles and re-evaluate on every sign-in. SP metadata URL exposed in-app for one-click IdP setup. Owner-only configuration."
       },
       "signInWithVerkio": {
-        "date": "TBD — developer demand-led",
+        "date": "Červen 2026",
         "name": "Sign in with Verkio",
         "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Nástěnky",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Vestavěné Kanban nástěnky — plánujte a sledujte práci bez opuštění Verkia. Vlastní sloupce, typy karet, řešitelé, sledující a úplná historie aktivit."
       },
       "forms": {
         "name": "Formuláře",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Vlastní formuláře, které směrují každé odeslání do schránky, složky, wiki, nástěnky nebo webhooku — s ochranou proti spamu a souhlasem GDPR."
       },
       "crm": {
         "name": "CRM",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Odlehčené CRM nad vašimi kontakty: pipeline, obchody, vážená predikce a poznámky — plně hostováno v EU."
       },
       "autoTranslate": {
         "name": "Automatický překlad",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Okamžitý překlad příchozí i odchozí pošty do jazyků EU — hostováno v EU, bez Googlu či DeepL, zdarma v každém tarifu."
       },
       "transparencyLog": {
         "name": "Protokol transparentnosti",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Veřejný, kryptograficky ověřitelný protokol změn dílčích zpracovatelů, incidentů a aktualizací infrastruktury."
       },
       "dsrPortal": {
         "name": "Portál žádostí subjektů údajů",
-        "date": "June 2026",
+        "date": "Červen 2026",
         "description": "Samoobslužný portál GDPR pro žádosti vašich koncových uživatelů dle článků 15–21, se zpracováním pověřencem pro ochranu osobních údajů v zákonné lhůtě."
       }
     }
@@ -884,7 +884,7 @@
           "Šifrování AES-256-GCM na soubor — každý soubor, každý tarif, bez příplatku.",
           "Datové šifrovací klíče obalené Vault Transit na infrastruktuře se sídlem v EU.",
           "Úložiště na EU-resident object storage — žádný americký bucket nedrží tvoje data.",
-          "Šifrování klíčem drženým zákazníkem od června 2026 — ani Verkio to nepřečte."
+          "Volitelné šifrování pošty klíčem drženým zákazníkem — ani Verkio ji nepřečte."
         ]
       },
       "uploads": {
@@ -1442,7 +1442,7 @@
       "items": [
         {
           "name": "Poštovní služba se šifrováním end-to-end jako Proton nebo Tuta.",
-          "body": "Výchozí šifrování v klidu používá klíče spravované Verkiem v EU — silné, ale Verkio technicky může číst vaši poštu. Volitelné šifrování s klíči v rukou zákazníka přichází v červnu 2026, ale za cenu webové schránky, fulltextového vyhledávání a push náhledů. Pokud je pravé E2EE pro každou zprávu vaším tvrdým požadavkem, ony produkty vám sednou lépe."
+          "body": "Výchozí šifrování v klidu používá klíče spravované Verkiem v EU — silné, ale Verkio technicky může číst vaši poštu. Volitelné šifrování s klíči v rukou zákazníka je k dispozici, ale za cenu webové schránky, fulltextového vyhledávání a push náhledů. Pokud je pravé E2EE pro každou zprávu vaším tvrdým požadavkem, ony produkty vám sednou lépe."
         },
         {
           "name": "Balík 50 aplikací jako Zoho nebo Workspace.",
