@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Juni 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Boards",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "Een in de EU gevestigde identity provider voor het open web. Standaard OIDC, geen cross-site profilering, jij hebt de toestemming. Gepland — gedreven door vraag van ontwikkelaars.",
-    "eyebrow": "Sign in with Verkio · Binnenkort",
+    "metaDescription": "Een in de EU gevestigde identity provider voor het open web. Standaard OIDC, geen cross-site profilering, jij hebt de toestemming. Voor apps met een server-side backend.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Een identity provider die de mensen die hem gebruiken respecteert.",
-    "body": "Sign in with Verkio is een standaard OIDC-knop die elke derde partij kan integreren — je Verkio-account wordt je identiteit voor het open web. In de EU gevestigd, privacyrespecterend, geen cross-site profilering. Gepland, gedreven door vraag van ontwikkelaars: gratis voor eindgebruikers, gratis voor ontwikkelaars in v1. Laat ons weten dat je het wil en we bouwen het eerder.",
-    "cta": "Laat ons weten dat je het wil",
+    "body": "Sign in with Verkio is een standaard OIDC-knop die elke site met een server-side backend kan integreren — je Verkio-account wordt je identiteit voor het open web. In de EU gevestigd, privacyrespecterend, geen cross-site profilering. Gratis voor eindgebruikers, gratis voor ontwikkelaars in v1.",
+    "cta": "Op de wachtlijst",
     "backLink": "Terug naar productoverzicht",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Vandaag betekent 'sign in with…' Google, Apple of Microsoft — allemaal hoofdkantoor in de VS, allemaal lezen ze elke site mee waar je op inlogt. Sign in with Verkio geeft het open web een in de EU gevestigd alternatief. Aanmeldingen blijven binnen de EU-infrastructuur van Verkio. Geen cross-site profilering. Geen US CLOUD Act-oppervlak.",
         "bullets": [
           "In de EU gevestigde aanmeldflow op Verkio-infrastructuur.",
-          "Geen cross-site tracking — sites krijgen geen profiel dat ze kunnen correleren.",
+          "Sites krijgen je naam, gebruikersnaam en e-mailadres — nooit je mail, bestanden of agenda.",
           "Buiten de jurisdictie van de US CLOUD Act.",
           "Eén identiteit voor de apps die je gebruikt; per site intrekbaar wanneer je wil."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standaard OIDC",
         "headline": "Gewoon OIDC. Werkt met wat je al hebt.",
-        "body": "Sign in with Verkio zal standaard OpenID Connect spreken — hetzelfde protocol dat je bestaande identity broker (Auth0, Clerk, Keycloak, NextAuth) al ondersteunt. Het toevoegen zou een configuratiewijziging moeten zijn, geen code-herschrijving.",
+        "body": "Sign in with Verkio spreekt standaard OpenID Connect — hetzelfde protocol dat je bestaande identity broker (Auth0, Clerk, Keycloak, NextAuth) al ondersteunt. Het toevoegen is een configuratiewijziging, geen code-herschrijving.",
         "bullets": [
           "Standaard OpenID Connect (OIDC) — discovery, JWKS, het gebruikelijke.",
-          "Werkt met elke OIDC-bewuste bibliotheek — geen Verkio-SDK vereist.",
+          "Werkt met elke server-side OIDC-bibliotheek — geen Verkio-SDK vereist.",
           "Voegt zich toe aan je bestaande IdP-setup naast Sign in with Google of Apple.",
           "Gratis voor eindgebruikers; gratis voor ontwikkelaars in v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Jij hebt de toestemming",
         "headline": "Per site, intrekbaar, transparant.",
-        "body": "Wanneer een site om aanmelding vraagt, zie je precies welke data ze vragen. Je kan delen weigeren die je niet wil delen. Elke site waar je ooit op hebt ingelogd verschijnt in een dashboard met verbonden apps — trek elke daarvan in met één klik. Geen stille herauthenticatie, geen scope creep.",
+        "body": "De eerste keer dat een site je vraagt om in te loggen, zie je precies welke data hij vraagt, en keur je het goed of af. Elke site die je hebt goedgekeurd staat op je Verkio-accountpagina — trek daar elke ervan in. Een site die meer data wil, moet het je opnieuw vragen.",
         "bullets": [
-          "Per-site toestemmingsscherm — granulair, geen alles-of-niets.",
-          "Dashboard met verbonden apps die elke site lijst waarop je hebt ingelogd.",
-          "Eén-klik intrekken, op elk moment — de site verliest direct toegang.",
-          "Geen stille herauthenticatie; scope-wijzigingen vereisen verse toestemming."
+          "Een toestemmingsscherm voor elke nieuwe site, dat precies laat zien wat hij krijgt.",
+          "Elke site die je hebt goedgekeurd, op je accountpagina.",
+          "Trek de toegang van elke site in, op elk moment.",
+          "Een site die om meer data vraagt, heeft opnieuw je toestemming nodig."
         ]
       }
     }
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Binnenkort",
+        "eyebrow": "Sign in with Verkio",
         "headline": "Een EU-gehoste identiteitsprovider voor je gebruikers.",
-        "body": "Een standaard OIDC-knop die je in elke derde-partijsite kunt integreren. EU-gehoste inlogflow, geen cross-site profiling, granulair toestemming per site. Gepland, ontwikkelaarsvraag-gedreven — gratis voor eindgebruikers, gratis voor ontwikkelaars in v1. Wil je het voor je app? Laat het ons weten.",
+        "body": "Een standaard OIDC-knop voor elke site met een server-side backend. EU-gehoste inlogflow, geen cross-site profiling, toestemming per site. Registreer je app in Verkio en krijg een client ID, secret en discovery-URL. Gratis voor eindgebruikers, gratis voor ontwikkelaars in v1.",
         "bullets": [
           "Standaard OpenID Connect (OIDC) — geen Verkio-SDK vereist.",
           "Werkt met elke OIDC-bewuste identiteitsbroker (Auth0, Clerk, Keycloak, NextAuth).",
-          "Granulair toestemming per site plus dashboard voor verbonden apps voor eindgebruikers.",
-          "Gratis in v1 — laat het ons weten en we geven het prioriteit."
+          "Toestemming per site voor je gebruikers, in te trekken op hun accountpagina.",
+          "Roteer je client secret of trek je app zelf in. Gratis in v1."
         ]
       }
     }
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Inloggen met Verkio",
-          "description": "Het in de EU gevestigde alternatief voor Inloggen met Google of Apple. Binnenkort beschikbaar."
+          "description": "Het in de EU gevestigde alternatief voor Inloggen met Google of Apple."
         }
       }
     }

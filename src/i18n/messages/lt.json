@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Birželis 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Lentos",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "ES rezidentas tapatybės teikėjas atvirajam žiniatinkliui. Standartinis OIDC, jokio profiliavimo tarp svetainių, sutikimas priklauso jums. Planuojama — paremta kūrėjų paklausa.",
-    "eyebrow": "Sign in with Verkio · Netrukus",
+    "metaDescription": "ES rezidentas tapatybės teikėjas atvirajam žiniatinkliui. Standartinis OIDC, jokio profiliavimo tarp svetainių, sutikimas priklauso jums. Programoms, turinčioms serverinę dalį.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Tapatybės teikėjas, kuris gerbia žmones, kurie jį naudoja.",
-    "body": "Sign in with Verkio yra standartinis OIDC mygtukas, kurį gali integruoti bet kokia trečiosios šalies svetainė — jūsų Verkio paskyra tampa jūsų tapatybe atvirajam žiniatinkliui. ES rezidentas, gerbiantis privatumą, jokio profiliavimo tarp svetainių. Planuojama, paremta kūrėjų paklausa: nemokama galutiniams vartotojams, nemokama kūrėjams v1. Pasakykite mums, kad to norite, ir mes sukursime greičiau.",
-    "cta": "Pasakykite mums, kad to norite",
+    "body": "Sign in with Verkio yra standartinis OIDC mygtukas, kurį gali integruoti bet kuri serverinę dalį turinti svetainė — jūsų Verkio paskyra tampa jūsų tapatybe atvirajam žiniatinkliui. ES rezidentas, gerbiantis privatumą, jokio profiliavimo tarp svetainių. Nemokama galutiniams vartotojams, nemokama kūrėjams v1.",
+    "cta": "Užsiregistruoti",
     "backLink": "Atgal į produkto apžvalgą",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Šiandien 'sign in with…' reiškia Google, Apple arba Microsoft — visi su būstine JAV, visi skaito kiekvieną svetainę, kurioje prisijungiate. Sign in with Verkio suteikia atvirajam žiniatinkliui ES rezidentą alternatyvą. Prisijungimai išlieka Verkio ES infrastruktūroje. Jokio profiliavimo tarp svetainių. Jokio US CLOUD Act paviršiaus.",
         "bullets": [
           "ES rezidentas prisijungimo srautas Verkio infrastruktūroje.",
-          "Jokio sekimo tarp svetainių — svetainės negauna profilio, kurį galėtų koreliuoti.",
+          "Svetainės gauna jūsų vardą, naudotojo vardą ir el. pašto adresą — niekada jūsų laiškų, failų ar kalendoriaus.",
           "Už US CLOUD Act jurisdikcijos ribų.",
           "Viena tapatybė programėlėms, kurias naudojate; atšaukiama per svetainę bet kada."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standartinis OIDC",
         "headline": "Tik OIDC. Veikia su tuo, ką jau turite.",
-        "body": "Sign in with Verkio kalbės standartinį OpenID Connect — tą patį protokolą, kurį jūsų esamas tapatybės brokeris (Auth0, Clerk, Keycloak, NextAuth) jau palaiko. Jo pridėjimas turėtų būti konfigūracijos pakeitimas, o ne kodo perrašymas.",
+        "body": "Sign in with Verkio kalba standartiniu OpenID Connect — tuo pačiu protokolu, kurį jūsų esamas tapatybės brokeris (Auth0, Clerk, Keycloak, NextAuth) jau palaiko. Jo pridėjimas yra konfigūracijos pakeitimas, o ne kodo perrašymas.",
         "bullets": [
           "Standartinis OpenID Connect (OIDC) — discovery, JWKS, įprasta.",
-          "Veikia su bet kokia OIDC suprantančia biblioteka — Verkio SDK nereikalingas.",
+          "Veikia su bet kokia serverio pusės OIDC biblioteka — Verkio SDK nereikalingas.",
           "Pridedamas prie esamos IdP konfigūracijos šalia Sign in with Google ar Apple.",
           "Nemokama galutiniams vartotojams; nemokama kūrėjams v1."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Sutikimas priklauso jums",
         "headline": "Per svetainę, atšaukiamas, skaidrus.",
-        "body": "Kai svetainė prašys prisijungimo, matysite tiksliai, kokių duomenų prašo. Galite atsisakyti dalių, kurių nenorite dalintis. Kiekviena svetainė, kurioje kada nors prisijungėte, pasirodys prijungtų programėlių skydelyje — atšaukite bet kurią vienu paspaudimu. Jokio tylaus pakartotinio autentifikavimo, jokio scope creep.",
+        "body": "Kai svetainė pirmą kartą paprašo jūsų prisijungti, matote tiksliai, kokių duomenų ji prašo, ir patvirtinate arba atsisakote. Kiekviena patvirtinta svetainė nurodyta jūsų Verkio paskyros puslapyje — ten atšaukite bet kurią. Svetainė, norinti daugiau duomenų, turi jūsų paklausti iš naujo.",
         "bullets": [
-          "Per-svetainė sutikimo ekranas — detalus, jokio viskas-arba-nieko.",
-          "Prijungtų programėlių skydelis, kuriame išvardintos visos svetainės, kuriose prisijungėte.",
-          "Vieno paspaudimo atšaukimas, bet kada — svetainė nedelsiant praranda prieigą.",
-          "Jokio tylaus pakartotinio autentifikavimo; scope pakeitimai reikalauja naujo sutikimo."
+          "Sutikimo ekranas kiekvienai naujai svetainei, rodantis tiksliai, ką ji gauna.",
+          "Kiekviena patvirtinta svetainė, nurodyta jūsų paskyros puslapyje.",
+          "Atšaukite bet kurios svetainės prieigą bet kada.",
+          "Svetainei, prašančiai daugiau duomenų, vėl reikia jūsų sutikimo."
         ]
       }
     }
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Netrukus",
+        "eyebrow": "Sign in with Verkio",
         "headline": "ES talpinamas tapatybės teikėjas jūsų vartotojams.",
-        "body": "Standartinis OIDC mygtukas, kurį galite integruoti į bet kurį trečiosios šalies puslapį. ES talpinamas prisijungimo srautas, jokios cross-site profiliavimo, smulkus sutikimas pagal puslapį. Planuojama, kūrėjų paklausos vedama — nemokama galutiniams vartotojams, nemokama kūrėjams v1. Norite to savo programai? Pasakykite mums.",
+        "body": "Standartinis OIDC mygtukas bet kuriai svetainei, turinčiai serverinę dalį. ES talpinamas prisijungimo srautas, jokio cross-site profiliavimo, sutikimas pagal svetainę. Užregistruokite savo programą Verkio ir gaukite client ID, secret ir discovery URL. Nemokama galutiniams vartotojams, nemokama kūrėjams v1.",
         "bullets": [
           "Standartinis OpenID Connect (OIDC) — jokio Verkio SDK reikalavimo.",
           "Veikia su bet kuriuo OIDC suderintu tapatybės brokeriu (Auth0, Clerk, Keycloak, NextAuth).",
-          "Smulkus sutikimas pagal puslapį plius prijungtų programų skydelis galutiniams vartotojams.",
-          "Nemokama v1 — pasakykite mums, kad norite, ir paskirsime prioritetą."
+          "Sutikimas pagal svetainę jūsų vartotojams, atšaukiamas jų paskyros puslapyje.",
+          "Patys pakeiskite client secret arba atšaukite programą. Nemokama v1."
         ]
       }
     }
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Prisijungti su Verkio",
-          "description": "ES rezidento alternatyva prisijungimui su Google ar Apple. Netrukus."
+          "description": "ES rezidento alternatyva prisijungimui su Google ar Apple."
         }
       }
     }

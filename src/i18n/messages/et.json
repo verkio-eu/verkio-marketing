@@ -474,7 +474,7 @@
       "signInWithVerkio": {
         "date": "Juuni 2026",
         "name": "Sign in with Verkio",
-        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any third-party site can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site granular consent + a connected-apps dashboard where you revoke any third-party with one click. Free for end users; free for developers in v1."
+        "description": "Privacy-respecting alternative to “Sign in with Google / Apple / Microsoft”. A standard OIDC button any site with a server-side backend can integrate — your Verkio account becomes your identity for the open web. EU-resident sign-in flow; no cross-site profiling. Per-site consent, with every site you've approved listed on your account page, where you can revoke it. Free for end users; free for developers in v1."
       },
       "boards": {
         "name": "Tahvlid",
@@ -1107,11 +1107,11 @@
   },
   "productSignIn": {
     "metaTitle": "Sign in with Verkio — Verkio",
-    "metaDescription": "EL-i residendist identiteediteenuse pakkuja avatud veebi jaoks. Standardne OIDC, mingit cross-site profileerimist, sina omad nõusolekut. Plaanitud — arendajate nõudluse juhitud.",
-    "eyebrow": "Sign in with Verkio · Peagi",
+    "metaDescription": "EL-i residendist identiteediteenuse pakkuja avatud veebi jaoks. Standardne OIDC, mingit cross-site profileerimist, sina omad nõusolekut. Serveripoolse taustasüsteemiga rakendustele.",
+    "eyebrow": "Sign in with Verkio",
     "headline": "Identiteediteenuse pakkuja, kes austab inimesi, kes seda kasutavad.",
-    "body": "Sign in with Verkio on standardne OIDC nupp, mida iga kolmanda osapoole sait saab integreerida — sinu Verkio konto saab sinu identiteediks avatud veebi jaoks. EL-i resident, privaatsust austav, mingit cross-site profileerimist. Plaanitud, arendajate nõudluse juhitud: tasuta lõppkasutajatele, tasuta arendajatele v1-s. Ütle meile, et tahad seda, ja ehitame selle varem.",
-    "cta": "Ütle meile, et tahad seda",
+    "body": "Sign in with Verkio on standardne OIDC nupp, mida iga serveripoolse taustasüsteemiga sait saab integreerida — sinu Verkio konto saab sinu identiteediks avatud veebi jaoks. EL-i resident, privaatsust austav, mingit cross-site profileerimist. Tasuta lõppkasutajatele, tasuta arendajatele v1-s.",
+    "cta": "Liitu ootejärjekorraga",
     "backLink": "Tagasi tooteülevaate juurde",
     "sections": {
       "euIdentity": {
@@ -1120,7 +1120,7 @@
         "body": "Täna 'sign in with…' tähendab Google'it, Apple'it või Microsofti — kõik USA-s peakortega, kõik loevad iga saiti, kuhu sa sisse logid. Sign in with Verkio annab avatud veebile EL-i residendist alternatiivi. Sisselogimised jäävad Verkio EL-i infrastruktuuri sisse. Mingit cross-site profileerimist. Mingit US CLOUD Act pinda.",
         "bullets": [
           "EL-i residendist sisselogimisvoog Verkio infrastruktuuril.",
-          "Mingit cross-site jälgimist — saidid ei saa profiili, mida nad saaksid korreleerida.",
+          "Saidid saavad sinu nime, kasutajanime ja e-posti aadressi — mitte kunagi sinu kirju, faile ega kalendrit.",
           "Väljaspool US CLOUD Acti jurisdiktsiooni.",
           "Üks identiteet rakenduste jaoks, mida sa kasutad; iga sait eraldi tühistatav, millal sa tahad."
         ]
@@ -1128,10 +1128,10 @@
       "openStandard": {
         "eyebrow": "Standardne OIDC",
         "headline": "Lihtsalt OIDC. Töötab sellega, mis sul juba on.",
-        "body": "Sign in with Verkio räägib standardset OpenID Connecti — sama protokolli, mida sinu olemasolev identiteedimaakler (Auth0, Clerk, Keycloak, NextAuth) juba toetab. Selle lisamine peaks olema konfiguratsioonimuudatus, mitte koodi ümberkirjutamine.",
+        "body": "Sign in with Verkio räägib standardset OpenID Connecti — sama protokolli, mida sinu olemasolev identiteedimaakler (Auth0, Clerk, Keycloak, NextAuth) juba toetab. Selle lisamine on konfiguratsioonimuudatus, mitte koodi ümberkirjutamine.",
         "bullets": [
           "Standardne OpenID Connect (OIDC) — discovery, JWKS, tavapärane.",
-          "Töötab iga OIDC-teadliku raamatukoguga — Verkio SDK pole vajalik.",
+          "Töötab iga serveripoolse OIDC teegiga — Verkio SDK pole vajalik.",
           "Lisandub sinu olemasolevasse IdP-seadistusse Sign in with Google'i või Apple'i kõrvale.",
           "Tasuta lõppkasutajatele; tasuta arendajatele v1-s."
         ]
@@ -1139,12 +1139,12 @@
       "consent": {
         "eyebrow": "Sina omad nõusolekut",
         "headline": "Saidi kohta, tühistatav, läbipaistev.",
-        "body": "Kui sait küsib sisselogimist, näed täpselt, milliseid andmeid nad küsivad. Saad keelduda osadest, mida sa jagada ei taha. Iga sait, kuhu oled kunagi sisse loginud, ilmub ühendatud rakenduste töölauale — tühista ükskõik milline ühe klõpsuga. Mingit vaikset uuesti autentimist, mingit scope creep'i.",
+        "body": "Kui sait sinult esimest korda sisselogimist küsib, näed täpselt, milliseid andmeid ta küsib, ning kinnitad või keeldud. Iga sait, mille oled kinnitanud, on loetletud sinu Verkio konto lehel — tühista seal ükskõik milline. Sait, mis tahab rohkem andmeid, peab sinult uuesti küsima.",
         "bullets": [
-          "Saidi kohta nõusolekuekraan — granulaarne, ei kõik-või-mitte-midagi.",
-          "Ühendatud rakenduste töölaud, mis loetleb iga saidi, kuhu oled sisse loginud.",
-          "Ühe klõpsuga tühistamine, igal ajal — sait kaotab juurdepääsu kohe.",
-          "Mingit vaikset uuesti autentimist; scope-muudatused nõuavad värsket nõusolekut."
+          "Nõusolekuekraan iga uue saidi jaoks, mis näitab täpselt, mida see saab.",
+          "Iga sait, mille oled kinnitanud, sinu konto lehel loetletud.",
+          "Tühista iga saidi juurdepääs igal ajal.",
+          "Sait, mis küsib rohkem andmeid, vajab uuesti sinu nõusolekut."
         ]
       }
     }
@@ -1384,14 +1384,14 @@
         ]
       },
       "futureSignIn": {
-        "eyebrow": "Sign in with Verkio · Peagi",
+        "eyebrow": "Sign in with Verkio",
         "headline": "EL-i residentsusega identiteediteenuse pakkuja sinu kasutajatele.",
-        "body": "Standardne OIDC nupp, mida saad integreerida ükskõik millisele kolmanda osapoole saidile. EL-i residentsusega sisselogimise voog, ei mingit cross-site profileerimist, granulaarne nõusolek saidi kohta. Plaanitud, arendajate nõudluse juhitud — tasuta lõppkasutajatele, tasuta arendajatele v1-s. Tahad seda oma rakenduse jaoks? Ütle meile.",
+        "body": "Standardne OIDC nupp igale serveripoolse taustasüsteemiga saidile. EL-i residentsusega sisselogimise voog, ei mingit cross-site profileerimist, nõusolek saidi kohta. Registreeri oma rakendus Verkios ja saa client ID, secret ja discovery URL. Tasuta lõppkasutajatele, tasuta arendajatele v1-s.",
         "bullets": [
           "Standardne OpenID Connect (OIDC) — ei mingit Verkio SDK-d ei nõuta.",
           "Töötab ükskõik millise OIDC-teadliku identiteedimaakleriga (Auth0, Clerk, Keycloak, NextAuth).",
-          "Granulaarne nõusolek saidi kohta pluss ühendatud rakenduste töölaud lõppkasutajatele.",
-          "Tasuta v1-s — ütle meile, et tahad seda, ja me prioriseerime."
+          "Nõusolek saidi kohta sinu kasutajatele, tühistatav nende konto lehelt.",
+          "Vaheta oma client secret või tühista rakendus ise. Tasuta v1-s."
         ]
       }
     }
@@ -1582,7 +1582,7 @@
         },
         "signIn": {
           "name": "Logi sisse Verkioga",
-          "description": "EL-i residentsiline alternatiiv Google'i või Apple'iga sisselogimisele. Peagi saadaval."
+          "description": "EL-i residentsiline alternatiiv Google'i või Apple'iga sisselogimisele."
         }
       }
     }
