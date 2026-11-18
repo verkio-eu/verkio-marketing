@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Julkaistaan heinäkuussa 2026",
+    "eyebrow": "Julkaistaan helmikuussa 2027",
     "headline": "Työpaketti ilman melua.",
     "body1": "Sähköposti, kalenteri, yhteystiedot, tiedostot, wikit ja viestit. Yksi paketti todelliseen työhön, ilman täytettä tai melua.",
     "body2": "Rakennettu avoimille standardeille. Hostattu Euroopassa. Sinun lähteä, milloin tahansa.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Milloin Verkio julkaistaan?",
-        "answer": "Heinäkuussa 2026. Liity jonotuslistalle, niin otamme yhteyttä, kun tilit avataan."
+        "answer": "Helmikuussa 2027. Liity jonotuslistalle, niin otamme yhteyttä, kun tilit avataan."
       },
       "migration": {
         "question": "Voinko siirtyä Google Workspacesta tai Microsoft 365:stä?",
@@ -259,7 +259,9 @@
     "terms": "Käyttöehdot",
     "subprocessors": "Alikäsittelijät",
     "isAndIsnt": "Mitä Verkio on ja mitä ei",
-    "allRightsReserved": "Kaikki oikeudet pidätetään"
+    "allRightsReserved": "Kaikki oikeudet pidätetään",
+    "themeLight": "Vaihda vaaleaan tilaan",
+    "themeDark": "Vaihda tummaan tilaan"
   },
   "waitlist": {
     "cardTitle": "Liity jonotuslistalle",

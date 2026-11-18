@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Lanzamiento en julio de 2026",
+    "eyebrow": "Lanzamiento en febrero de 2027",
     "headline": "La suite de trabajo sin ruido.",
     "body1": "Correo, calendario, contactos, archivos, wikis y mensajería. Una sola suite para el trabajo real, sin sobrecarga ni ruido.",
     "body2": "Construida sobre estándares abiertos. Alojada en Europa. Tuya para irte, cuando quieras.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "¿Cuándo se lanza Verkio?",
-        "answer": "Julio de 2026. Únete a la lista de espera y nos pondremos en contacto cuando las cuentas se abran."
+        "answer": "Febrero de 2027. Únete a la lista de espera y nos pondremos en contacto cuando las cuentas se abran."
       },
       "migration": {
         "question": "¿Puedo migrar desde Google Workspace o Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Términos y condiciones",
     "subprocessors": "Subencargados",
     "isAndIsnt": "Qué es Verkio y qué no es",
-    "allRightsReserved": "Todos los derechos reservados"
+    "allRightsReserved": "Todos los derechos reservados",
+    "themeLight": "Cambiar al modo claro",
+    "themeDark": "Cambiar al modo oscuro"
   },
   "waitlist": {
     "cardTitle": "Únete a la lista de espera",

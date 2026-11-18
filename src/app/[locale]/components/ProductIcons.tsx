@@ -113,3 +113,11 @@ export function ChevronDown(props: IconProps) {
     </svg>
   );
 }
+
+export function ArrowRight(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...strokeProps({ ...props, strokeWidth: 2 })}>
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  );
+}

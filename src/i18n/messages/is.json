@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Kemur út í júlí 2026",
+    "eyebrow": "Kemur út í febrúar 2027",
     "headline": "Vinnusvíta án hávaða.",
     "body1": "Póstur, dagatal, tengiliðir, skrár, wikiar og skilaboð. Ein svíta fyrir alvöru vinnu, án þenslu eða hávaða.",
     "body2": "Smíðað á opnum stöðlum. Hýst í Evrópu. Þitt að yfirgefa, hvenær sem er.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Hvenær kemur Verkio út?",
-        "answer": "Í júlí 2026. Skráðu þig á biðlistann og við höfum samband þegar reikningar opna."
+        "answer": "Í febrúar 2027. Skráðu þig á biðlistann og við höfum samband þegar reikningar opna."
       },
       "migration": {
         "question": "Get ég flutt mig frá Google Workspace eða Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Skilmálar",
     "subprocessors": "Undirvinnsluaðilar",
     "isAndIsnt": "Hvað Verkio er og hvað ekki",
-    "allRightsReserved": "Allur réttur áskilinn"
+    "allRightsReserved": "Allur réttur áskilinn",
+    "themeLight": "Skipta í ljóst útlit",
+    "themeDark": "Skipta í dökkt útlit"
   },
   "waitlist": {
     "cardTitle": "Skráðu þig á biðlistann",

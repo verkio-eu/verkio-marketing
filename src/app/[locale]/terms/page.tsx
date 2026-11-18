@@ -3,11 +3,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import {
-  Container,
-  Footer,
-  Header,
-} from "@/app/[locale]/components/Layout";
+import { Footer, Header } from "@/app/[locale]/components/Layout";
+import { eyebrow, h1Page, lead, textLink } from "@/app/[locale]/components/styles";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -44,45 +41,28 @@ function TermsContent() {
   const sections = t.raw("sections") as Section[];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32">
-      <Container>
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold text-brand-600">
-            {t("eyebrow")}
-          </p>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight text-gray-900 leading-tight">
-            {t("headline")}
-          </h1>
-          <p className="mt-4 text-sm text-gray-500">{t("lastUpdated")}</p>
-          <p className="mt-8 text-lg text-gray-600 leading-relaxed">
-            {t("intro")}
-          </p>
-        </div>
+    <section className="mx-auto max-w-2xl px-4 pt-20 pb-24 sm:px-6 lg:pt-28">
+      <p className={eyebrow}>{t("eyebrow")}</p>
+      <h1 className={`mt-4 ${h1Page}`}>{t("headline")}</h1>
+      <p className="mt-3 text-[13px] text-muted-foreground">{t("lastUpdated")}</p>
+      <p className={`mt-6 ${lead}`}>{t("intro")}</p>
 
-        <div className="mt-16 max-w-2xl space-y-12">
-          {sections.map((section, idx) => (
-            <div key={idx}>
-              <h2 className="text-xl font-medium text-gray-900">
-                {section.heading}
-              </h2>
-              <div className="mt-4 space-y-4 text-base text-gray-600 leading-relaxed">
-                {section.body.split("\n\n").map((paragraph, pIdx) => (
-                  <p key={pIdx}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
-          ))}
+      {sections.map((section, idx) => (
+        <div key={idx} className="mt-14">
+          <h2 className="text-xl font-medium text-foreground">{section.heading}</h2>
+          <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-muted-foreground">
+            {section.body.split("\n\n").map((paragraph, pIdx) => (
+              <p key={pIdx}>{paragraph}</p>
+            ))}
+          </div>
         </div>
+      ))}
 
-        <div className="mt-16 max-w-2xl">
-          <Link
-            href="/"
-            className="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-gray-900 transition-colors"
-          >
-            ← {t("backLink")}
-          </Link>
-        </div>
-      </Container>
+      <div className="mt-16">
+        <Link href="/" className={textLink}>
+          ← {t("backLink")}
+        </Link>
+      </div>
     </section>
   );
 }

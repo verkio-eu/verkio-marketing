@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Container } from "./Layout";
-import { productIcons, type ProductIconKey } from "./ProductIcons";
+import { ArrowRight, productIcons, type ProductIconKey } from "./ProductIcons";
+import { eyebrow, h1, iconBox, lead, pill } from "./styles";
 
 const items: { key: ProductIconKey; href: string; comingSoon?: boolean }[] = [
   { key: "mail", href: "/product/mail" },
@@ -14,59 +14,46 @@ const items: { key: ProductIconKey; href: string; comingSoon?: boolean }[] = [
   { key: "signIn", href: "/product/sign-in-with-verkio", comingSoon: true },
 ];
 
+/** Every product, as Branchscope's /product overview: a centred hero, then a card for each. */
 export function ProductIndex() {
   const t = useTranslations("productIndex");
   const tMenu = useTranslations("nav.productMenu");
   return (
-    <section className="py-20 sm:py-28">
-      <Container>
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-gray-900 leading-[1.05]">
-            {t("headline")}
-          </h1>
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            {t("body")}
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 max-w-4xl"
-        >
+    <>
+      <section className="mx-auto max-w-6xl px-4 pt-20 pb-8 text-center sm:px-6 lg:pt-28">
+        <p className={`animate-hero-in motion-reduce:animate-none ${eyebrow}`}>{t("eyebrow")}</p>
+        <h1 className={`animate-hero-in motion-reduce:animate-none mx-auto mt-4 max-w-3xl ${h1}`}>{t("headline")}</h1>
+        <p className={`animate-hero-in motion-reduce:animate-none mx-auto mt-6 max-w-2xl ${lead}`}>{t("body")}</p>
+      </section>
+      <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <ul role="list" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {items.map(({ key, href, comingSoon }) => {
             const Icon = productIcons[key];
             return (
               <li key={key}>
                 <Link
                   href={href}
-                  className="group flex items-start gap-4 rounded-xl border border-gray-200 p-5 transition-colors hover:border-gray-300 hover:bg-gray-50"
+                  className="group flex h-full gap-3 rounded-xl border border-ink/10 bg-ink/[0.02] p-4 transition-colors hover:bg-ink/[0.05]"
                 >
-                  <Icon className="mt-0.5 h-6 w-6 shrink-0 text-brand-600" />
-                  <div className="min-w-0">
-                    <p className="flex items-center gap-2 text-base font-medium text-gray-900">
+                  <span className={`mt-0.5 ${iconBox}`}>
+                    <Icon className="size-4 text-foreground" aria-hidden="true" />
+                  </span>
+                  <span className="grid min-w-0 content-start gap-1">
+                    <span className="flex items-center gap-2 text-[15px] font-medium text-foreground">
                       {tMenu(`${key}.name`)}
-                      {comingSoon && (
-                        <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">
-                          {tMenu("comingSoon")}
-                        </span>
-                      )}
-                    </p>
-                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
-                      {tMenu(`${key}.description`)}
-                    </p>
-                    <p className="mt-3 inline-flex items-center text-sm font-semibold text-brand-600 transition-colors group-hover:text-gray-900">
-                      {t("learnMore")}{" "}
-                      <span aria-hidden="true" className="ml-1">
-                        →
-                      </span>
-                    </p>
-                  </div>
+                      {comingSoon && <span className={pill}>{tMenu("comingSoon")}</span>}
+                    </span>
+                    <span className="text-[13px] leading-relaxed text-muted-foreground">{tMenu(`${key}.description`)}</span>
+                    <span className="mt-2 inline-flex items-center gap-1 text-[13px] font-medium text-primary group-hover:underline">
+                      {t("learnMore")} <ArrowRight className="size-3.5" />
+                    </span>
+                  </span>
                 </Link>
               </li>
             );
           })}
         </ul>
-      </Container>
-    </section>
+      </section>
+    </>
   );
 }

@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Atklāšana 2026. gada jūlijā",
+    "eyebrow": "Atklāšana 2027. gada februārī",
     "headline": "Darba pakete bez trokšņa.",
     "body1": "Pasts, kalendārs, kontakti, faili, wiki un ziņojumi. Viena pakete īstam darbam, bez piepūšanas vai trokšņa.",
     "body2": "Veidots uz atklātajiem standartiem. Mitināts Eiropā. Tavs, lai pamestu, jebkurā brīdī.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Kad Verkio tiek atklāts?",
-        "answer": "2026. gada jūlijā. Pievienojieties gaidīšanas sarakstam, un mēs sazināsimies, kad konti tiks atvērti."
+        "answer": "2027. gada februārī. Pievienojieties gaidīšanas sarakstam, un mēs sazināsimies, kad konti tiks atvērti."
       },
       "migration": {
         "question": "Vai varu migrēt no Google Workspace vai Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Lietošanas noteikumi",
     "subprocessors": "Apakšapstrādātāji",
     "isAndIsnt": "Kas Verkio ir un kas nav",
-    "allRightsReserved": "Visas tiesības aizsargātas"
+    "allRightsReserved": "Visas tiesības aizsargātas",
+    "themeLight": "Pārslēgties uz gaišo režīmu",
+    "themeDark": "Pārslēgties uz tumšo režīmu"
   },
   "waitlist": {
     "cardTitle": "Pievienoties gaidīšanas sarakstam",

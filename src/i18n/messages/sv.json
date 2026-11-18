@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Lanseras i juli 2026",
+    "eyebrow": "Lanseras i februari 2027",
     "headline": "Arbetspaketet utan brus.",
     "body1": "Mail, kalender, kontakter, filer, wikis och meddelanden. Ett paket för det faktiska arbetet, utan svallande eller brus.",
     "body2": "Byggt på öppna standarder. Hostat i Europa. Ditt att lämna, när som helst.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "När lanseras Verkio?",
-        "answer": "I juli 2026. Gå med i väntelistan så hör vi av oss när konton öppnar."
+        "answer": "I februari 2027. Gå med i väntelistan så hör vi av oss när konton öppnar."
       },
       "migration": {
         "question": "Kan jag migrera från Google Workspace eller Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Användarvillkor",
     "subprocessors": "Underbiträden",
     "isAndIsnt": "Vad Verkio är och inte är",
-    "allRightsReserved": "Alla rättigheter förbehållna"
+    "allRightsReserved": "Alla rättigheter förbehållna",
+    "themeLight": "Byt till ljust läge",
+    "themeDark": "Byt till mörkt läge"
   },
   "waitlist": {
     "cardTitle": "Gå med i väntelistan",

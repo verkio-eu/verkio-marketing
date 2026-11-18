@@ -6,6 +6,7 @@ import {
   joinWaitlist,
   type WaitlistErrorKey,
 } from "@/app/actions/waitlist";
+import { inkButton, input, label } from "@/app/[locale]/components/styles";
 
 type FormState =
   | { status: "idle" }
@@ -13,25 +14,9 @@ type FormState =
   | { status: "success" }
   | { status: "error"; errorKey: WaitlistErrorKey };
 
-const inputClasses =
-  "block w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600 disabled:opacity-60 transition-colors";
-
-export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
+export function WaitlistForm() {
   const t = useTranslations("waitlist");
   const [state, setState] = useState<FormState>({ status: "idle" });
-
-  const labelClass = onDark
-    ? "mb-2 block text-sm font-medium text-white"
-    : "mb-2 block text-sm font-medium text-gray-900";
-
-  const buttonClass = onDark
-    ? "inline-flex w-full justify-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
-    : "inline-flex w-full justify-center rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed";
-
-  const successClass = onDark
-    ? "text-sm text-gray-300 text-center"
-    : "text-sm text-gray-700 text-center";
-  const errorClass = onDark ? "text-sm text-red-300" : "text-sm text-red-700";
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -48,7 +33,7 @@ export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
   }
 
   if (state.status === "success") {
-    return <p className={successClass}>{t("successMessage")}</p>;
+    return <p className="text-center text-sm text-muted-foreground">{t("successMessage")}</p>;
   }
 
   return (
@@ -65,7 +50,7 @@ export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
       </div>
 
       <div>
-        <label htmlFor="email" className={labelClass}>
+        <label htmlFor="email" className={label}>
           {t("emailLabel")}
         </label>
         <input
@@ -75,21 +60,15 @@ export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
           required
           autoComplete="email"
           disabled={state.status === "submitting"}
-          className={inputClasses}
+          className={input}
           placeholder={t("emailPlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="company" className={labelClass}>
+        <label htmlFor="company" className={label}>
           {t("companyLabel")}{" "}
-          <span
-            className={
-              onDark
-                ? "text-gray-400 font-normal"
-                : "text-gray-400 font-normal"
-            }
-          >
+          <span className="font-normal text-muted-foreground">
             {t("companyOptional")}
           </span>
         </label>
@@ -100,7 +79,7 @@ export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
           autoComplete="organization"
           disabled={state.status === "submitting"}
           maxLength={255}
-          className={inputClasses}
+          className={input}
           placeholder={t("companyPlaceholder")}
         />
       </div>
@@ -108,13 +87,13 @@ export function WaitlistForm({ onDark = false }: { onDark?: boolean }) {
       <button
         type="submit"
         disabled={state.status === "submitting"}
-        className={buttonClass}
+        className={`${inkButton} w-full`}
       >
         {state.status === "submitting" ? t("submitting") : t("submit")}
       </button>
 
       {state.status === "error" && (
-        <p className={errorClass} role="alert">
+        <p className="text-sm text-destructive" role="alert">
           {t(state.errorKey)}
         </p>
       )}

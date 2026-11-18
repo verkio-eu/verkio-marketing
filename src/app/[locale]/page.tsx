@@ -1,10 +1,13 @@
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Container, Footer, Header } from "./components/Layout";
+import { Link } from "@/i18n/navigation";
+import { Footer, Header } from "./components/Layout";
 import { ConsoleEasterEgg } from "./components/ConsoleEasterEgg";
 import { HomeNarrative } from "./components/HomeNarrative";
 import { RotatingWord } from "./components/RotatingWord";
+import { ArrowRight } from "./components/ProductIcons";
 import { WaitlistCta } from "./components/WaitlistCta";
+import { h1, inkButton, lead, secondaryButton } from "./components/styles";
 
 async function StructuredData({ locale }: { locale: string }) {
   const tMeta = await getTranslations({ locale, namespace: "metadata" });
@@ -27,35 +30,41 @@ async function StructuredData({ locale }: { locale: string }) {
 
 function Hero() {
   const t = useTranslations("hero");
+  const tNav = useTranslations("nav");
   const words = t.raw("rotatingWords") as string[];
   return (
-    <section className="py-16 sm:py-24 lg:py-32">
-      <Container>
-        <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
-          <div className="relative z-10 lg:col-span-4 max-w-md">
-            <p className="text-sm font-semibold text-brand-600">
-              {t("eyebrow")}
-            </p>
-            <h1 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-gray-900 leading-[1.1]">
-              {t("headlinePrefix")}
-              <RotatingWord words={words} />
-            </h1>
-            <p className="mt-6 text-base text-gray-600">{t("body1")}</p>
-            <p className="mt-4 text-base text-gray-600">{t("body2")}</p>
-          </div>
-          <div className="hidden lg:block lg:col-span-7 lg:col-start-6 lg:-ml-4 xl:-ml-12">
-            <video
-              src="/images/euro-map.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              aria-hidden="true"
-              className="w-full h-auto scale-110 origin-right"
-            />
-          </div>
+    <section className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-16 pb-20 sm:px-6 lg:grid-cols-[1fr_minmax(0,32rem)] lg:pt-28 lg:pb-28">
+      <div className="relative z-10">
+        <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ink/[0.03] px-3 py-1 text-xs text-muted-foreground">
+          <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
+          {t("eyebrow")}
+        </p>
+        <h1 className={`animate-hero-in motion-reduce:animate-none ${h1}`}>
+          {t("headlinePrefix")}
+          <RotatingWord words={words} />
+        </h1>
+        <p className={`animate-hero-in motion-reduce:animate-none mt-6 max-w-xl ${lead}`}>{t("body1")}</p>
+        <p className={`animate-hero-in motion-reduce:animate-none mt-4 max-w-xl ${lead}`}>{t("body2")}</p>
+        <div className="mt-9 flex flex-wrap gap-3">
+          <Link href="/#waitlist" className={`animate-hero-in-later motion-reduce:animate-none ${inkButton}`}>
+            {tNav("joinWaitlist")} <ArrowRight className="size-4" />
+          </Link>
+          <Link href="/product" className={`animate-hero-in-latest motion-reduce:animate-none ${secondaryButton}`}>
+            {tNav("product")}
+          </Link>
         </div>
-      </Container>
+      </div>
+      <div className="animate-hero-in motion-reduce:animate-none hidden lg:block">
+        <video
+          src="/images/euro-map.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          className="h-auto w-full scale-110 origin-right"
+        />
+      </div>
     </section>
   );
 }

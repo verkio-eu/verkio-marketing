@@ -3,7 +3,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { Container } from "./Layout";
+import { Section } from "./Section";
+import { eyebrow, gradientText, h1, inkButton, lead, secondaryButton, sectionLead } from "./styles";
 
 export type ProductSection = { key: string; bulletCount: number };
 
@@ -40,6 +41,15 @@ export async function buildProductDeepPageMetadata({
   };
 }
 
+function CheckIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
+
+/** A product page's hero, as Branchscope's: centred, a large headline that fades, a lead and two buttons. */
 function Hero({
   namespace,
   backLinkHref,
@@ -49,80 +59,50 @@ function Hero({
 }) {
   const t = useTranslations(namespace);
   return (
-    <section className="py-16 sm:py-24 lg:py-28">
-      <Container>
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-gray-900 leading-[1.05]">
-            {t("headline")}
-          </h1>
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            {t("body")}
-          </p>
-          <div className="mt-10 flex items-center gap-x-6">
-            <Link
-              href="/#waitlist"
-              className="inline-flex justify-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-gray-800 transition-colors"
-            >
-              {t("cta")}
-            </Link>
-            <Link
-              href={backLinkHref}
-              className="text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              {t("backLink")} <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </div>
-      </Container>
+    <section className="mx-auto max-w-6xl px-4 pt-20 pb-16 text-center sm:px-6 lg:pt-28">
+      <p className={`animate-hero-in motion-reduce:animate-none ${eyebrow}`}>{t("eyebrow")}</p>
+      <h1 className={`animate-hero-in motion-reduce:animate-none mx-auto mt-4 max-w-3xl ${h1}`}>{t("headline")}</h1>
+      <p className={`animate-hero-in motion-reduce:animate-none mx-auto mt-6 max-w-2xl ${lead}`}>{t("body")}</p>
+      <div className="mt-9 flex flex-wrap justify-center gap-3">
+        <Link href="/#waitlist" className={`animate-hero-in-later motion-reduce:animate-none ${inkButton}`}>
+          {t("cta")}
+        </Link>
+        <Link href={backLinkHref} className={`animate-hero-in-latest motion-reduce:animate-none ${secondaryButton}`}>
+          {t("backLink")}
+        </Link>
+      </div>
     </section>
   );
 }
 
+/** One capability, as Branchscope's features: a label, a headline and a paragraph beside its points; every other one is mirrored. */
 function CapabilitySection({
   namespace,
   sectionKey,
   bulletCount,
-  tone,
+  flip,
 }: {
   namespace: string;
   sectionKey: string;
   bulletCount: number;
-  tone: "light" | "tinted";
+  flip: boolean;
 }) {
   const t = useTranslations(`${namespace}.sections.${sectionKey}`);
   return (
-    <section
-      className={`py-20 sm:py-28 ${tone === "tinted" ? "bg-gray-50" : "bg-white"}`}
-    >
-      <Container>
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-medium tracking-tight text-gray-900 leading-tight">
-            {t("headline")}
-          </h2>
-          <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-            {t("body")}
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="mt-10 grid max-w-4xl grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2"
-        >
-          {Array.from({ length: bulletCount }).map((_, idx) => (
-            <li
-              key={idx}
-              className="flex items-start gap-3 text-base text-gray-800"
-            >
-              <span
-                aria-hidden="true"
-                className="mt-3 inline-block h-px w-5 shrink-0 bg-gray-400"
-              />
-              <span className="leading-relaxed">{t(`bullets.${idx}`)}</span>
-            </li>
-          ))}
-        </ul>
-      </Container>
+    <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16">
+      <div className={flip ? "lg:order-2" : ""}>
+        <p className={eyebrow}>{t("eyebrow")}</p>
+        <h2 className={`mt-3 text-3xl font-semibold tracking-[-0.025em] text-balance ${gradientText}`}>{t("headline")}</h2>
+        <p className={`mt-4 ${sectionLead}`}>{t("body")}</p>
+      </div>
+      <ul role="list" className={`min-w-0 space-y-3 rounded-xl border border-ink/[0.08] bg-panel p-6 ${flip ? "lg:order-1" : ""}`}>
+        {Array.from({ length: bulletCount }).map((_, idx) => (
+          <li key={idx} className="flex gap-2.5 text-sm leading-relaxed text-muted-foreground">
+            <CheckIcon className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+            <span>{t(`bullets.${idx}`)}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
@@ -131,29 +111,15 @@ function StandardsRow({ namespace }: { namespace: string }) {
   const t = useTranslations(`${namespace}.standards`);
   const items = t.raw("items") as string[];
   return (
-    <section className="py-20 sm:py-28 bg-white">
-      <Container>
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <h2 className="mt-3 text-3xl font-medium tracking-tight text-gray-900 leading-tight">
-            {t("headline")}
-          </h2>
-          <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-            {t("body")}
-          </p>
-        </div>
-        <ul role="list" className="mt-10 flex flex-wrap gap-2 max-w-4xl">
-          {items.map((s) => (
-            <li
-              key={s}
-              className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-medium text-gray-700"
-            >
-              {s}
-            </li>
-          ))}
-        </ul>
-      </Container>
-    </section>
+    <Section eyebrow={t("eyebrow")} title={t("headline")} lead={t("body")}>
+      <ul role="list" className="flex max-w-4xl flex-wrap gap-2">
+        {items.map((s) => (
+          <li key={s} className="rounded-full border border-ink/10 bg-ink/[0.03] px-3 py-1 text-xs text-muted-foreground">
+            {s}
+          </li>
+        ))}
+      </ul>
+    </Section>
   );
 }
 
@@ -172,7 +138,7 @@ export function ProductDeepPage({
           namespace={namespace}
           sectionKey={s.key}
           bulletCount={s.bulletCount}
-          tone={idx % 2 === 0 ? "light" : "tinted"}
+          flip={idx % 2 === 1}
         />
       ))}
       {hasStandards && <StandardsRow namespace={namespace} />}

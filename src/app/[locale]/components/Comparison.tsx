@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Container } from "./Layout";
+import { Section } from "./Section";
 
 const comparisonRows = [
   "infrastructure",
@@ -17,7 +17,7 @@ const comparisonRows = [
 
 function CheckPill() {
   return (
-    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-brand-600 text-white">
+    <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
       <svg
         viewBox="0 0 16 16"
         className="h-3 w-3"
@@ -35,7 +35,7 @@ function CheckPill() {
 
 function DashPill() {
   return (
-    <span className="flex h-5 w-5 items-center justify-center rounded-full border border-gray-300 text-gray-400">
+    <span className="flex size-5 shrink-0 items-center justify-center rounded-full border border-ink/15 text-muted-foreground">
       <svg viewBox="0 0 16 16" className="h-3 w-3">
         <line
           x1="4"
@@ -74,84 +74,75 @@ export function Comparison() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <section id="comparison" className="border-t border-gray-200 py-20 sm:py-32">
-      <Container>
-        <div>
-          <p className="text-sm font-semibold text-brand-600">{t("eyebrow")}</p>
-          <h2 className="mt-3 text-3xl font-medium tracking-tight text-gray-900">
-            {t("headline")}
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">{t("subhead")}</p>
-        </div>
-
-        <div className="mt-16 -mx-4 sm:-mx-6 lg:-mx-8 overflow-x-auto">
-          <div className="min-w-[760px] px-4 sm:px-6 lg:px-8">
+    <Section id="comparison" eyebrow={t("eyebrow")} title={t("headline")} lead={t("subhead")}>
+        <div className="overflow-x-auto rounded-xl border border-ink/[0.08]">
+          <div className="min-w-[760px]">
             <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="border-b border-gray-200">
+              <thead className="bg-ink/[0.03] text-muted-foreground">
+                <tr>
                   <th
                     scope="col"
-                    className="pb-4 pr-6 font-medium text-gray-500 w-2/5"
+                    className="w-2/5 px-5 py-3 font-medium"
                   >
                     <span className="sr-only">Feature</span>
                   </th>
                   <th
                     scope="col"
-                    className="pb-4 px-4 text-base font-semibold text-gray-900 align-bottom"
+                    className="px-4 py-3 align-bottom font-medium text-foreground"
                   >
                     {t("columns.verkio")}
                   </th>
                   <th
                     scope="col"
-                    className="pb-4 px-4 text-base font-medium text-gray-600 align-bottom"
+                    className="px-4 py-3 align-bottom font-medium"
                   >
                     {t("columns.google")}
                   </th>
                   <th
                     scope="col"
-                    className="pb-4 px-4 text-base font-medium text-gray-600 align-bottom"
+                    className="px-4 py-3 align-bottom font-medium"
                   >
                     {t("columns.microsoft")}
                   </th>
                   <th
                     scope="col"
-                    className="pb-4 px-4 text-xs font-medium text-gray-500 align-bottom w-16 text-center uppercase tracking-wider"
+                    className="w-16 px-4 py-3 text-center align-bottom text-xs font-medium tracking-wider uppercase"
                   >
                     {t("columns.info")}
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {comparisonRows.map((key, idx) => {
+                {comparisonRows.map((key) => {
                   const isOpen = expanded === key;
                   return (
                     <Fragment key={key}>
-                      <tr className={idx > 0 ? "border-t border-gray-200" : ""}>
+                      <tr className="border-t border-ink/[0.06] align-top">
                         <th
                           scope="row"
-                          className="py-5 pr-6 text-sm font-medium text-gray-900 align-top"
+                          className="px-5 py-4 align-top font-medium text-foreground"
                         >
                           {t(`rows.${key}.label`)}
                         </th>
-                        <td className="py-5 px-4 align-top">
-                          <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-900">
+                        <td className="px-4 py-4 align-top">
+                          <span className="inline-flex items-center gap-2 font-medium text-foreground">
                             <CheckPill />
                             {t(`rows.${key}.verkio`)}
                           </span>
                         </td>
-                        <td className="py-5 px-4 align-top">
-                          <span className="inline-flex items-center gap-2 text-sm text-gray-600">
+                        <td className="px-4 py-4 align-top">
+                          <span className="inline-flex items-center gap-2 text-muted-foreground">
                             <DashPill />
                             {t(`rows.${key}.google`)}
                           </span>
                         </td>
-                        <td className="py-5 px-4 align-top">
-                          <span className="inline-flex items-center gap-2 text-sm text-gray-600">
+                        <td className="px-4 py-4 align-top">
+                          <span className="inline-flex items-center gap-2 text-muted-foreground">
                             <DashPill />
                             {t(`rows.${key}.microsoft`)}
                           </span>
                         </td>
-                        <td className="py-5 px-4 align-top text-center">
+                        <td className="px-4 py-4 text-center align-top">
                           <button
                             type="button"
                             onClick={() =>
@@ -162,8 +153,8 @@ export function Comparison() {
                             aria-label={t("infoLabel")}
                             className={`inline-flex items-center justify-center rounded-full transition-colors ${
                               isOpen
-                                ? "text-brand-600"
-                                : "text-gray-400 hover:text-gray-900"
+                                ? "text-primary"
+                                : "text-muted-foreground hover:text-foreground"
                             }`}
                           >
                             <QuestionIcon className="h-5 w-5" />
@@ -181,13 +172,13 @@ export function Comparison() {
                           >
                             <div className="overflow-hidden">
                               <div
-                                className={`pb-6 transition-opacity duration-200 ${
+                                className={`px-5 pb-5 transition-opacity duration-200 ${
                                   isOpen
                                     ? "opacity-100 delay-100"
                                     : "opacity-0"
                                 }`}
                               >
-                                <div className="rounded-lg bg-gray-100 p-5 text-sm text-gray-700 leading-relaxed">
+                                <div className="rounded-lg bg-ink/[0.04] p-5 text-sm leading-relaxed text-muted-foreground">
                                   {t(`rows.${key}.info`)}
                                 </div>
                               </div>
@@ -202,7 +193,6 @@ export function Comparison() {
             </table>
           </div>
         </div>
-      </Container>
-    </section>
+    </Section>
   );
 }

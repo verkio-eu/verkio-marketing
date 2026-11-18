@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Pristatymas 2026 m. liepą",
+    "eyebrow": "Pristatymas 2027 m. vasarį",
     "headline": "Darbo rinkinys be triukšmo.",
     "body1": "Paštas, kalendorius, kontaktai, failai, vikiai ir žinutės. Vienas rinkinys tikram darbui, be išpūtimo ar triukšmo.",
     "body2": "Sukurta atvirais standartais. Talpinama Europoje. Tavo, kad pasitrauktum, bet kada.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Kada Verkio bus pristatyta?",
-        "answer": "2026 m. liepą. Užsiregistruokite į laukimo sąrašą ir mes susisieksime, kai atsidarys paskyros."
+        "answer": "2027 m. vasarį. Užsiregistruokite į laukimo sąrašą ir mes susisieksime, kai atsidarys paskyros."
       },
       "migration": {
         "question": "Ar galiu migruoti iš Google Workspace arba Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Naudojimosi sąlygos",
     "subprocessors": "Tvarkytojai",
     "isAndIsnt": "Kas Verkio yra ir kas ne",
-    "allRightsReserved": "Visos teisės saugomos"
+    "allRightsReserved": "Visos teisės saugomos",
+    "themeLight": "Perjungti į šviesų režimą",
+    "themeDark": "Perjungti į tamsų režimą"
   },
   "waitlist": {
     "cardTitle": "Užsiregistruoti į laukimo sąrašą",

@@ -6,6 +6,7 @@ import {
   submitRoadmapRequest,
   type RoadmapRequestErrorKey,
 } from "@/app/actions/roadmapRequest";
+import { inkButton, input, label, textarea } from "@/app/[locale]/components/styles";
 
 type FormState =
   | { status: "idle" }
@@ -13,8 +14,6 @@ type FormState =
   | { status: "success" }
   | { status: "error"; errorKey: RoadmapRequestErrorKey };
 
-const inputClasses =
-  "block w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600 disabled:opacity-60 transition-colors";
 
 export function RoadmapRequestForm() {
   const t = useTranslations("roadmap.requestForm");
@@ -36,7 +35,7 @@ export function RoadmapRequestForm() {
 
   if (state.status === "success") {
     return (
-      <p className="text-sm text-gray-700">{t("successMessage")}</p>
+      <p className="text-sm text-muted-foreground">{t("successMessage")}</p>
     );
   }
 
@@ -56,7 +55,7 @@ export function RoadmapRequestForm() {
       <div>
         <label
           htmlFor="rrf-request"
-          className="mb-2 block text-sm font-medium text-gray-900"
+          className={label}
         >
           {t("requestLabel")}
         </label>
@@ -68,7 +67,7 @@ export function RoadmapRequestForm() {
           maxLength={1000}
           rows={4}
           disabled={state.status === "submitting"}
-          className={`${inputClasses} resize-y`}
+          className={`${textarea} resize-y`}
           placeholder={t("requestPlaceholder")}
         />
       </div>
@@ -76,10 +75,10 @@ export function RoadmapRequestForm() {
       <div>
         <label
           htmlFor="rrf-email"
-          className="mb-2 block text-sm font-medium text-gray-900"
+          className={label}
         >
           {t("emailLabel")}{" "}
-          <span className="text-gray-400 font-normal">
+          <span className="font-normal text-muted-foreground">
             {t("emailOptional")}
           </span>
         </label>
@@ -89,7 +88,7 @@ export function RoadmapRequestForm() {
           name="email"
           autoComplete="email"
           disabled={state.status === "submitting"}
-          className={inputClasses}
+          className={input}
           placeholder={t("emailPlaceholder")}
         />
       </div>
@@ -97,13 +96,13 @@ export function RoadmapRequestForm() {
       <button
         type="submit"
         disabled={state.status === "submitting"}
-        className="inline-flex justify-center rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className={inkButton}
       >
         {state.status === "submitting" ? t("submitting") : t("submit")}
       </button>
 
       {state.status === "error" && (
-        <p className="text-sm text-red-700" role="alert">
+        <p className="text-sm text-destructive" role="alert">
           {t(state.errorKey)}
         </p>
       )}

@@ -3,11 +3,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import {
-  Container,
-  Footer,
-  Header,
-} from "@/app/[locale]/components/Layout";
+import { Footer, Header } from "@/app/[locale]/components/Layout";
+import { eyebrow, h1Page, inlineLink, lead, textLink } from "@/app/[locale]/components/styles";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -74,57 +71,50 @@ function SubprocessorsContent() {
   const t = useTranslations("subprocessors");
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32">
-      <Container>
+    <section className="mx-auto max-w-3xl px-4 pt-20 pb-24 sm:px-6 lg:pt-28">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold text-brand-600">
-            {t("eyebrow")}
-          </p>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight text-gray-900 leading-tight">
-            {t("headline")}
-          </h1>
-          <p className="mt-4 text-sm text-gray-500">{t("lastUpdated")}</p>
-          <p className="mt-8 text-lg text-gray-600 leading-relaxed">
-            {t("intro")}
-          </p>
+          <p className={eyebrow}>{t("eyebrow")}</p>
+          <h1 className={`mt-4 ${h1Page}`}>{t("headline")}</h1>
+          <p className="mt-3 text-[13px] text-muted-foreground">{t("lastUpdated")}</p>
+          <p className={`mt-6 ${lead}`}>{t("intro")}</p>
         </div>
 
-        <div className="mt-12 max-w-3xl overflow-hidden rounded-lg border border-gray-200">
-          <table className="w-full text-sm">
-            <thead className="bg-gray-50">
+        <div className="mt-12 overflow-x-auto rounded-xl border border-ink/[0.08]">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-ink/[0.03] text-muted-foreground">
               <tr>
-                <th className="px-4 py-3 text-left font-medium text-gray-900">
+                <th className="px-5 py-3 font-medium">
                   {t("columns.vendor")}
                 </th>
-                <th className="px-4 py-3 text-left font-medium text-gray-900">
+                <th className="px-5 py-3 font-medium">
                   {t("columns.purpose")}
                 </th>
-                <th className="px-4 py-3 text-left font-medium text-gray-900">
+                <th className="px-5 py-3 font-medium">
                   {t("columns.country")}
                 </th>
-                <th className="px-4 py-3 text-left font-medium text-gray-900">
+                <th className="px-5 py-3 font-medium">
                   {t("columns.dpa")}
                 </th>
               </tr>
             </thead>
             <tbody>
               {ROWS.map((row) => (
-                <tr key={row.vendor} className="border-t border-gray-200">
-                  <td className="px-4 py-3 font-medium text-gray-900 align-top">
+                <tr key={row.vendor} className="border-t border-ink/[0.06]">
+                  <td className="px-5 py-4 align-top font-medium text-foreground">
                     {row.vendor}
                   </td>
-                  <td className="px-4 py-3 text-gray-600 align-top">
+                  <td className="px-5 py-4 align-top text-muted-foreground">
                     {t(`purposes.${row.purposeKey}`)}
                   </td>
-                  <td className="px-4 py-3 text-gray-600 align-top whitespace-nowrap">
+                  <td className="px-5 py-4 align-top whitespace-nowrap text-muted-foreground">
                     {row.country}
                   </td>
-                  <td className="px-4 py-3 align-top">
+                  <td className="px-5 py-4 align-top">
                     <a
                       href={row.dpaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-brand-600 hover:text-gray-900 underline underline-offset-4 decoration-1 hover:decoration-2 transition-colors"
+                      className="text-primary underline-offset-4 hover:underline"
                     >
                       {t("dpaLink")}
                     </a>
@@ -135,47 +125,47 @@ function SubprocessorsContent() {
           </table>
         </div>
 
-        <div className="mt-16 max-w-2xl">
-          <h2 className="text-xl font-medium text-gray-900">
+        <div className="mt-14 max-w-2xl">
+          <h2 className="text-xl font-medium text-foreground">
             {t("customerHeading")}
           </h2>
-          <p className="mt-4 text-base text-gray-600 leading-relaxed">
+          <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
             {t.rich("customerBody1", {
               strong: (chunks) => (
-                <strong className="font-semibold text-gray-900">
+                <strong className="font-medium text-foreground">
                   {chunks}
                 </strong>
               ),
             })}
           </p>
-          <p className="mt-6 text-sm font-medium text-gray-900">
+          <p className="mt-6 text-sm font-medium text-foreground">
             {t("customerCategoriesIntro")}
           </p>
           <ul className="mt-3 space-y-3">
             {CUSTOMER_CATEGORIES.map((key) => (
-              <li key={key} className="text-base text-gray-600 leading-relaxed">
-                <span className="font-medium text-gray-900">
+              <li key={key} className="text-[15px] leading-relaxed text-muted-foreground">
+                <span className="font-medium text-foreground">
                   {t(`customerCategories.${key}.name`)}
                 </span>{" "}
                 — {t(`customerCategories.${key}.description`)}
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-base text-gray-600 leading-relaxed">
+          <p className="mt-6 text-[15px] leading-relaxed text-muted-foreground">
             {t("customerBody2")}
           </p>
         </div>
 
-        <div className="mt-16 max-w-2xl">
-          <h2 className="text-xl font-medium text-gray-900">
+        <div className="mt-14 max-w-2xl">
+          <h2 className="text-xl font-medium text-foreground">
             {t("noticeHeading")}
           </h2>
-          <p className="mt-4 text-base text-gray-600 leading-relaxed">
+          <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
             {t.rich("noticeBody", {
               email: (chunks) => (
                 <a
                   href="mailto:subprocessors@verkio.eu"
-                  className="text-gray-900 underline underline-offset-4 decoration-1 hover:decoration-2"
+                  className={inlineLink}
                 >
                   {chunks}
                 </a>
@@ -184,15 +174,11 @@ function SubprocessorsContent() {
           </p>
         </div>
 
-        <div className="mt-16 max-w-2xl">
-          <Link
-            href="/"
-            className="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-gray-900 transition-colors"
-          >
+        <div className="mt-16">
+          <Link href="/" className={textLink}>
             ← {t("backLink")}
           </Link>
         </div>
-      </Container>
     </section>
   );
 }

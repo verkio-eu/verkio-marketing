@@ -72,7 +72,7 @@
     }
   },
   "hero": {
-    "eyebrow": "Lanseres i juli 2026",
+    "eyebrow": "Lanseres i februar 2027",
     "headline": "Arbeidssuiten uten støy.",
     "body1": "E-post, kalender, kontakter, filer, wikier og meldinger. Én suite for det faktiske arbeidet, uten oppblåsthet eller støy.",
     "body2": "Bygd på åpne standarder. Driftet i Europa. Ditt å forlate, når som helst.",
@@ -220,7 +220,7 @@
       },
       "launch": {
         "question": "Når lanseres Verkio?",
-        "answer": "Juli 2026. Bli med på ventelisten, så hører du fra oss når kontoene åpner."
+        "answer": "Februar 2027. Bli med på ventelisten, så hører du fra oss når kontoene åpner."
       },
       "migration": {
         "question": "Kan jeg migrere fra Google Workspace eller Microsoft 365?",
@@ -259,7 +259,9 @@
     "terms": "Vilkår",
     "subprocessors": "Underdatabehandlere",
     "isAndIsnt": "Hva Verkio er og ikke er",
-    "allRightsReserved": "Alle rettigheter reservert"
+    "allRightsReserved": "Alle rettigheter reservert",
+    "themeLight": "Bytt til lyst tema",
+    "themeDark": "Bytt til mørkt tema"
   },
   "waitlist": {
     "cardTitle": "Bli med på ventelisten",

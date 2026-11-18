@@ -4,11 +4,12 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { LanguageSwitcher } from "./components/LanguageSwitcher";
+import { heroGlow } from "./components/styles";
+import { ThemeScript } from "./components/ThemeScript";
 import "../globals.css";
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
   variable: "--font-inter",
 });
@@ -75,8 +76,12 @@ export async function generateMetadata({
   };
 }
 
+// The browser's chrome takes the page's colour: --page in globals.css, light and dark.
 export const viewport = {
-  themeColor: "#3b5f7f",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#08090a" },
+  ],
 };
 
 export default async function LocaleLayout({
@@ -93,12 +98,15 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${inter.variable} bg-white antialiased`}>
-      <body className="font-sans text-gray-900">
-        <NextIntlClientProvider>
-          {children}
-          <LanguageSwitcher />
-        </NextIntlClientProvider>
+    // Light or dark: the visitor's choice (ThemeScript adds it as a class before the first paint), else the system's.
+    <html lang={locale} className={inter.variable} suppressHydrationWarning>
+      <head>
+        <ThemeScript />
+      </head>
+      <body className="bg-page font-sans text-foreground">
+        {/* A soft electric-blue glow at the top of every page, behind everything (the page's colour is the canvas's). */}
+        <div aria-hidden="true" className={`${heroGlow} -z-10`} />
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
