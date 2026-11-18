@@ -382,7 +382,7 @@
         "description": "Zaplanuj wiadomość na jutro o 9. Uśpij wątek do piątku. 30 sekund na cofnięcie wysłania."
       },
       "compliance": {
-        "date": "Grudzień 2027",
+        "date": "Kwiecień 2028",
         "name": "SOC 2 Type II i ISO 27001",
         "description": "Atesty zgodności, o które pytają kupujący. Stałe zobowiązanie z dokumentacją gotową do audytu."
       },

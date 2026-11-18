@@ -382,7 +382,7 @@
         "description": "Programa un mensaje para mañana a las 9:00. Pausa un hilo hasta el viernes. 30 segundos de gracia para recuperar un envío."
       },
       "compliance": {
-        "date": "Diciembre 2027",
+        "date": "Abril 2028",
         "name": "SOC 2 Tipo II e ISO 27001",
         "description": "Atestaciones de cumplimiento que los compradores piden. Compromiso continuo con documentación lista para auditoría."
       },

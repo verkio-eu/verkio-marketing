@@ -382,7 +382,7 @@
         "description": "Schemalägg ett meddelande till imorgon klockan 9. Snooza en tråd till fredag. 30-sekunders frist för att dra tillbaka ett skickat meddelande."
       },
       "compliance": {
-        "date": "December 2027",
+        "date": "April 2028",
         "name": "SOC 2 Type II och ISO 27001",
         "description": "Efterlevnadsintyg som köpare frågar efter. Löpande åtagande med revisorsklar dokumentation."
       },

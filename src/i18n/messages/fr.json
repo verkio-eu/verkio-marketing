@@ -382,7 +382,7 @@
         "description": "Planifiez un message pour demain 9h. Mettez un fil en veille jusqu'à vendredi. 30 secondes pour rattraper un envoi."
       },
       "compliance": {
-        "date": "Décembre 2027",
+        "date": "Avril 2028",
         "name": "SOC 2 Type II et ISO 27001",
         "description": "Attestations de conformité que les acheteurs demandent. Engagement continu avec une documentation prête pour l'audit."
       },

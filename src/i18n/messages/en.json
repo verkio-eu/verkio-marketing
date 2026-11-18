@@ -520,7 +520,7 @@
         "description": "Schedule a message for tomorrow at 9am. Snooze a thread until Friday. A 30-second grace period to pull back a send."
       },
       "compliance": {
-        "date": "December 2027",
+        "date": "April 2028",
         "name": "SOC 2 Type II and ISO 27001",
         "description": "Compliance attestations buyers ask for. Rolling commitment with auditor-ready documentation."
       },
